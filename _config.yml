@@ -6,9 +6,10 @@ description: >-
 url: "https://marcoschumacher-uniwuppertal.github.io"
 baseurl: "/Shape-Bias-and-Robustness-Evaluation-via-Cue-Decomposition-for-Image-Classification-and-Segmentation"
 
-remote_theme: "mmistakes/minimal-mistakes"
+theme: "minimal-mistakes-jekyll"
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme    # you can actually remove this now
 
 author:
   name: "Marco Schumacher"
