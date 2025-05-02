@@ -7,10 +7,9 @@ description: >-
 url: "https://marcoschumacher-uniwuppertal.github.io"
 baseurl: "/Shape-Bias-and-Robustness-Evaluation-via-Cue-Decomposition-for-Image-Classification-and-Segmentation"
 
-# use the remote_theme approach
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"  # pin to a release if you like
+
+theme: minimal-mistakes-jekyll
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
 
