@@ -160,30 +160,56 @@
       </section>
 
       <!-- CHARTS -->
-<section id="segmentation-metrics" class="mb-16">
-    <h2 class="text-2xl font-semibold mb-4">Segmentation Metrics</h2>
-    <div class="overflow-x-auto">
-      <!-- relative path from your site root -->
-      <object
-        type="text/html"
-        data="./assets/charts/semseg_selected_cue_decom_metrics.html"
-        class="w-full min-h-[350px] border"
-        aria-label="Segmentation metrics table">
-      </object>
-    </div>
-  </section>
+      <style>
+        /* hide the fallback image by default, show the live table */
+        .chart-object { display: block; }
+        .chart-image  { display: none; }
+      
+        /* below 1000px, hide the live table and show the image */
+        @media (max-width: 1000px) {
+          .chart-object { display: none; }
+          .chart-image  { display: block; }
+        }
+      </style>
+    <section id="segmentation-metrics" class="mb-16">
+        <h2 class="text-2xl font-semibold mb-4">Segmentation Metrics</h2>
+        <div class="overflow-x-auto">
+        <!-- live, interactive table -->
+        <object
+            type="text/html"
+            data="./assets/charts/semseg_selected_cue_decom_metrics.html"
+            aria-label="Segmentation metrics table"
+            class="chart-object w-full min-h-[350px] border">
+        </object>
+    
+        <!-- static fallback image -->
+        <img
+            src="./assets/images/segmentation_metrics_table.png"
+            alt="Segmentation metrics summary"
+            class="chart-image w-full border"
+        />
+        </div>
+    </section>
   
-  <section id="classification-metrics" class="mb-16">
-    <h2 class="text-2xl font-semibold mb-4">Classification Metrics</h2>
-    <div class="overflow-x-auto">
-      <object
-        type="text/html"
-        data="./assets/charts/classification_cue_decom_metrics.html"
-        class="w-full min-h-[650px] border"
-        aria-label="Classification metrics table">
-      </object>
-    </div>
-  </section>
+    <section id="classification-metrics" class="mb-16">
+        <h2 class="text-2xl font-semibold mb-4">Classification Metrics</h2>
+        <div class="overflow-x-auto">
+        <!-- live, interactive table -->
+        <object
+            type="text/html"
+            data="./assets/charts/classification_cue_decom_metrics.html"
+            aria-label="Classification metrics table"
+            class="chart-object w-full min-h-[650px] border">
+        </object>
+    
+        <!-- static fallback image -->
+        <img
+            src="./assets/images/classification_metrics_table.png"
+            alt="Classification metrics summary"
+            class="chart-image w-full border"
+        />
+        </div>
+    </section>
 
       <!-- KEY CONTRIBUTIONS -->
       <section id="contribs" class="mb-14">
