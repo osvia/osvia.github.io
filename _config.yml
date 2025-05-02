@@ -9,7 +9,6 @@ baseurl: "/Shape-Bias-and-Robustness-Evaluation-via-Cue-Decomposition-for-Image-
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 
 author:
   name: "Marco Schumacher"

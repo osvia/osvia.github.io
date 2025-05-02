@@ -1,5 +1,2 @@
-source "https://rubygems.org"
-
-gem "jekyll", "~> 4.3"
-gem "jekyll-feed"
-gem "jekyll-remote-theme"
+# Gemfile
+gem "github-pages", group: :jekyll_plugins
