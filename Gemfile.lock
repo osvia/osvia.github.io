@@ -302,6 +302,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed
+  jekyll-include-cache
   minimal-mistakes-jekyll (~> 4.24.0)
 
 BUNDLED WITH

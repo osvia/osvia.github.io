@@ -8,10 +8,11 @@ url: "https://marcoschumacher-uniwuppertal.github.io"
 baseurl: "/Shape-Bias-and-Robustness-Evaluation-via-Cue-Decomposition-for-Image-Classification-and-Segmentation"
 
 
-theme: minimal-mistakes-jekyll
+#theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
 
 author:
   name: "Marco Schumacher"
