@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shape Bias & Robustness – Project Page</title>
+  <link rel="icon" type="image/png" href="./assets/images/KeyVisual.png" />
   <!-- Tailwind (via CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -94,7 +95,13 @@
           <em>via Cue Decomposition for Image Classification &amp; Segmentation</em>
         </p>
         <p class="text-sm text-gray-500 mt-3">
-          Edgar Heinert • Thomas Gottwald • Annika Mütze • Matthias Rottmann
+          <a href="https://acm.uni-wuppertal.de/en/team/details/heinert/" class="hover:underline" target="_blank" rel="noopener noreferrer">Edgar Heinert</a>
+          • 
+          <a href="https://acm.uni-wuppertal.de/en/team/details/gottwald/" class="hover:underline" target="_blank" rel="noopener noreferrer">Thomas Gottwald</a>
+          • 
+          <a href="https://acm.uni-wuppertal.de/en/team/details/muetze/" class="hover:underline" target="_blank" rel="noopener noreferrer">Annika Mütze</a>
+          • 
+          <a href="https://acm.uni-wuppertal.de/en/team/details/rottmann/" class="hover:underline" target="_blank" rel="noopener noreferrer">Matthias Rottmann</a>
         </p>
         <a href="https://arxiv.org/pdf/2503.12453.pdf" class="inline-block mt-6 px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
           Download PDF
@@ -135,30 +142,70 @@
         <p>
           Our pipeline first applies <em>Edge‑Enhancing Diffusion</em> to emphasize object boundaries while removing fine‑grained textures. The resulting shape cue keeps category‑defining contours. Next, we compute a <em>Voronoi texture abstraction</em> on the original image, which discards shape but preserves local texture statistics. By evaluating models on shape‑only (<span class="font-mono">x<sub>S</sub></span>) and texture‑only (<span class="font-mono">x<sub>T</sub></span>) inputs, we can decompose the prediction confidence into distinct cues.
         </p>
-        <figure class="rounded-xl overflow-hidden shadow-sm">
-          <img src="./assets/images/pipeline_overview_placeholder.png" alt="Pipeline overview diagram" loading="lazy" class="w-full">
-          <figcaption class="text-center mt-2 text-sm text-gray-600">Two‑step cue‑decomposition pipeline</figcaption>
-        </figure>
       </section>
 
-      <!-- FIGURES -->
-      <section id="figures" class="space-y-6">
-        <h2 class="text-2xl font-semibold">Figures</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <figure class="rounded-xl overflow-hidden shadow-sm">
-            <img src="/assets/images/shape_cue_placeholder.png" alt="Shape cue" loading="lazy">
-            <figcaption class="text-center mt-2 text-sm text-gray-600">Shape cue (EED)</figcaption>
-          </figure>
-          <figure class="rounded-xl overflow-hidden shadow-sm">
-            <img src="/assets/images/texture_cue_placeholder.png" alt="Texture cue" loading="lazy">
-            <figcaption class="text-center mt-2 text-sm text-gray-600">Texture cue (Voronoi)</figcaption>
-          </figure>
-          <figure class="rounded-xl overflow-hidden shadow-sm">
-            <img src="/assets/images/robustness_curve_placeholder.png" alt="Robustness curve" loading="lazy">
-            <figcaption class="text-center mt-2 text-sm text-gray-600">Robustness vs. Corruption Severity</figcaption>
-          </figure>
+    <!-- FIGURES -->
+    <section id="figures" class="space-y-6">
+      <h2 class="text-2xl font-semibold">Figures</h2>
+      <div class="grid md:grid-cols-3 gap-x-6 gap-y-8">
+        <!-- Column 1: EED Cues -->
+        <div class="space-y-3">
+          <h3 class="text-xl font-semibold mb-3 text-center">EED Cues</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/EED/EEDOriginal01.jpg" alt="EED Cue Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/EED/EED01.jpg" alt="EED Cue Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/EED/EEDOriginal02.jpg" alt="EED Cue Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/EED/EED02.jpg" alt="EED Cue Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+          </div>
         </div>
-      </section>
+
+        <!-- Column 2: Voronoi Cues -->
+        <div class="space-y-3 border-t border-l border-gray-100 pt-6 pl-6 md:border-t-0 md:pt-0">
+          <h3 class="text-xl font-semibold mb-3 text-center">Voronoi Cues</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/Voronoi/voronoi_frame_1.png" alt="Voronoi Cue Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/Voronoi/voronoi_frame_2.png" alt="Voronoi Cue Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/Voronoi/voronoi_shuffle_02.png" alt="Voronoi Cue Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/Voronoi/voronoi_shuffle_06.png" alt="Voronoi Cue Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Column 3: Cue Conflict Examples -->
+        <div class="space-y-3 border-t border-l border-gray-100 pt-6 pl-6 md:border-t-0 md:pt-0">
+          <h3 class="text-xl font-semibold mb-3 text-center">Cue Conflict</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/CueConflict/CueConfl01.jpg" alt="Cue Conflict Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/CueConflict/CueConfl02.jpg" alt="Cue Conflict Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/CueConflict/CueConfl03.jpg" alt="Cue Conflict Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+            <figure class="rounded-lg overflow-hidden shadow-sm">
+              <img src="./assets/images/CueConflict/CueConfl04.jpg" alt="Cue Conflict Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
 
       <!-- METRICS (segmentation + classification) -->
     <style>
@@ -174,10 +221,6 @@
     
     <section id="metrics" class="space-y-10">
         <h2 class="text-2xl font-semibold">Metrics at a Glance</h2>
-        <p class="text-sm text-gray-600">
-        Interactive tables → scroll inside the iframe, tap the static image on mobile.
-        </p>
-    
         <!-- ── Segmentation ───────────────────────────────────── -->
         <div
         class="
@@ -270,7 +313,7 @@
       <section id="results" class="space-y-6">
         <h2 class="text-2xl font-semibold">Qualitative Results</h2>
         <p>Below we show "texture‑to‑shape" flips where the texture cue misleads the model, but our shape‑biased model succeeds.</p>
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 gap-6">
           <figure class="rounded-xl overflow-hidden shadow-sm">
             <img src="/assets/images/qualitative1_placeholder.png" alt="Qualitative example 1" loading="lazy">
             <figcaption class="text-center mt-2 text-sm text-gray-600">Original vs. shape‑cue prediction</figcaption>
@@ -279,23 +322,20 @@
             <img src="/assets/images/qualitative2_placeholder.png" alt="Qualitative example 2" loading="lazy">
             <figcaption class="text-center mt-2 text-sm text-gray-600">Texture confuses baseline model</figcaption>
           </figure>
-          <figure class="rounded-xl overflow-hidden shadow-sm">
-            <img src="/assets/images/qualitative3_placeholder.png" alt="Qualitative example 3" loading="lazy">
-            <figcaption class="text-center mt-2 text-sm text-gray-600">Robust prediction using cue decomposition</figcaption>
-          </figure>
         </div>
       </section>
 
       <!-- INTERACTIVE DEMO -->
-      <section id="demo" class="space-y-6">
+      <!--<section id="demo" class="space-y-6">
         <h2 class="text-2xl font-semibold">Interactive Demo</h2>
         <p>Try cue‑decomposition live in your browser. Upload an image or pick a sample, and inspect how classification confidence changes under shape vs. texture.</p>
         <a href="https://huggingface.co/spaces/your-org/shape-bias-demo" class="inline-flex items-center px-5 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700" target="_blank" rel="noopener noreferrer">
           Launch Demo ↗
         </a>
-      </section>
+      </section> -->
 
       <!-- PRE‑TRAINED MODELS / CHECKPOINTS -->
+      <!--
       <section id="models" class="space-y-6">
         <h2 class="text-2xl font-semibold">Pre‑trained Models & Checkpoints</h2>
         <ul class="list-disc list-inside space-y-2">
@@ -303,7 +343,7 @@
           <li>ResNet‑50 Cityscapes <span class="text-gray-500">(shape‑bias ↑ 10%, mIoU +1.8)</span> – <a href="https://zenodo.org/record/1234567/files/resnet50_cityscapes_shape.ckpt" class="text-blue-600 hover:underline">download</a></li>
           <li>Swin‑Large ADE20k <span class="text-gray-500">(shape‑bias ↑ 9%, mIoU +1.4)</span> – <a href="https://zenodo.org/record/1234567/files/swin_large_ade20k_shape.ckpt" class="text-blue-600 hover:underline">download</a></li>
         </ul>
-      </section>
+      </section>-->
 
       <!-- RESOURCES -->
       <section id="resources" class="space-y-6">
@@ -312,7 +352,6 @@
           <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv abstract &amp; BibTeX</a></li>
           <li><a href="https://github.com/your-org/your-repo" class="text-blue-600 hover:underline">Official implementation (PyTorch)</a></li>
           <li><a href="https://zenodo.org/record/1234567" class="text-blue-600 hover:underline">Dataset &amp; pre‑computed cues (Zenodo)</a></li>
-          <li><a href="https://huggingface.co/spaces/your-org/shape-bias-demo" class="text-blue-600 hover:underline">Hugging Face demo space</a></li>
         </ul>
       </section>
 
@@ -339,6 +378,7 @@
       <section id="acks" class="space-y-6">
         <h2 class="text-2xl font-semibold">Acknowledgments</h2>
         <p>We thank Sebastian Houben, Sina Honari, and the anonymous reviewers for valuable feedback. This work was supported by the German Federal Ministry of Education and Research (BMBF) under Grant XYZ123.</p>
+        <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab Logo" loading="lazy" class="w-32 h-auto mt-4">
       </section>
 
       <!-- CONTACT -->
