@@ -18,13 +18,13 @@
     <div class="px-4 pb-5 text-sm space-y-6 leading-relaxed">
       <nav class="space-y-1">
         <a href="#abstract"   class="block hover:underline text-gray-700">Abstract</a>
-        <a href="#video"      class="block hover:underline text-gray-700">Video</a>
+        <!--<a href="#video"      class="block hover:underline text-gray-700">Video</a>-->
         <a href="#method"     class="block hover:underline text-gray-700">Method</a>
-        <a href="#figures"    class="block hover:underline text-gray-700">Figures</a>
+        <!--<a href="#figures"    class="block hover:underline text-gray-700">Figures</a>-->
         <a href="#metrics"    class="block hover:underline text-gray-700">Metrics</a>
         <a href="#results"    class="block hover:underline text-gray-700">Qualitative Results</a>
-        <a href="#demo"       class="block hover:underline text-gray-700">Interactive Demo</a>
-        <a href="#models"     class="block hover:underline text-gray-700">Pre‑trained Models</a>
+        <!--<a href="#demo"       class="block hover:underline text-gray-700">Interactive Demo</a>
+        <a href="#models"     class="block hover:underline text-gray-700">Pre‑trained Models</a>-->
         <a href="#resources"  class="block hover:underline text-gray-700">Resources</a>
         <a href="#faq"        class="block hover:underline text-gray-700">FAQ</a>
         <a href="#acks"       class="block hover:underline text-gray-700">Acknowledgments</a>
@@ -35,7 +35,7 @@
       <div>
         <h3 class="font-semibold mb-1">Paper Links</h3>
         <ul class="list-disc list-inside space-y-1">
-          <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (1.3 MB)</a></li>
+          <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
           <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv page</a></li>
           <li><a href="https://github.com/your-org/your-repo" class="text-blue-600 hover:underline">Project Code</a></li>
         </ul>
@@ -51,9 +51,9 @@
       <h2 class="text-xl font-bold mb-4">Navigation</h2>
       <nav class="space-y-2 mb-6 text-sm leading-relaxed">
         <a href="#abstract"   class="block hover:underline text-gray-700">Abstract</a>
-        <a href="#video"      class="block hover:underline text-gray-700">Video</a>
+        <!--<a href="#video"      class="block hover:underline text-gray-700">Video</a>-->
         <a href="#method"     class="block hover:underline text-gray-700">Method</a>
-        <a href="#figures"    class="block hover:underline text-gray-700">Figures</a>
+        <!--<a href="#figures"    class="block hover:underline text-gray-700">Figures</a>-->
         <a href="#metrics"    class="block hover:underline text-gray-700">Metrics</a>
         <a href="#results"    class="block hover:underline text-gray-700">Qualitative Results</a>
         <!--<a href="#demo"       class="block hover:underline text-gray-700">Interactive Demo</a>-->
@@ -67,20 +67,46 @@
       <hr class="my-6">
       <h3 class="font-semibold mb-2 text-sm">Paper Links</h3>
       <ul class="list-disc list-inside space-y-1 text-sm leading-relaxed mb-6">
-        <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (1.3 MB)</a></li>
+        <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
         <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv page</a></li>
         <li><a href="https://github.com/your-org/your-repo" class="text-blue-600 hover:underline">Project Code</a></li>
       </ul>
       <hr class="my-6">
+      <!-- ── CITATION ─────────────────────────────────────────── -->
       <h3 class="font-semibold mb-2 text-sm">Citation</h3>
-      <code class="block text-[0.7rem] text-gray-600 leading-5 select-all">
+
+      <div class="relative group">
+        <!-- the code block -->
+        <pre id="bibtex"
+            class="whitespace-pre overflow-x-auto
+                    bg-gray-100 rounded-lg p-3
+                    text-[0.70rem] leading-5 font-mono
+                    text-gray-700 select-all">
 @article{Heinert2025ShapeBias,
   title={Shape Bias & Robustness via Cue Decomposition},
   author={Heinert, E. and Gottwald, T. …},
   journal={arXiv:2503.12453},
   year={2025}
 }
-      </code>
+        </pre>
+
+        <!-- copy‑to‑clipboard button -->
+        <button
+          type="button"
+          aria-label="Copy BibTeX"
+          class="absolute top-2 right-2
+                flex items-center gap-1
+                px-2 py-1 rounded-md text-xs font-medium
+                bg-gray-200 hover:bg-gray-300
+                transition
+                group-hover:opacity-100 opacity-0"
+          onclick="
+            navigator.clipboard.writeText(document.getElementById('bibtex').innerText)
+              .then(btn=>{this.textContent='✔︎ Copied';setTimeout(()=>this.textContent='Copy',1500);});
+          ">
+          Copy
+        </button>
+      </div>
     </aside>
 
     <!-- MAIN CONTENT -->
@@ -94,29 +120,56 @@
         <p class="text-xl mt-2">
           <em>via Cue Decomposition for Image Classification &amp; Segmentation</em>
         </p>
+
+        <!-- AUTHORS -->
         <p class="text-sm text-gray-500 mt-3">
-          <a href="https://acm.uni-wuppertal.de/en/team/details/heinert/" class="hover:underline" target="_blank" rel="noopener noreferrer">Edgar Heinert</a>
-          • 
-          <a href="https://acm.uni-wuppertal.de/en/team/details/gottwald/" class="hover:underline" target="_blank" rel="noopener noreferrer">Thomas Gottwald</a>
-          • 
-          <a href="https://acm.uni-wuppertal.de/en/team/details/muetze/" class="hover:underline" target="_blank" rel="noopener noreferrer">Annika Mütze</a>
-          • 
-          <a href="https://acm.uni-wuppertal.de/en/team/details/rottmann/" class="hover:underline" target="_blank" rel="noopener noreferrer">Matthias Rottmann</a>
+          <a href="https://acm.uni-wuppertal.de/en/team/details/heinert/"
+            class="text-blue-600 hover:underline" target="_blank"
+            rel="noopener noreferrer">Edgar Heinert</a><sup>1</sup> •
+          <a href="https://acm.uni-wuppertal.de/en/team/details/gottwald/"
+            class="text-blue-600 hover:underline" target="_blank"
+            rel="noopener noreferrer">Thomas Gottwald</a><sup>1</sup> •
+          <a href="https://acm.uni-wuppertal.de/en/team/details/muetze/"
+            class="text-blue-600 hover:underline" target="_blank"
+            rel="noopener noreferrer">Annika Mütze</a><sup>1</sup> •
+          <a href="https://acm.uni-wuppertal.de/en/team/details/rottmann/"
+            class="text-blue-600 hover:underline" target="_blank"
+            rel="noopener noreferrer">Matthias Rottmann</a><sup>1</sup>
         </p>
-        <a href="https://arxiv.org/pdf/2503.12453.pdf" class="inline-block mt-6 px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
-          Download PDF
-        </a>
-        <!-- Title Images Row -->
+
+        <!-- AFFILIATION FOOTNOTE -->
+        <p class="text-xs text-gray-500 mt-1">
+          <sup>1</sup> Department&nbsp;of&nbsp;Mathematics, University&nbsp;of&nbsp;Wuppertal, Wuppertal, Germany
+        </p>
+
+        <!-- ACTION BUTTONS -->
+        <div class="flex flex-wrap justify-center gap-3 mt-6">
+          <a href="https://arxiv.org/abs/2503.12453"
+            class="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
+            arXiv Page
+          </a>
+          <a href="https://github.com/your-org/your-repo"
+            class="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
+            GitHub Code
+          </a>
+        </div>
+        <!-- Title Images Row (unchanged) -->
         <div class="flex flex-wrap justify-center gap-2 mt-6">
-          <img src="./assets/images/title_image_1.JPEG"  alt="Title image 1" class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
-          <img src="./assets/images/title_image_2.JPEG"  alt="Title image 2" class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
-          <img src="./assets/images/title_image_3.jpg"    alt="Title image 3" class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
-          <img src="./assets/images/title_image_4.png"    alt="Title image 4" class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
+          <img src="./assets/images/title_image_1.JPEG"  alt="Title image 1"
+              class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
+          <img src="./assets/images/title_image_2.JPEG"  alt="Title image 2"
+              class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
+          <img src="./assets/images/title_image_3.jpg"    alt="Title image 3"
+              class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
+          <img src="./assets/images/title_image_4.png"    alt="Title image 4"
+              class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
         </div>
       </header>
+      <!-- /HERO -->
+
 
       <!-- ABSTRACT -->
-      <section id="abstract" class="space-y-4">
+      <section id="abstract" class="space-y-4 lg:max-w-6xl  lg:mx-auto">
         <h2 class="text-2xl font-semibold">Abstract</h2>
         <p>
           We introduce a two‑step cue‑decomposition pipeline—Edge‑Enhancing Diffusion (EED) to isolate <strong>shape</strong> information and Voronoi‑based abstraction to capture <strong>texture</strong>—that lets us quantify how much deep nets rely on each cue. Building on this decomposition, we propose:
@@ -129,24 +182,19 @@
       </section>
 
       <!-- VIDEO -->
+      <!--
       <section id="video" class="space-y-4">
-        <!-- Centered container with max width and responsive aspect ratio -->
         <div class="mx-auto max-w-3xl" style="aspect-ratio: 16 / 9;">
           <iframe class="w-full h-full rounded-xl shadow" src="https://www.youtube.com/embed/X" title="Shape Bias & Robustness – video overview" frameborder="0" allowfullscreen></iframe>
         </div>
-      </section>
+      </section>-->
 
       <!-- METHOD OVERVIEW -->
-      <section id="method" class="space-y-6">
-        <h2 class="text-2xl font-semibold">Method Overview</h2>
-        <p>
-          Our pipeline first applies <em>Edge‑Enhancing Diffusion</em> to emphasize object boundaries while removing fine‑grained textures. The resulting shape cue keeps category‑defining contours. Next, we compute a <em>Voronoi texture abstraction</em> on the original image, which discards shape but preserves local texture statistics. By evaluating models on shape‑only (<span class="font-mono">x<sub>S</sub></span>) and texture‑only (<span class="font-mono">x<sub>T</sub></span>) inputs, we can decompose the prediction confidence into distinct cues.
-        </p>
-      </section>
-
-    <!-- FIGURES -->
-    <section id="figures" class="space-y-6">
-      <h2 class="text-2xl font-semibold">Figures</h2>
+    <section id="method" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8">
+      <h2 class="text-2xl font-semibold">Method Overview</h2>
+      <p>
+        Our pipeline first applies <em>Edge‑Enhancing Diffusion</em> to emphasize object boundaries while removing fine‑grained textures. The resulting shape cue keeps category‑defining contours. Next, we compute a <em>Voronoi texture abstraction</em> on the original image, which discards shape but preserves local texture statistics. By evaluating models on shape‑only (<span class="font-mono">x<sub>S</sub></span>) and texture‑only (<span class="font-mono">x<sub>T</sub></span>) inputs, we can decompose the prediction confidence into distinct cues.
+      </p>
       <div class="grid md:grid-cols-3 gap-x-6 gap-y-8">
         <!-- Column 1: EED Cues -->
         <div class="space-y-3">
@@ -312,7 +360,7 @@
      <!-- =====================================
      QUALITATIVE RESULTS – Interactive Panel
      ===================================== -->
-    <section id="results" class="space-y-6">
+    <section id="results" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8">
       <h2 class="text-2xl font-semibold text-center md:text-left">Qualitative Results</h2>
       <p class="text-sm mb-4 text-center md:text-left">
         Compare how each model handles <em>shape‑only</em>, <em>texture‑only</em>, and <em>original</em> inputs. Use the buttons to switch between models; the bottom row updates live.
@@ -460,7 +508,6 @@
         <ul class="list-disc list-inside space-y-2">
           <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv abstract &amp; BibTeX</a></li>
           <li><a href="https://github.com/your-org/your-repo" class="text-blue-600 hover:underline">Official implementation (PyTorch)</a></li>
-          <li><a href="https://zenodo.org/record/1234567" class="text-blue-600 hover:underline">Dataset &amp; pre‑computed cues (Zenodo)</a></li>
         </ul>
       </section>
 
@@ -489,6 +536,50 @@
         <p>We thank Sebastian Houben, Sina Honari, and the anonymous reviewers for valuable feedback. This work was supported by the German Federal Ministry of Education and Research (BMBF) under Grant XYZ123.</p>
         <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab Logo" loading="lazy" class="w-32 h-auto mt-4">
       </section>
+
+      <!-- ==========  CITATION (bottom)  ========== -->
+      <section id="citation" class="space-y-6">
+        <h2 class="text-2xl font-semibold">Citation</h2>
+
+        <div class="relative group">
+          <!-- BibTeX code block -->
+          <pre id="bibtex-bottom"
+                class="whitespace-pre overflow-x-auto
+                      bg-gray-100 rounded-lg p-3
+                      text-[0.70rem] leading-5 font-mono
+                      text-gray-700 select-all">
+@article{Heinert2025ShapeBias,
+  title={Shape Bias & Robustness via Cue Decomposition},
+  author={Heinert, E. and Gottwald, T. …},
+  journal={arXiv:2503.12453},
+  year={2025}
+}
+          </pre>
+
+          <!-- copy‑to‑clipboard button -->
+          <button
+            type="button"
+            aria-label="Copy BibTeX"
+            class="absolute top-2 right-2
+                    flex items-center gap-1
+                    px-2 py-1 rounded-md text-xs font-medium
+                    bg-gray-200 hover:bg-gray-300
+                    transition
+                    group-hover:opacity-100 opacity-0"
+            onclick="
+              navigator.clipboard
+                .writeText(document.getElementById('bibtex-bottom').innerText)
+                .then(btn=>{
+                  this.textContent='✔︎ Copied';
+                  setTimeout(()=>this.textContent='Copy',1500);
+                });
+            ">
+            Copy
+          </button>
+        </div>
+      </section>
+      <!-- ========== /CITATION (bottom)  ========== -->
+      
 
       <!-- CONTACT -->
       <section id="contact" class="space-y-6">
