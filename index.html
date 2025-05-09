@@ -249,7 +249,7 @@
             type="text/html"
             data="./assets/charts/semseg_selected_cue_decom_metrics.html"
             aria-label="Segmentation metrics table"
-            class="chart-object w-full min-h-[350px] border rounded-md"
+            class="chart-object w-full min-h-[350px]"
             ></object>
     
             <img
@@ -294,7 +294,7 @@
                     type="text/html"
                     data="./assets/charts/classification_cue_decom_metrics.html"
                     aria-label="Classification metrics table"
-                    class="chart-object w-full min-h-[650px] border rounded-md"
+                    class="chart-object w-full min-h-[650px]"
                 ></object>
 
                 <img
@@ -309,21 +309,130 @@
   
   
 
-      <!-- QUALITATIVE RESULTS -->
-      <section id="results" class="space-y-6">
-        <h2 class="text-2xl font-semibold">Qualitative Results</h2>
-        <p>Below we show "texture‑to‑shape" flips where the texture cue misleads the model, but our shape‑biased model succeeds.</p>
-        <div class="grid md:grid-cols-2 gap-6">
-          <figure class="rounded-xl overflow-hidden shadow-sm">
-            <img src="/assets/images/qualitative1_placeholder.png" alt="Qualitative example 1" loading="lazy">
-            <figcaption class="text-center mt-2 text-sm text-gray-600">Original vs. shape‑cue prediction</figcaption>
-          </figure>
-          <figure class="rounded-xl overflow-hidden shadow-sm">
-            <img src="/assets/images/qualitative2_placeholder.png" alt="Qualitative example 2" loading="lazy">
-            <figcaption class="text-center mt-2 text-sm text-gray-600">Texture confuses baseline model</figcaption>
-          </figure>
-        </div>
-      </section>
+     <!-- =====================================
+     QUALITATIVE RESULTS – Interactive Panel
+     ===================================== -->
+    <section id="results" class="space-y-6">
+      <h2 class="text-2xl font-semibold text-center md:text-left">Qualitative Results</h2>
+      <p class="text-sm mb-4 text-center md:text-left">
+        Compare how each model handles <em>shape‑only</em>, <em>texture‑only</em>, and <em>original</em> inputs. Use the buttons to switch between models; the bottom row updates live.
+      </p>
+
+      <!-- ── IMAGE GRID ───────────────────────────────────────── -->
+      <div class="grid grid-cols-3 gap-3 md:gap-6 place-items-center">
+
+        <!-- ── ROW 1 — Segmentation GTs ── -->
+        <figure class="text-center">
+          <img src="./assets/images/example1/gt_original.png" id="gt-orig" alt="Segmentation GT – original" class="rounded-lg shadow-sm max-h-56 object-contain">
+          <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– Original</figcaption>
+        </figure>
+
+        <figure class="text-center">
+          <img src="./assets/images/example1/gt_eed.png" id="gt-eed" alt="Segmentation GT – EED" class="rounded-lg shadow-sm max-h-56 object-contain">
+          <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– EED</figcaption>
+        </figure>
+
+        <figure class="text-center">
+          <img src="./assets/images/example1/gt_vor.png" id="gt-vor" alt="Segmentation GT – Voronoi" class="rounded-lg shadow-sm max-h-56 object-contain">
+          <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– Voronoi</figcaption>
+        </figure>
+
+        <!-- ── ROW 2 — Input Images ── -->
+        <figure class="text-center">
+          <img src="./assets/images/example1/img_original.png" id="img-orig" alt="Street scene – original" class="rounded-lg shadow-sm max-h-56 object-contain">
+          <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– Original</figcaption>
+        </figure>
+
+        <figure class="text-center">
+          <img src="./assets/images/example1/img_eed.png" id="img-eed" alt="Street scene – EED" class="rounded-lg shadow-sm max-h-56 object-contain">
+          <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– EED</figcaption>
+        </figure>
+
+        <figure class="text-center">
+          <img src="./assets/images/example1/img_vor.png" id="img-vor" alt="Street scene – Voronoi" class="rounded-lg shadow-sm max-h-56 object-contain">
+          <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– Voronoi</figcaption>
+        </figure>
+
+        <!-- ── ROW 3 — Model Predictions (switchable) ── -->
+        <figure class="text-center">
+          <img src="./assets/images/example1/dv3_r50_original.png" id="pred-orig" alt="Model prediction – original" class="rounded-lg shadow-md max-h-56 object-contain">
+          <figcaption class="mt-1 text-xs text-gray-600" id="pred-orig-caption">DV3+R50</figcaption>
+        </figure>
+
+        <figure class="text-center">
+          <img src="./assets/images/example1/dv3_r50_eed.png" id="pred-eed" alt="Model prediction – EED" class="rounded-lg shadow-md max-h-56 object-contain">
+          <figcaption class="mt-1 text-xs text-gray-600" id="pred-eed-caption">DV3+R50</figcaption>
+        </figure>
+
+        <figure class="text-center">
+          <img src="./assets/images/example1/dv3_r50_vor.png" id="pred-vor" alt="Model prediction – Voronoi" class="rounded-lg shadow-md max-h-56 object-contain">
+          <figcaption class="mt-1 text-xs text-gray-600" id="pred-vor-caption">DV3+R50</figcaption>
+        </figure>
+      </div>
+
+      <!-- ── MODEL SWITCHER ──────────────────────────────────── -->
+      <div class="flex justify-center gap-3 mt-6">
+        <button data-model="DV3" class="model-btn px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium shadow active">DV3+R50</button>
+        <button data-model="Mask2SL" class="model-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm font-medium shadow">Mask2SL</button>
+        <button data-model="SetrPup" class="model-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm font-medium shadow">VSetrPup</button>
+      </div>
+
+      <!-- ── SCRIPT ─────────────────────────────────────────── -->
+      <script>
+        // Prediction sources for each model
+        const modelPreds = {
+          DV3: {
+            orig: "./assets/images/example1/dv3_r50_original.png",
+            eed:  "./assets/images/example1/dv3_r50_eed.png",
+            vor:  "./assets/images/example1/dv3_r50_vor.png",
+            label: "DV3+R50"
+          },
+          Mask2SL: {
+            orig: "./assets/images/example1/mask2sl_original.png",
+            eed:  "./assets/images/example1/mask2sl_eed.png",
+            vor:  "./assets/images/example1/mask2sl_vor.png",
+            label: "Mask2SL"
+          },
+          SetrPup: {
+            orig: "./assets/images/example1/setrpup_original.png",
+            eed:  "./assets/images/example1/setrpup_eed.png",
+            vor:  "./assets/images/example1/setrpup_vor.png",
+            label: "SetrPup"
+          }
+        };
+
+        const btns = document.querySelectorAll('.model-btn');
+        const predOrig = document.getElementById('pred-orig');
+        const predEed  = document.getElementById('pred-eed');
+        const predVor  = document.getElementById('pred-vor');
+        const predOrigCap = document.getElementById('pred-orig-caption');
+        const predEedCap  = document.getElementById('pred-eed-caption');
+        const predVorCap  = document.getElementById('pred-vor-caption');
+
+        btns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            // visual feedback
+            btns.forEach(b => b.classList.remove('bg-blue-600', 'text-white', 'active'));
+            btns.forEach(b => b.classList.add('bg-gray-200', 'text-gray-800'));
+            btn.classList.remove('bg-gray-200', 'text-gray-800');
+            btn.classList.add('bg-blue-600', 'text-white');
+
+            const modelKey = btn.dataset.model;
+            const preds = modelPreds[modelKey];
+
+            // swap sources
+            predOrig.src = preds.orig;
+            predEed.src  = preds.eed;
+            predVor.src  = preds.vor;
+
+            // update captions
+            predOrigCap.textContent = preds.label;
+            predEedCap.textContent  = preds.label;
+            predVorCap.textContent  = preds.label;
+          });
+        });
+      </script>
+    </section>
 
       <!-- INTERACTIVE DEMO -->
       <!--<section id="demo" class="space-y-6">
