@@ -18,13 +18,9 @@
     <div class="px-4 pb-5 text-sm space-y-6 leading-relaxed">
       <nav class="space-y-1">
         <a href="#abstract"   class="block hover:underline text-gray-700">Abstract</a>
-        <!--<a href="#video"      class="block hover:underline text-gray-700">Video</a>-->
         <a href="#method"     class="block hover:underline text-gray-700">Method</a>
-        <!--<a href="#figures"    class="block hover:underline text-gray-700">Figures</a>-->
         <a href="#metrics"    class="block hover:underline text-gray-700">Metrics</a>
         <a href="#results"    class="block hover:underline text-gray-700">Qualitative Results</a>
-        <!--<a href="#demo"       class="block hover:underline text-gray-700">Interactive Demo</a>
-        <a href="#models"     class="block hover:underline text-gray-700">Pre‑trained Models</a>-->
         <a href="#resources"  class="block hover:underline text-gray-700">Resources</a>
         <!--<a href="#faq"        class="block hover:underline text-gray-700">FAQ</a>-->
         <a href="#acks"       class="block hover:underline text-gray-700">Acknowledgments</a>
@@ -52,13 +48,9 @@
       <h2 class="text-xl font-bold mb-4">Navigation</h2>
       <nav class="space-y-2 mb-6 text-sm leading-relaxed">
         <a href="#abstract"   class="block hover:underline text-gray-700">Abstract</a>
-        <!--<a href="#video"      class="block hover:underline text-gray-700">Video</a>-->
         <a href="#method"     class="block hover:underline text-gray-700">Method</a>
-        <!--<a href="#figures"    class="block hover:underline text-gray-700">Figures</a>-->
         <a href="#metrics"    class="block hover:underline text-gray-700">Metrics</a>
         <a href="#results"    class="block hover:underline text-gray-700">Qualitative Results</a>
-        <!--<a href="#demo"       class="block hover:underline text-gray-700">Interactive Demo</a>-->
-        <!--<a href="#models"     class="block hover:underline text-gray-700">Pre‑trained Models</a>-->
         <a href="#resources"  class="block hover:underline text-gray-700">Resources</a>
         <!--<a href="#faq"        class="block hover:underline text-gray-700">FAQ</a>-->
         <a href="#acks"       class="block hover:underline text-gray-700">Acknowledgments</a>
@@ -154,330 +146,265 @@
         </p>
       </section>
 
-      <!-- VIDEO -->
-      <!--
-      <section id="video" class="space-y-4">
-        <div class="mx-auto max-w-3xl" style="aspect-ratio: 16 / 9;">
-          <iframe class="w-full h-full rounded-xl shadow" src="https://www.youtube.com/embed/X" title="Shape Bias & Robustness – video overview" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </section>-->
-
       <!-- METHOD OVERVIEW -->
-    <section id="method" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8">
-      <h2 class="text-2xl font-semibold">Method Overview</h2>
-      <p>
-        Our pipeline first applies <em>Edge‑Enhancing Diffusion</em>: The PDE-based diffusion method propagates color values along edges but not across them and thus removes texture from images while preserving their shape. The resulting shape cue keeps category‑defining contours.
-        Next, we compute a <em>Voronoi texture abstraction</em> on the original image, which discards shape but preserves local texture statistics. A number of Voronoi cells are sampled and each displays a randomly chosen part of the original image.
-        The CDSB and CDR proposals are then chosen from a number of candidate metrics which included both additional cue-decomposition approaches as well as a number of AI-free cue-conflict-metric candidates and are compared to the established shape bias metric by Geirhos et al.<br><br>
-        By evaluating models on shape‑only (<span class="font-mono">x<sub>S</sub></span>) and texture‑only (<span class="font-mono">x<sub>T</sub></span>) inputs, we can decompose the prediction confidence into distinct cues.
-        
-      </p>
-      <div class="grid md:grid-cols-3 gap-x-6 gap-y-8">
-        <!-- Column 1: EED Cues -->
-        <div class="space-y-3">
-          <h3 class="text-xl font-semibold mb-3 text-center">EED Cues</h3>
-          <div class="grid grid-cols-2 gap-3">
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/EED/EEDOriginal01.jpg" alt="EED Cue Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/EED/EED01.jpg" alt="EED Cue Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/EED/EEDOriginal02.jpg" alt="EED Cue Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/EED/EED02.jpg" alt="EED Cue Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
+      <section id="method" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8">
+        <h2 class="text-2xl font-semibold">Method Overview</h2>
+        <p>
+          Our pipeline first applies <em>Edge‑Enhancing Diffusion</em>: The PDE-based diffusion method propagates color values along edges but not across them and thus removes texture from images while preserving their shape. The resulting shape cue keeps category‑defining contours.
+          Next, we compute a <em>Voronoi texture abstraction</em> on the original image, which discards shape but preserves local texture statistics. A number of Voronoi cells are sampled and each displays a randomly chosen part of the original image.
+          The CDSB and CDR proposals are then chosen from a number of candidate metrics which included both additional cue-decomposition approaches as well as a number of AI-free cue-conflict-metric candidates and are compared to the established shape bias metric by Geirhos et al.<br><br>
+          By evaluating models on shape‑only (<span class="font-mono">x<sub>S</sub></span>) and texture‑only (<span class="font-mono">x<sub>T</sub></span>) inputs, we can decompose the prediction confidence into distinct cues.
+        </p>
+        <div class="grid md:grid-cols-3 gap-x-6 gap-y-8">
+          <!-- Column 1: EED Cues -->
+          <div class="space-y-3">
+            <h3 class="text-xl font-semibold mb-3 text-center">EED Cues</h3>
+            <div class="grid grid-cols-2 gap-3">
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/EED/EEDOriginal01.jpg" alt="EED Cue Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/EED/EED01.jpg" alt="EED Cue Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/EED/EEDOriginal02.jpg" alt="EED Cue Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/EED/EED02.jpg" alt="EED Cue Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+            </div>
           </div>
-        </div>
 
-        <!-- Column 2: Voronoi Cues -->
-        <div class="space-y-3">
-          <h3 class="text-xl font-semibold mb-3 text-center">Voronoi Cues</h3>
-          <div class="grid grid-cols-2 gap-3">
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/Voronoi/voronoi_frame_1.png" alt="Voronoi Cue Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/Voronoi/voronoi_frame_2.png" alt="Voronoi Cue Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/Voronoi/voronoi_shuffle_02.png" alt="Voronoi Cue Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/Voronoi/voronoi_shuffle_06.png" alt="Voronoi Cue Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
+          <!-- Column 2: Voronoi Cues -->
+          <div class="space-y-3">
+            <h3 class="text-xl font-semibold mb-3 text-center">Voronoi Cues</h3>
+            <div class="grid grid-cols-2 gap-3">
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/Voronoi/voronoi_frame_1.png" alt="Voronoi Cue Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/Voronoi/voronoi_frame_2.png" alt="Voronoi Cue Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/Voronoi/voronoi_shuffle_02.png" alt="Voronoi Cue Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/Voronoi/voronoi_shuffle_06.png" alt="Voronoi Cue Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+            </div>
           </div>
-        </div>
 
-        <!-- Column 3: Cue Conflict Examples -->
-        <div class="space-y-3">
-          <h3 class="text-xl font-semibold mb-3 text-center">Cue Conflict</h3>
-          <div class="grid grid-cols-2 gap-3">
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/CueConflict/CueConfl01.jpg" alt="Cue Conflict Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/CueConflict/CueConfl02.jpg" alt="Cue Conflict Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/CueConflict/CueConfl03.jpg" alt="Cue Conflict Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
-            <figure class="rounded-lg overflow-hidden shadow-sm">
-              <img src="./assets/images/CueConflict/CueConfl04.jpg" alt="Cue Conflict Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
-            </figure>
+          <!-- Column 3: Cue Conflict Examples -->
+          <div class="space-y-3">
+            <h3 class="text-xl font-semibold mb-3 text-center">Cue Conflict</h3>
+            <div class="grid grid-cols-2 gap-3">
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/CueConflict/CueConfl01.jpg" alt="Cue Conflict Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/CueConflict/CueConfl02.jpg" alt="Cue Conflict Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/CueConflict/CueConfl03.jpg" alt="Cue Conflict Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+              <figure class="rounded-lg overflow-hidden shadow-sm">
+                <img src="./assets/images/CueConflict/CueConfl04.jpg" alt="Cue Conflict Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
+              </figure>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       <!-- METRICS (segmentation + classification) -->
-    <style>
-        /* keep your existing chart‑object / chart‑image swap */
-        .chart-object { display: block; }
-        .chart-image  { display: none; }
-    
-        @media (max-width: 1000px) {
-        .chart-object { display: none; }
-        .chart-image  { display: block; }
-        }
-    </style>
-    
-    <section id="metrics" class="space-y-10">
-        <h2 class="text-2xl font-semibold">Metrics at a Glance</h2>
-        <!-- ── Segmentation ───────────────────────────────────── -->
-        <div
-        class="
-            flex flex-col
-            min-[1360px]:flex-row min-[1360px]:items-start min-[1360px]:gap-8
-        "
-        >
-        <!-- Explanatory text -->
-        <div
-            class="space-y-3 mb-4 min-[1360px]:mb-0 min-[1360px]:w-1/3"
-        >
-            <h3 class="font-semibold text-lg">
-            Segmentation Shape‑Bias&nbsp;&amp;&nbsp;Robustness
-            </h3>
-            <p class="text-sm leading-relaxed">
-            • <strong>[MODEL NAME]</strong> shows the strongest [...] (XXX)—
-            <em>XXX pp higher</em> than [architecture name]‑based <strong>[MODEL NAME]</strong>.<br>
-            • Robustness score&nbsp;ρ = 0.XXX predicts mIoU drops on Cityscapes‑C.<br>
-            • ...
-            </p>
-        </div>
-    
-        <!-- Chart -->
-        <div class="flex-1 overflow-x-auto">
-            <object
-            type="text/html"
-            data="./assets/charts/semseg_selected_cue_decom_metrics.html"
-            aria-label="Segmentation metrics table"
-            class="chart-object w-full min-h-[350px]"
-            ></object>
-    
-            <img
-            src="./assets/images/segmentation_metrics_table.png"
-            alt="Segmentation metrics summary"
-            class="chart-image w-full border rounded-md"
-            />
-        </div>
-        </div>
-    
-    <!-- ── Classification ─────────────────────────────────── -->
-        <div
-            class="
-            flex flex-col
-            min-[1360px]:flex-row min-[1360px]:items-start min-[1360px]:gap-8
-            "
-        >
-            <!-- Explanatory text -->
-            <div
-                class="
-                    space-y-3
-                    mb-4 min-[1360px]:mb-0
-                    min-[1360px]:w-1/3
-                "
-            >
-                <h3 class="font-semibold text-lg">
-                    Classification Shape-Bias&nbsp;&amp;&nbsp;Robustness
-                </h3>
-                <p class="text-sm leading-relaxed">
-                    • CNNs (e.g.&nbsp;[MODEL NAME]) remain texture-leaning
-                    (shape-bias &lt; 0.XXX); <strong>[MODEL NAME]</strong> reaches 0.XXX
-                    after fine-tuning.<br>
-                    • Our robustness metric correlates with [MODEL NAME] drops at r = 0.XXX—
-                    better than mCE.<br>
-                    •...
-                </p>
-            </div>
-
-            <!-- Chart -->
-            <div class="flex-1 overflow-x-auto">
-                <object
-                    type="text/html"
-                    data="./assets/charts/classification_cue_decom_metrics.html"
-                    aria-label="Classification metrics table"
-                    class="chart-object w-full min-h-[650px]"
-                ></object>
-
-                <img
-                    src="./assets/images/classification_metrics_table.png"
-                    alt="Classification metrics summary"
-                    class="chart-image w-full border rounded-md"
-                />
-            </div>
-        </div>
-
-    </section>
-  
-  
-
-     <!-- =====================================
-     QUALITATIVE RESULTS – Interactive Panel
-     ===================================== -->
-    <section id="results" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8">
-      <h2 class="text-2xl font-semibold text-center md:text-left">Qualitative Results</h2>
-      <p class="text-sm mb-4 text-center md:text-left">
-        Compare how each model handles <em>shape‑only</em>, <em>texture‑only</em>, and <em>original</em> inputs. Use the buttons to switch between models.
-      </p>
-
-      <!-- ── IMAGE GRID ───────────────────────────────────────── -->
-      <div class="grid grid-cols-3 gap-3 md:gap-6 place-items-center">
-
-        <!-- ── ROW 1 — Segmentation GTs ── -->
-        <figure class="text-center">
-          <img src="./assets/images/example1/gt_original.png" id="gt-orig" alt="Segmentation GT – original" class="rounded-lg shadow-sm max-h-56 object-contain">
-          <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– Original</figcaption>
-        </figure>
-
-        <figure class="text-center">
-          <img src="./assets/images/example1/gt_eed.png" id="gt-eed" alt="Segmentation GT – EED" class="rounded-lg shadow-sm max-h-56 object-contain">
-          <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– EED</figcaption>
-        </figure>
-
-        <figure class="text-center">
-          <img src="./assets/images/example1/gt_vor.png" id="gt-vor" alt="Segmentation GT – Voronoi" class="rounded-lg shadow-sm max-h-56 object-contain">
-          <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– Voronoi</figcaption>
-        </figure>
-
-        <!-- ── ROW 2 — Input Images ── -->
-        <figure class="text-center">
-          <img src="./assets/images/example1/img_original.png" id="img-orig" alt="Street scene – original" class="rounded-lg shadow-sm max-h-56 object-contain">
-          <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– Original</figcaption>
-        </figure>
-
-        <figure class="text-center">
-          <img src="./assets/images/example1/img_eed.png" id="img-eed" alt="Street scene – EED" class="rounded-lg shadow-sm max-h-56 object-contain">
-          <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– EED</figcaption>
-        </figure>
-
-        <figure class="text-center">
-          <img src="./assets/images/example1/img_vor.png" id="img-vor" alt="Street scene – Voronoi" class="rounded-lg shadow-sm max-h-56 object-contain">
-          <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– Voronoi</figcaption>
-        </figure>
-
-        <!-- ── ROW 3 — Model Predictions (switchable) ── -->
-        <figure class="text-center">
-          <img src="./assets/images/example1/dv3_r50_original.png" id="pred-orig" alt="Model prediction – original" class="rounded-lg shadow-md max-h-56 object-contain">
-          <figcaption class="mt-1 text-xs text-gray-600" id="pred-orig-caption">DV3+R50</figcaption>
-        </figure>
-
-        <figure class="text-center">
-          <img src="./assets/images/example1/dv3_r50_eed.png" id="pred-eed" alt="Model prediction – EED" class="rounded-lg shadow-md max-h-56 object-contain">
-          <figcaption class="mt-1 text-xs text-gray-600" id="pred-eed-caption">DV3+R50</figcaption>
-        </figure>
-
-        <figure class="text-center">
-          <img src="./assets/images/example1/dv3_r50_vor.png" id="pred-vor" alt="Model prediction – Voronoi" class="rounded-lg shadow-md max-h-56 object-contain">
-          <figcaption class="mt-1 text-xs text-gray-600" id="pred-vor-caption">DV3+R50</figcaption>
-        </figure>
-      </div>
-
-      <!-- ── MODEL SWITCHER ──────────────────────────────────── -->
-      <div class="flex justify-center gap-3 mt-6">
-        <button data-model="DV3" class="model-btn px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium shadow active">DV3+R50</button>
-        <button data-model="Mask2SL" class="model-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm font-medium shadow">Mask2SL</button>
-        <button data-model="SetrPup" class="model-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm font-medium shadow">VSetrPup</button>
-      </div>
-
-      <!-- ── SCRIPT ─────────────────────────────────────────── -->
-      <script>
-        // Prediction sources for each model
-        const modelPreds = {
-          DV3: {
-            orig: "./assets/images/example1/dv3_r50_original.png",
-            eed:  "./assets/images/example1/dv3_r50_eed.png",
-            vor:  "./assets/images/example1/dv3_r50_vor.png",
-            label: "DV3+R50"
-          },
-          Mask2SL: {
-            orig: "./assets/images/example1/mask2sl_original.png",
-            eed:  "./assets/images/example1/mask2sl_eed.png",
-            vor:  "./assets/images/example1/mask2sl_vor.png",
-            label: "Mask2SL"
-          },
-          SetrPup: {
-            orig: "./assets/images/example1/setrpup_original.png",
-            eed:  "./assets/images/example1/setrpup_eed.png",
-            vor:  "./assets/images/example1/setrpup_vor.png",
-            label: "SetrPup"
+      <style>
+          /* keep your existing chart‑object / chart‑image swap */
+          .chart-object { display: block; }
+          .chart-image  { display: none; }
+      
+          @media (max-width: 1000px) {
+          .chart-object { display: none; }
+          .chart-image  { display: block; }
           }
-        };
+      </style>
+      
+      <section id="metrics" class="space-y-10">
+          <h2 class="text-2xl font-semibold">Metrics at a Glance</h2>
+          <!-- ── Segmentation ───────────────────────────────────── -->
+          <div
+          class="flex flex-col min-[1360px]:flex-row min-[1360px]:items-start min-[1360px]:gap-8">
+          <!-- Explanatory text -->
+          <div class="space-y-3 mb-4 min-[1360px]:mb-0 min-[1360px]:w-1/3">
+              <h3 class="font-semibold text-lg">
+              Segmentation Shape‑Bias&nbsp;&amp;&nbsp;Robustness
+              </h3>
+              <p class="text-sm leading-relaxed">
+              • <strong>[MODEL NAME]</strong> shows the strongest [...] (XXX)—
+              <em>XXX pp higher</em> than [architecture name]‑based <strong>[MODEL NAME]</strong>.<br>
+              • Robustness score&nbsp;ρ = 0.XXX predicts mIoU drops on Cityscapes‑C.<br>
+              • ...
+              </p>
+          </div>
+      
+          <!-- Chart -->
+          <div class="flex-1 overflow-x-auto">
+              <object type="text/html" data="./assets/charts/semseg_selected_cue_decom_metrics.html" aria-label="Segmentation metrics table" class="chart-object w-full min-h-[350px]" ></object>
+      
+              <img src="./assets/images/segmentation_metrics_table.png" alt="Segmentation metrics summary" class="chart-image w-full border rounded-md" />
+          </div>
+          </div>
+      
+        <!-- ── Classification ─────────────────────────────────── -->
+          <div
+              class="flex flex-col min-[1360px]:flex-row min-[1360px]:items-start min-[1360px]:gap-8">
+              <!-- Explanatory text -->
+              <div
+                  class="space-y-3 mb-4 min-[1360px]:mb-0 min-[1360px]:w-1/3">
+                  <h3 class="font-semibold text-lg">
+                      Classification Shape-Bias&nbsp;&amp;&nbsp;Robustness
+                  </h3>
+                  <p class="text-sm leading-relaxed">
+                      • CNNs (e.g.&nbsp;[MODEL NAME]) remain texture-leaning
+                      (shape-bias &lt; 0.XXX); <strong>[MODEL NAME]</strong> reaches 0.XXX
+                      after fine-tuning.<br>
+                      • Our robustness metric correlates with [MODEL NAME] drops at r = 0.XXX—
+                      better than mCE.<br>
+                      •...
+                  </p>
+              </div>
 
-        const btns = document.querySelectorAll('.model-btn');
-        const predOrig = document.getElementById('pred-orig');
-        const predEed  = document.getElementById('pred-eed');
-        const predVor  = document.getElementById('pred-vor');
-        const predOrigCap = document.getElementById('pred-orig-caption');
-        const predEedCap  = document.getElementById('pred-eed-caption');
-        const predVorCap  = document.getElementById('pred-vor-caption');
+              <!-- Chart -->
+              <div class="flex-1 overflow-x-auto">
+                  <object type="text/html" data="./assets/charts/classification_cue_decom_metrics.html" aria-label="Classification metrics table" class="chart-object w-full min-h-[650px]"></object>
+                  <img src="./assets/images/classification_metrics_table.png" alt="Classification metrics summary" class="chart-image w-full border rounded-md"/>
+              </div>
+          </div>
 
-        btns.forEach(btn => {
-          btn.addEventListener('click', () => {
-            // visual feedback
-            btns.forEach(b => b.classList.remove('bg-blue-600', 'text-white', 'active'));
-            btns.forEach(b => b.classList.add('bg-gray-200', 'text-gray-800'));
-            btn.classList.remove('bg-gray-200', 'text-gray-800');
-            btn.classList.add('bg-blue-600', 'text-white');
+      </section>
+  
+  
 
-            const modelKey = btn.dataset.model;
-            const preds = modelPreds[modelKey];
+      <!-- QUALITATIVE RESULTS – Interactive Panel -->
+      <section id="results" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8">
+        <h2 class="text-2xl font-semibold text-center md:text-left">Qualitative Results</h2>
+        <p class="text-sm mb-4 text-center md:text-left">
+          Compare how each model handles <em>shape‑only</em>, <em>texture‑only</em>, and <em>original</em> inputs. Use the buttons to switch between models.
+        </p>
 
-            // swap sources
-            predOrig.src = preds.orig;
-            predEed.src  = preds.eed;
-            predVor.src  = preds.vor;
+        <!-- ── IMAGE GRID ───────────────────────────────────────── -->
+        <div class="grid grid-cols-3 gap-3 md:gap-6 place-items-center">
 
-            // update captions
-            predOrigCap.textContent = preds.label;
-            predEedCap.textContent  = preds.label;
-            predVorCap.textContent  = preds.label;
+          <!-- ── ROW 1 — Segmentation GTs ── -->
+          <figure class="text-center">
+            <img src="./assets/images/example1/gt_original.png" id="gt-orig" alt="Segmentation GT – original" class="rounded-lg shadow-sm max-h-56 object-contain">
+            <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– Original</figcaption>
+          </figure>
+
+          <figure class="text-center">
+            <img src="./assets/images/example1/gt_eed.png" id="gt-eed" alt="Segmentation GT – EED" class="rounded-lg shadow-sm max-h-56 object-contain">
+            <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– EED</figcaption>
+          </figure>
+
+          <figure class="text-center">
+            <img src="./assets/images/example1/gt_vor.png" id="gt-vor" alt="Segmentation GT – Voronoi" class="rounded-lg shadow-sm max-h-56 object-contain">
+            <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– Voronoi</figcaption>
+          </figure>
+
+          <!-- ── ROW 2 — Input Images ── -->
+          <figure class="text-center">
+            <img src="./assets/images/example1/img_original.png" id="img-orig" alt="Street scene – original" class="rounded-lg shadow-sm max-h-56 object-contain">
+            <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– Original</figcaption>
+          </figure>
+
+          <figure class="text-center">
+            <img src="./assets/images/example1/img_eed.png" id="img-eed" alt="Street scene – EED" class="rounded-lg shadow-sm max-h-56 object-contain">
+            <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– EED</figcaption>
+          </figure>
+
+          <figure class="text-center">
+            <img src="./assets/images/example1/img_vor.png" id="img-vor" alt="Street scene – Voronoi" class="rounded-lg shadow-sm max-h-56 object-contain">
+            <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– Voronoi</figcaption>
+          </figure>
+
+          <!-- ── ROW 3 — Model Predictions (switchable) ── -->
+          <figure class="text-center">
+            <img src="./assets/images/example1/dv3_r50_original.png" id="pred-orig" alt="Model prediction – original" class="rounded-lg shadow-md max-h-56 object-contain">
+            <figcaption class="mt-1 text-xs text-gray-600" id="pred-orig-caption">DV3+R50</figcaption>
+          </figure>
+
+          <figure class="text-center">
+            <img src="./assets/images/example1/dv3_r50_eed.png" id="pred-eed" alt="Model prediction – EED" class="rounded-lg shadow-md max-h-56 object-contain">
+            <figcaption class="mt-1 text-xs text-gray-600" id="pred-eed-caption">DV3+R50</figcaption>
+          </figure>
+
+          <figure class="text-center">
+            <img src="./assets/images/example1/dv3_r50_vor.png" id="pred-vor" alt="Model prediction – Voronoi" class="rounded-lg shadow-md max-h-56 object-contain">
+            <figcaption class="mt-1 text-xs text-gray-600" id="pred-vor-caption">DV3+R50</figcaption>
+          </figure>
+        </div>
+
+        <!-- ── MODEL SWITCHER ──────────────────────────────────── -->
+        <div class="flex justify-center gap-3 mt-6">
+          <button data-model="DV3" class="model-btn px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium shadow active">DV3+R50</button>
+          <button data-model="Mask2SL" class="model-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm font-medium shadow">Mask2SL</button>
+          <button data-model="SetrPup" class="model-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm font-medium shadow">VSetrPup</button>
+        </div>
+
+        <!-- ── SCRIPT ─────────────────────────────────────────── -->
+        <script>
+          // Prediction sources for each model
+          const modelPreds = {
+            DV3: {
+              orig: "./assets/images/example1/dv3_r50_original.png",
+              eed:  "./assets/images/example1/dv3_r50_eed.png",
+              vor:  "./assets/images/example1/dv3_r50_vor.png",
+              label: "DV3+R50"
+            },
+            Mask2SL: {
+              orig: "./assets/images/example1/mask2sl_original.png",
+              eed:  "./assets/images/example1/mask2sl_eed.png",
+              vor:  "./assets/images/example1/mask2sl_vor.png",
+              label: "Mask2SL"
+            },
+            SetrPup: {
+              orig: "./assets/images/example1/setrpup_original.png",
+              eed:  "./assets/images/example1/setrpup_eed.png",
+              vor:  "./assets/images/example1/setrpup_vor.png",
+              label: "SetrPup"
+            }
+          };
+
+          const btns = document.querySelectorAll('.model-btn');
+          const predOrig = document.getElementById('pred-orig');
+          const predEed  = document.getElementById('pred-eed');
+          const predVor  = document.getElementById('pred-vor');
+          const predOrigCap = document.getElementById('pred-orig-caption');
+          const predEedCap  = document.getElementById('pred-eed-caption');
+          const predVorCap  = document.getElementById('pred-vor-caption');
+
+          btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+              // visual feedback
+              btns.forEach(b => b.classList.remove('bg-blue-600', 'text-white', 'active'));
+              btns.forEach(b => b.classList.add('bg-gray-200', 'text-gray-800'));
+              btn.classList.remove('bg-gray-200', 'text-gray-800');
+              btn.classList.add('bg-blue-600', 'text-white');
+
+              const modelKey = btn.dataset.model;
+              const preds = modelPreds[modelKey];
+
+              // swap sources
+              predOrig.src = preds.orig;
+              predEed.src  = preds.eed;
+              predVor.src  = preds.vor;
+
+              // update captions
+              predOrigCap.textContent = preds.label;
+              predEedCap.textContent  = preds.label;
+              predVorCap.textContent  = preds.label;
+            });
           });
-        });
-      </script>
-    </section>
-
-      <!-- INTERACTIVE DEMO -->
-      <!--<section id="demo" class="space-y-6">
-        <h2 class="text-2xl font-semibold">Interactive Demo</h2>
-        <p>Try cue‑decomposition live in your browser. Upload an image or pick a sample, and inspect how classification confidence changes under shape vs. texture.</p>
-        <a href="https://huggingface.co/spaces/your-org/shape-bias-demo" class="inline-flex items-center px-5 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700" target="_blank" rel="noopener noreferrer">
-          Launch Demo ↗
-        </a>
-      </section> -->
-
-      <!-- PRE‑TRAINED MODELS / CHECKPOINTS -->
-      <!--
-      <section id="models" class="space-y-6">
-        <h2 class="text-2xl font-semibold">Pre‑trained Models & Checkpoints</h2>
-        <ul class="list-disc list-inside space-y-2">
-          <li>ImageNet‑21k ViT‑B <span class="text-gray-500">(shape‑bias ↑ 13%, mCE ↓ 9)</span> – <a href="https://zenodo.org/record/1234567/files/vit_b21k_shape_bias.ckpt" class="text-blue-600 hover:underline">download</a></li>
-          <li>ResNet‑50 Cityscapes <span class="text-gray-500">(shape‑bias ↑ 10%, mIoU +1.8)</span> – <a href="https://zenodo.org/record/1234567/files/resnet50_cityscapes_shape.ckpt" class="text-blue-600 hover:underline">download</a></li>
-          <li>Swin‑Large ADE20k <span class="text-gray-500">(shape‑bias ↑ 9%, mIoU +1.4)</span> – <a href="https://zenodo.org/record/1234567/files/swin_large_ade20k_shape.ckpt" class="text-blue-600 hover:underline">download</a></li>
-        </ul>
-      </section>-->
+        </script>
+      </section>
 
       <!-- RESOURCES -->
       <section id="resources" class="space-y-6">
@@ -490,7 +417,7 @@
       </section>
 
       <!-- FAQ -->
-       <!--
+        <!--
       <section id="faq" class="space-y-6">
         <h2 class="text-2xl font-semibold">FAQ</h2>
         <details class="bg-gray-50 p-4 rounded-xl shadow-sm">
@@ -524,7 +451,7 @@
         </div>
       </section>
 
-      <!-- ==========  CITATION (bottom)  ========== -->
+      <!-- CITATION (bottom) -->
       <section id="citation" class="space-y-6">
         <h2 class="text-2xl font-semibold">Citation</h2>
 
@@ -565,7 +492,7 @@
           </button>
         </div>
       </section>
-      <!-- ========== /CITATION (bottom)  ========== -->
+      <!-- /CITATION (bottom) -->
       
 
       <!-- CONTACT -->
