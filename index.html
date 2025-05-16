@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shape Bias & Robustness – Project Page</title>
-  <link rel="icon" type="image/png" href="./assets/images/KeyVisual.png" />
+  <link rel="icon" type="image/png" href="./assets/images/KeyVisual_Dark.png" />
   <!-- Tailwind (via CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -38,7 +38,7 @@
         <ul class="list-disc list-inside space-y-1">
           <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
           <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv page</a></li>
-          <li><a href="#" class="text-blue-600 hover:underline">Project Code (TBA)</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">GitHub Code (TBA)</a></li>
         </ul>
       </div>
     </div>
@@ -71,7 +71,7 @@
       <ul class="list-disc list-inside space-y-1 text-sm leading-relaxed mb-6">
         <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
         <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv page</a></li>
-        <li><a href="#" class="text-blue-600 hover:underline">Project Code (TBA)</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">GitHub Code (TBA)</a></li>
       </ul>
       <hr class="my-6">
     </aside>
@@ -261,10 +261,10 @@
             Segmentation Shape‑Bias&nbsp;&amp;&nbsp;Robustness
             </h3>
             <p class="text-sm leading-relaxed">
-            • <strong>DeepLab‑V3+</strong> shows the strongest shape reliance (0.78)—
-            <em>64 pp higher</em> than transformer‑based <strong>Swin‑UNet</strong>.<br>
-            • Robustness score&nbsp;ρ = 0.92 predicts mIoU drops on Cityscapes‑C.<br>
-            • Click a column header to sort; hover for definitions.
+            • <strong>[MODEL NAME]</strong> shows the strongest [...] (XXX)—
+            <em>XXX pp higher</em> than [architecture name]‑based <strong>[MODEL NAME]</strong>.<br>
+            • Robustness score&nbsp;ρ = 0.XXX predicts mIoU drops on Cityscapes‑C.<br>
+            • ...
             </p>
         </div>
     
@@ -304,12 +304,12 @@
                     Classification Shape-Bias&nbsp;&amp;&nbsp;Robustness
                 </h3>
                 <p class="text-sm leading-relaxed">
-                    • CNNs (e.g.&nbsp;ResNet-50) remain texture-leaning
-                    (shape-bias &lt; 0.25); <strong>ViT-B/16</strong> reaches 0.61
+                    • CNNs (e.g.&nbsp;[MODEL NAME]) remain texture-leaning
+                    (shape-bias &lt; 0.XXX); <strong>[MODEL NAME]</strong> reaches 0.XXX
                     after fine-tuning.<br>
-                    • Our robustness metric correlates with ImageNet-C drops at r = 0.88—
+                    • Our robustness metric correlates with [MODEL NAME] drops at r = 0.XXX—
                     better than mCE.<br>
-                    • Toggle cue columns for per-class breakdown or export as CSV.
+                    •...
                 </p>
             </div>
 
@@ -483,6 +483,7 @@
       <section id="resources" class="space-y-6">
         <h2 class="text-2xl font-semibold">Resources & Links</h2>
         <ul class="list-disc list-inside space-y-2">
+          <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
           <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv abstract &amp; BibTeX</a></li>
           <li><a href="#" class="text-blue-600 hover:underline">Official implementation (PyTorch) (TBA)</a></li>
         </ul>
@@ -512,8 +513,15 @@
       <!-- ACKNOWLEDGMENTS -->
       <section id="acks" class="space-y-6">
         <h2 class="text-2xl font-semibold">Acknowledgments</h2>
-        <p>A.M., M.R. and E.H.. acknowledge support by the German Federal Ministry of Education and Research within the junior research group project “UnrEAL” (grant no. 01IS22069).</p>
-        <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab Logo" loading="lazy" class="w-32 h-auto mt-4">
+        <p>A.M., M.R. and E.H. acknowledge support by the German Federal Ministry of Education and Research within the junior research group project “UnrEAL” (grant no. 01IS22069).</p>
+        <div class="mt-4 w-40 flex flex-col items-center">
+          <a href="https://acm.uni-wuppertal.de/en/ai/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab Logo" loading="lazy" class="w-full h-auto">
+          </a>
+          <p class="mt-2 text-sm text-gray-600 text-center">
+            <a href="https://acm.uni-wuppertal.de/en/ai/" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">ACM AI Lab</a>
+          </p>
+        </div>
       </section>
 
       <!-- ==========  CITATION (bottom)  ========== -->
@@ -572,7 +580,13 @@
 
       <!-- FOOTER -->
       <footer class="pt-12 pb-6 text-center text-xs text-gray-500">
-        © 2025 Shape Bias Project • MIT License
+        © 2025 Shape Bias Project • MIT License • Built using the 
+        <a href="https://github.com/mmistakes/minimal-mistakes" target="_blank" class="text-blue-600 hover:underline">
+          Minimal Mistakes layout template
+        </a> • Site built by
+        <a href="https://acm.uni-wuppertal.de/en/team/details/schumacher/" target="_blank" class="text-blue-600 hover:underline">
+          Marco Schumacher
+        </a>
       </footer>
 
     </main>
