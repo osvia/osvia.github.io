@@ -26,8 +26,9 @@
         <!--<a href="#demo"       class="block hover:underline text-gray-700">Interactive Demo</a>
         <a href="#models"     class="block hover:underline text-gray-700">Pre‑trained Models</a>-->
         <a href="#resources"  class="block hover:underline text-gray-700">Resources</a>
-        <a href="#faq"        class="block hover:underline text-gray-700">FAQ</a>
+        <!--<a href="#faq"        class="block hover:underline text-gray-700">FAQ</a>-->
         <a href="#acks"       class="block hover:underline text-gray-700">Acknowledgments</a>
+        <a href="#citation"   class="block hover:underline text-gray-700">Citation</a>
         <a href="#contact"    class="block hover:underline text-gray-700">Contact</a>
       </nav>
       <hr>
@@ -37,7 +38,7 @@
         <ul class="list-disc list-inside space-y-1">
           <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
           <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv page</a></li>
-          <li><a href="https://github.com/your-org/your-repo" class="text-blue-600 hover:underline">Project Code</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Project Code (TBA)</a></li>
         </ul>
       </div>
     </div>
@@ -59,8 +60,9 @@
         <!--<a href="#demo"       class="block hover:underline text-gray-700">Interactive Demo</a>-->
         <!--<a href="#models"     class="block hover:underline text-gray-700">Pre‑trained Models</a>-->
         <a href="#resources"  class="block hover:underline text-gray-700">Resources</a>
-        <a href="#faq"        class="block hover:underline text-gray-700">FAQ</a>
+        <!--<a href="#faq"        class="block hover:underline text-gray-700">FAQ</a>-->
         <a href="#acks"       class="block hover:underline text-gray-700">Acknowledgments</a>
+        <a href="#citation"   class="block hover:underline text-gray-700">Citation</a>
         <a href="#contact"    class="block hover:underline text-gray-700">Contact</a>
       </nav>
 
@@ -69,44 +71,9 @@
       <ul class="list-disc list-inside space-y-1 text-sm leading-relaxed mb-6">
         <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
         <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv page</a></li>
-        <li><a href="https://github.com/your-org/your-repo" class="text-blue-600 hover:underline">Project Code</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Project Code (TBA)</a></li>
       </ul>
       <hr class="my-6">
-      <!-- ── CITATION ─────────────────────────────────────────── -->
-      <h3 class="font-semibold mb-2 text-sm">Citation</h3>
-
-      <div class="relative group">
-        <!-- the code block -->
-        <pre id="bibtex"
-            class="whitespace-pre overflow-x-auto
-                    bg-gray-100 rounded-lg p-3
-                    text-[0.70rem] leading-5 font-mono
-                    text-gray-700 select-all">
-@article{Heinert2025ShapeBias,
-  title={Shape Bias & Robustness via Cue Decomposition},
-  author={Heinert, E. and Gottwald, T. …},
-  journal={arXiv:2503.12453},
-  year={2025}
-}
-        </pre>
-
-        <!-- copy‑to‑clipboard button -->
-        <button
-          type="button"
-          aria-label="Copy BibTeX"
-          class="absolute top-2 right-2
-                flex items-center gap-1
-                px-2 py-1 rounded-md text-xs font-medium
-                bg-gray-200 hover:bg-gray-300
-                transition
-                group-hover:opacity-100 opacity-0"
-          onclick="
-            navigator.clipboard.writeText(document.getElementById('bibtex').innerText)
-              .then(btn=>{this.textContent='✔︎ Copied';setTimeout(()=>this.textContent='Copy',1500);});
-          ">
-          Copy
-        </button>
-      </div>
     </aside>
 
     <!-- MAIN CONTENT -->
@@ -115,10 +82,10 @@
       <!-- HERO -->
       <header class="text-center mb-12">
         <h1 class="text-4xl font-extrabold leading-tight">
-          Shape Bias &amp; Robustness Evaluation
+          Shape Bias &amp; Robustness
         </h1>
         <p class="text-xl mt-2">
-          <em>via Cue Decomposition for Image Classification &amp; Segmentation</em>
+          <em>Evaluation via Cue Decomposition for Image Classification and Segmentation</em>
         </p>
 
         <!-- AUTHORS -->
@@ -148,16 +115,16 @@
             class="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
             arXiv Page
           </a>
-          <a href="https://github.com/your-org/your-repo"
+          <a href="#"
             class="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
-            GitHub Code
+            GitHub Code (TBA)
           </a>
         </div>
         <!-- Title Images Row (unchanged) -->
         <div class="flex flex-wrap justify-center gap-2 mt-6">
-          <img src="./assets/images/title_image_1.JPEG"  alt="Title image 1"
+          <img src="./assets/images/title_image_1.jpg"  alt="Title image 1"
               class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
-          <img src="./assets/images/title_image_2.JPEG"  alt="Title image 2"
+          <img src="./assets/images/title_image_2.jpg"  alt="Title image 2"
               class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
           <img src="./assets/images/title_image_3.jpg"    alt="Title image 3"
               class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
@@ -172,13 +139,19 @@
       <section id="abstract" class="space-y-4 lg:max-w-6xl  lg:mx-auto">
         <h2 class="text-2xl font-semibold">Abstract</h2>
         <p>
-          We introduce a two‑step cue‑decomposition pipeline—Edge‑Enhancing Diffusion (EED) to isolate <strong>shape</strong> information and Voronoi‑based abstraction to capture <strong>texture</strong>—that lets us quantify how much deep nets rely on each cue. Building on this decomposition, we propose:
+          We propose a two-step cue decomposition pipeline that separates images into their <strong>shape cues</strong> using Edge-Enhancing Diffusion and their <strong>texture cues</strong> using Voronoi patch shuffling, <strong>enabling measurement of model reliance on either cue</strong>. Building on this, we introduce:
         </p>
         <ul class="list-inside list-disc space-y-1">
-          <li>a <strong>unified shape‑bias metric</strong> for both classifiers and high‑resolution semantic segmentation models;</li>
-          <li>a <strong>robustness metric</strong> that out‑predicts prior approaches when models face corruptions from ImageNet‑C and Cityscapes‑C; and</li>
-          <li>the <strong>first large‑scale shape‑bias study for segmentation</strong>, covering Cityscapes and ADE20k.</li>
+          <li>a <strong>unified Cue-Decomposition Shape Bias (CDSB) metric</strong> applicable to both <strong>image classification</strong> and, for the first time, <strong>semantic segmentation models</strong>, and</li>
+          <li>a <strong>Cue-Decomposition Robustness (CDR) metric</strong> assessing model performance in the <strong>absence of shape or texture cues.</strong></li>
         </ul>
+        <p>
+          Using these AI-free, handpicking-free metrics, we conduct:
+          <ul class="list-inside list-disc space-y-1">
+            <li>the <strong>first CDSB and CDR evalutaiton</strong> of 43 pre-trained image classification models, and</li>
+            <li>the <strong>first shape bias and CDR evaluation</strong> of 23 pre-trained semantic segmentation models.</li>
+          </ul>
+        </p>
       </section>
 
       <!-- VIDEO -->
@@ -193,7 +166,11 @@
     <section id="method" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8">
       <h2 class="text-2xl font-semibold">Method Overview</h2>
       <p>
-        Our pipeline first applies <em>Edge‑Enhancing Diffusion</em> to emphasize object boundaries while removing fine‑grained textures. The resulting shape cue keeps category‑defining contours. Next, we compute a <em>Voronoi texture abstraction</em> on the original image, which discards shape but preserves local texture statistics. By evaluating models on shape‑only (<span class="font-mono">x<sub>S</sub></span>) and texture‑only (<span class="font-mono">x<sub>T</sub></span>) inputs, we can decompose the prediction confidence into distinct cues.
+        Our pipeline first applies <em>Edge‑Enhancing Diffusion</em>: The PDE-based diffusion method propagates color values along edges but not across them and thus removes texture from images while preserving their shape. The resulting shape cue keeps category‑defining contours.
+        Next, we compute a <em>Voronoi texture abstraction</em> on the original image, which discards shape but preserves local texture statistics. A number of Voronoi cells are sampled and each displays a randomly chosen part of the original image.
+        The CDSB and CDR proposals are then chosen from a number of candidate metrics which included both additional cue-decomposition approaches as well as a number of AI-free cue-conflict-metric candidates and are compared to the established shape bias metric by Geirhos et al.<br><br>
+        By evaluating models on shape‑only (<span class="font-mono">x<sub>S</sub></span>) and texture‑only (<span class="font-mono">x<sub>T</sub></span>) inputs, we can decompose the prediction confidence into distinct cues.
+        
       </p>
       <div class="grid md:grid-cols-3 gap-x-6 gap-y-8">
         <!-- Column 1: EED Cues -->
@@ -216,7 +193,7 @@
         </div>
 
         <!-- Column 2: Voronoi Cues -->
-        <div class="space-y-3 border-t border-l border-gray-100 pt-6 pl-6 md:border-t-0 md:pt-0">
+        <div class="space-y-3">
           <h3 class="text-xl font-semibold mb-3 text-center">Voronoi Cues</h3>
           <div class="grid grid-cols-2 gap-3">
             <figure class="rounded-lg overflow-hidden shadow-sm">
@@ -235,7 +212,7 @@
         </div>
 
         <!-- Column 3: Cue Conflict Examples -->
-        <div class="space-y-3 border-t border-l border-gray-100 pt-6 pl-6 md:border-t-0 md:pt-0">
+        <div class="space-y-3">
           <h3 class="text-xl font-semibold mb-3 text-center">Cue Conflict</h3>
           <div class="grid grid-cols-2 gap-3">
             <figure class="rounded-lg overflow-hidden shadow-sm">
@@ -363,7 +340,7 @@
     <section id="results" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8">
       <h2 class="text-2xl font-semibold text-center md:text-left">Qualitative Results</h2>
       <p class="text-sm mb-4 text-center md:text-left">
-        Compare how each model handles <em>shape‑only</em>, <em>texture‑only</em>, and <em>original</em> inputs. Use the buttons to switch between models; the bottom row updates live.
+        Compare how each model handles <em>shape‑only</em>, <em>texture‑only</em>, and <em>original</em> inputs. Use the buttons to switch between models.
       </p>
 
       <!-- ── IMAGE GRID ───────────────────────────────────────── -->
@@ -507,11 +484,12 @@
         <h2 class="text-2xl font-semibold">Resources & Links</h2>
         <ul class="list-disc list-inside space-y-2">
           <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv abstract &amp; BibTeX</a></li>
-          <li><a href="https://github.com/your-org/your-repo" class="text-blue-600 hover:underline">Official implementation (PyTorch)</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Official implementation (PyTorch) (TBA)</a></li>
         </ul>
       </section>
 
       <!-- FAQ -->
+       <!--
       <section id="faq" class="space-y-6">
         <h2 class="text-2xl font-semibold">FAQ</h2>
         <details class="bg-gray-50 p-4 rounded-xl shadow-sm">
@@ -529,11 +507,12 @@
           <p class="mt-2 leading-relaxed text-sm">Yes—our <code class="text-[0.75rem] bg-gray-100 px-1 rounded">pip install cue‑decomposition</code> package ships a one‑liner <code class="text-[0.75rem] bg-gray-100 px-1 rounded">evaluate_shape_bias(model, dataloader)</code>.</p>
         </details>
       </section>
+      -->
 
       <!-- ACKNOWLEDGMENTS -->
       <section id="acks" class="space-y-6">
         <h2 class="text-2xl font-semibold">Acknowledgments</h2>
-        <p>We thank Sebastian Houben, Sina Honari, and the anonymous reviewers for valuable feedback. This work was supported by the German Federal Ministry of Education and Research (BMBF) under Grant XYZ123.</p>
+        <p>A.M., M.R. and E.H.. acknowledge support by the German Federal Ministry of Education and Research within the junior research group project “UnrEAL” (grant no. 01IS22069).</p>
         <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab Logo" loading="lazy" class="w-32 h-auto mt-4">
       </section>
 
@@ -550,7 +529,7 @@
                       text-gray-700 select-all">
 @article{Heinert2025ShapeBias,
   title={Shape Bias & Robustness via Cue Decomposition},
-  author={Heinert, E. and Gottwald, T. …},
+  author={Heinert, E. and Gottwald, T. and Mütze, A. and Rottmann, M.},
   journal={arXiv:2503.12453},
   year={2025}
 }
@@ -586,8 +565,8 @@
         <h2 class="text-2xl font-semibold">Contact</h2>
         <p class="text-sm">Have questions or want to collaborate? Reach out:</p>
         <ul class="space-y-1 text-sm">
-          <li>Email: <a href="mailto:heinert@uni-example.de" class="text-blue-600 hover:underline">heinert@uni-example.de</a></li>
-          <li>GitHub Issues: <a href="https://github.com/your-org/your-repo/issues" class="text-blue-600 hover:underline">open a ticket ↗</a></li>
+          <li>Email: <a href="mailto:heinert@uni-wuppertal.de" class="text-blue-600 hover:underline">heinert@uni-wuppertal.de</a></li>
+          <li>GitHub Issues: <a href="#" class="text-blue-600 hover:underline">open a ticket ↗</a></li>
         </ul>
       </section>
 
