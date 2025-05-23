@@ -101,17 +101,62 @@
           <sup>1</sup> Department&nbsp;of&nbsp;Mathematics, University&nbsp;of&nbsp;Wuppertal, Wuppertal, Germany
         </p>
 
+        <!-- LOGO STRIP -->
+        <div class="flex flex-wrap justify-center items-center gap-6 mt-4">
+          <!-- ACM AI Lab Logo -->
+          <a href="https://acm.uni-wuppertal.de/en/ai/" target="_blank" rel="noopener noreferrer" class="block h-10">
+            <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab Logo" class="h-full w-auto" loading="lazy">
+          </a>
+
+          <!-- University of Wuppertal Logo (example) -->
+          <a href="https://www.uni-wuppertal.de/" target="_blank" rel="noopener noreferrer" class="block h-10">
+            <img src="./assets/images/BUW_Logo.jpg" alt="University of Wuppertal Logo" class="h-full w-auto" loading="lazy">
+          </a>
+
+          <!-- Add additional logos here (duplicate & adapt) -->
+        </div>
+
+      
         <!-- ACTION BUTTONS -->
         <div class="flex flex-wrap justify-center gap-3 mt-6">
+
+          <!-- Paper / Document icon -->
           <a href="https://arxiv.org/abs/2503.12453"
-            class="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
+            class="inline-flex items-center px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
+            <!-- Heroicons outline: DocumentText -->
+            <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6 2.25h7.5L18 6.75v14.25a.75.75 0 01-.75.75H6.75A.75.75 0 016 21V2.25z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.25 2.25v4.5h4.5" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8.25 9.75h7.5m-7.5 3h7.5m-7.5 3h4.5" />
+            </svg>
             arXiv Page
           </a>
+
+          <!-- GitHub -->
           <a href="#"
-            class="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
+            class="inline-flex items-center px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
+            <!-- GitHub Octicon: mark-github -->
+            <svg class="w-5 h-5 mr-2" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                      0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                      -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                      .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                      -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
+                      .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+                      .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                      0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+              </path>
+            </svg>
             GitHub Code (TBA)
           </a>
         </div>
+
+
         <!-- Title Images Row (unchanged) -->
         <div class="flex flex-wrap justify-center gap-2 mt-6">
           <img src="./assets/images/title_image_1.jpg"  alt="Title image 1"
@@ -147,7 +192,7 @@
       </section>
 
       <!-- METHOD OVERVIEW -->
-      <section id="method" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8">
+      <section id="method" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8 lg:max-w-6xl lg:mx-auto">
         <h2 class="text-2xl font-semibold">Method Overview</h2>
         <p>
           Our pipeline first applies <em>Edge‑Enhancing Diffusion</em>: The PDE-based diffusion method propagates color values along edges but not across them and thus removes texture from images while preserving their shape. The resulting shape cue keeps category‑defining contours.
@@ -227,7 +272,7 @@
           }
       </style>
       
-      <section id="metrics" class="space-y-10">
+      <section id="metrics" class="space-y-6 rounded-xl px-6 py-8 lg:max-w-6xl lg:mx-auto">
           <h2 class="text-2xl font-semibold">Metrics at a Glance</h2>
           <!-- ── Segmentation ───────────────────────────────────── -->
           <div
@@ -284,7 +329,7 @@
   
 
       <!-- QUALITATIVE RESULTS – Interactive Panel -->
-      <section id="results" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8">
+      <section id="results" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8 lg:max-w-6xl lg:mx-auto">
         <h2 class="text-2xl font-semibold text-center md:text-left">Qualitative Results</h2>
         <p class="text-sm mb-4 text-center md:text-left">
           Compare how each model handles <em>shape‑only</em>, <em>texture‑only</em>, and <em>original</em> inputs. Use the buttons to switch between models.
@@ -407,7 +452,7 @@
       </section>
 
       <!-- RESOURCES -->
-      <section id="resources" class="space-y-6">
+      <section id="resources" class="space-y-6 px-6 py-8 lg:max-w-6xl lg:mx-auto">
         <h2 class="text-2xl font-semibold">Resources & Links</h2>
         <ul class="list-disc list-inside space-y-2">
           <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
@@ -438,7 +483,7 @@
       -->
 
       <!-- ACKNOWLEDGMENTS -->
-      <section id="acks" class="space-y-6">
+      <section id="acks" class="space-y-6 px-6 py-8 lg:max-w-6xl lg:mx-auto">
         <h2 class="text-2xl font-semibold">Acknowledgments</h2>
         <p>A.M., M.R. and E.H. acknowledge support by the German Federal Ministry of Education and Research within the junior research group project “UnrEAL” (grant no. 01IS22069).</p>
         <div class="mt-4 w-40 flex flex-col items-center">
@@ -452,7 +497,7 @@
       </section>
 
       <!-- CITATION (bottom) -->
-      <section id="citation" class="space-y-6">
+      <section id="citation" class="space-y-6 px-6 py-8 lg:max-w-6xl lg:mx-auto">
         <h2 class="text-2xl font-semibold">Citation</h2>
 
         <div class="relative group">
@@ -496,7 +541,7 @@
       
 
       <!-- CONTACT -->
-      <section id="contact" class="space-y-6">
+      <section id="contact" class="space-y-6 px-6 py-8 lg:max-w-6xl lg:mx-auto">
         <h2 class="text-2xl font-semibold">Contact</h2>
         <p class="text-sm">Have questions or want to collaborate? Reach out:</p>
         <ul class="space-y-1 text-sm">
