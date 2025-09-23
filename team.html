@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACM AI Lab – Team</title>
+  <link rel="icon" type="image/png" href="./assets/images/KeyVisual_Dark.png" />
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Page wrapper -->
+  <div class="min-h-screen flex flex-col">
+    <!-- Top bar (simple, matches publications page) -->
+    <!-- Top bar -->
+    <header class="border-b border-gray-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="inline-flex items-center gap-2 font-bold text-lg">
+          <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab" class="h-6 w-6 object-contain" />
+          <span>ACM AI Lab</span>
+        </a>
+
+        <!-- Desktop nav (unchanged) -->
+        <nav class="hidden sm:flex items-center gap-6 text-sm">
+          <a href="index.html"     class="text-gray-700 hover:underline">Home</a>
+          <a href="publications.html"   class="text-gray-700 hover:underline">Publications</a>
+          <a href="projects.html"       class="text-gray-700 hover:underline">Projects</a>
+          <a href="team.html"           class="text-gray-900 font-semibold">Team</a>
+          <a href="news.html"           class="text-gray-700 hover:underline">News</a>
+        </nav>
+      </div>
+
+      <!-- ==========  MOBILE-ONLY COLLAPSIBLE MENU  ========== -->
+      <details class="sm:hidden bg-white border-t border-gray-200 shadow-sm">
+        <summary class="px-4 py-3 font-semibold cursor-pointer select-none">
+          Menu
+        </summary>
+        <div class="px-4 pb-5 text-sm space-y-6 leading-relaxed">
+          <nav class="space-y-1">
+            <!-- Use page links that actually exist in your site -->
+            <a href="index.html"                 class="block hover:underline text-gray-700">Home</a>
+            <a href="publications.html"        class="block hover:underline text-gray-700">Publications</a>
+            <a href="projects.html"                   class="block hover:underline text-gray-700">Projects</a>
+            <a href="team.html"                       class="block hover:underline text-gray-700">Team</a>
+            <a href="news.html"                       class="block hover:underline text-gray-700">News</a>
+          </nav>
+          <hr>
+        </div>
+      </details>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1 py-10 px-4 sm:px-6">
+      <section class="max-w-3xl mx-auto">
+        <header class="mb-8">
+          <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Team</h1>
+          <p class="text-gray-600 mt-1">List of current members and their contact details.</p>
+        </header>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/ichrak_el_gabsi.jpg" alt="Portrait of B.Sc. Ichrak El Gabsi" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Ichrak El Gabsi <span class="text-sm font-normal text-gray-500">(B.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <!-- email icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:ichrak.el_gabsi@uni-wuppertal.de" class="hover:underline break-words">ichrak.el_gabsi@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <!-- phone icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391711" class="hover:underline">+49 202 439 1711</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <!-- room icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.20</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/artin_gerxhaliu.jpg" alt="Portrait of B.Sc. Artin Gerxhaliu" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Artin Gerxhaliu <span class="text-sm font-normal text-gray-500">(B.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:artin.gerxhaliu@uni-wuppertal.de" class="hover:underline break-words">artin.gerxhaliu@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391708" class="hover:underline">+49 202 439 1708</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.06</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/vignesh_gopinathan.jpg" alt="Portrait of M.Sc. Vignesh Gopinathan" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Vignesh Gopinathan <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:gopinathan@uni-wuppertal.de" class="hover:underline break-words">gopinathan@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391704" class="hover:underline">+49 202 439 1704</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.02</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/thomas_gottwald.jpg" alt="Portrait of M.Sc. Thomas Gottwald" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Thomas Gottwald <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:gottwald@uni-wuppertal.de" class="hover:underline break-words">gottwald@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391705" class="hover:underline">+49 202 439 1705</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.03</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/edgar_heinert.jpg" alt="Portrait of M.Sc. Edgar Heinert" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Edgar Heinert <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:heinert@uni-wuppertal.de" class="hover:underline break-words">heinert@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391705" class="hover:underline">+49 202 439 1705</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.03</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/timo_heller.jpg" alt="Portrait of B.Sc. Timo Heller" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Timo Heller <span class="text-sm font-normal text-gray-500">(B.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:timo.heller-hk@uni-wuppertal.de" class="hover:underline break-words">timo.heller-hk@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391711" class="hover:underline">+49 202 439 1711</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.20</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person (no phone listed on source page) -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/anna_hoevermann.jpg" alt="Portrait of B.Sc. Anna Hövermann" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Anna Hövermann <span class="text-sm font-normal text-gray-500">(B.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <!-- no email shown on the source page -->
+              <!-- no phone shown on the source page -->
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.06</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person (external email) -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/sadia_ilyas.jpg" alt="Portrait of M.Sc. Sadia Ilyas" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Sadia Ilyas <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:sadia.ilyas@aptiv.com" class="hover:underline break-words">sadia.ilyas@aptiv.com</a>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/jonathan_klees.jpg" alt="Portrait of M.Sc. Jonathan Klees" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Jonathan Klees <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:klees@uni-wuppertal.de" class="hover:underline break-words">klees@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391711" class="hover:underline">+49 202 439 1711</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.20</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/hannah_loercks.jpg" alt="Portrait of M.Sc. Hannah Lörcks" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Hannah Lörcks <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:hannah.loercks@uni-wuppertal.de" class="hover:underline break-words">hannah.loercks@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391704" class="hover:underline">+49 202 439 1704</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.02</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/annika_muetze.jpg" alt="Portrait of Dr. Annika Mütze" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Annika Mütze <span class="text-sm font-normal text-gray-500">(Dr.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:muetze@uni-wuppertal.de" class="hover:underline break-words">muetze@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391708" class="hover:underline">+49 202 439 1708</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.06</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/sarina_penquitt.jpg" alt="Portrait of M.Sc. Sarina Penquitt" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Sarina Penquitt <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:penquitt@uni-wuppertal.de" class="hover:underline break-words">penquitt@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391711" class="hover:underline">+49 202 439 1711</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.20</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person (title kept as provided on source page) -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/matthias_rottmann.jpg" alt="Portrait of PD Dr. Matthias Rottmann" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Matthias Rottmann <span class="text-sm font-normal text-gray-500">(PD Dr.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:rottmann@math.uni-wuppertal.de" class="hover:underline break-words">rottmann@math.uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391706" class="hover:underline">+49 202 439 1706</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.04</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person (title kept as provided on source page) -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/marco_schumacher.jpg" alt="Portrait of Marco Schumacher" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Marco Schumacher <span class="text-sm font-normal text-gray-500">(Student)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:marco.schumacher-hk@uni-wuppertal.de" class="hover:underline break-words">marco.schumacher-hk@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391705" class="hover:underline">+49 202 439 1705</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.03</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person (external email) -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/kai_schuette.jpg" alt="Portrait of M.Sc. Kai Schütte" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Kai Schütte <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:kai.schuette@volkswagen.de" class="hover:underline break-words">kai.schuette@volkswagen.de</a>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/peter_stehr.jpg" alt="Portrait of M.Sc. Peter Stehr" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Peter Stehr <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:stehr@uni-wuppertal.de" class="hover:underline break-words">stehr@uni-wuppertal.de</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391704" class="hover:underline">+49 202 439 1704</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.02</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person (external email) -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/martha_teye.jpg" alt="Portrait of M.Sc. Martha Teye" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Martha Teye <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:martha.teye@aptiv.com" class="hover:underline break-words">martha.teye@aptiv.com</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391704" class="hover:underline">+49 202 439 1704</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.02</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Person (external email) -->
+        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
+          <img src="./assets/images/team/jialong_wu.jpg" alt="Portrait of M.Sc. Jialong Wu" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+          <div class="min-w-0">
+            <h2 class="text-xl font-semibold leading-tight">Jialong Wu <span class="text-sm font-normal text-gray-500">(M.Sc.)</span></h2>
+            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
+                <a href="mailto:jialong.wu@aptiv.com" class="hover:underline break-words">jialong.wu@aptiv.com</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
+                <a href="tel:+492024391705" class="hover:underline">+49 202 439 1705</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
+                <span>Room FZ.00.03</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Add more <article> blocks per member -->
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-600">
+      Back to <a href="index.html#team" class="text-blue-600 hover:underline">homepage team section</a> • Questions? <a href="mailto:rot@uni-wuppertal.de" class="text-blue-600 hover:underline">rot@uni-wuppertal.de</a>
+    </footer>
+  </div>
+</body>
+</html>
