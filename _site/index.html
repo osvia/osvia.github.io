@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACM AI Lab</title>
+  <title>OSVIA Lab</title>
   <link rel="icon" type="image/png" href="./assets/images/KeyVisual_Dark.png" />
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,11 +13,10 @@
   <div class="min-h-screen flex flex-col">
   <!-- Top bar -->
   <header class="border-b border-gray-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 fixed top-0 left-0 right-0 z-10">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-      <a href="index.html" class="inline-flex items-center gap-2 font-bold text-lg">
-        <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab" class="h-6 w-6 object-contain" />
-        <span>ACM AI Lab</span>
-      </a>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="relative inline-flex items-center h-6 w-28" aria-label="OSVIA Lab — Home">
+      <img src="./assets/images/KeyVisual_Dark.png" alt="OSVIA Lab logo" class="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-6 object-contain origin-left scale-[4] sm:scale-[5.5]"/>
+    </a>
 
       <!-- Desktop nav -->
       <nav class="hidden sm:flex items-center gap-6 text-sm">
@@ -52,26 +51,21 @@
   <main class="flex-1 overflow-y-auto p-6 space-y-16">
 
     <!-- HERO -->
-    <section
-  id="home"
-  class="max-w-5xl mx-auto mt-32 sm:mt-24 scroll-mt-28 sm:scroll-mt-24
-         flex flex-col lg:flex-row items-center bg-gray-100 rounded-lg
-         p-6 sm:p-8 lg:p-12 overflow-hidden"
->
+    <section id="home" class="max-w-5xl mx-auto mt-32 sm:mt-24 scroll-mt-28 sm:scroll-mt-24 flex flex-col lg:flex-row items-center bg-gray-100 rounded-lg p-6 sm:p-8 lg:p-12 overflow-hidden">
       <div class="w-full lg:w-1/2 min-w-0 space-y-4 sm:space-y-6">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight break-words">
-          Reliable and Efficient AI
+          Osnabrück Vision AI (OSVIA) Lab
         </h1>
         <p class="text-base sm:text-lg text-gray-700">
-          The ACM AI Lab focuses on topics related to the uncertainty of Artificial Intelligence and related applications, particularly in the context of automated driving.
+          The OSVIA Lab researches methods that teach machines to see – from the basics of classical computer vision to modern deep learning approaches. Our goal is to develop algorithms that process visual data reliably, efficiently, and explainably. We work on problems ranging from the recognition and analysis of complex scenes to 3D reconstruction and robust machine learning. With our research, we bridge the gap between theory and application – for advances in science, industry, and society.
         </p>
       </div>
 
       <div class="w-full lg:w-1/2 min-w-0 mt-8 lg:mt-0 flex justify-center lg:justify-end">
         <img
-          src="./assets/images/osvia.jpg"
-          alt="Team Image"
-          class="max-h-64 sm:max-h-80 w-auto h-auto rounded-lg object-contain"
+          src="./assets/images/hero_image.png"
+          alt="Hero Image"
+          class="max-h-80 sm:max-h-96 w-auto h-auto rounded-lg object-contain border border-gray-200"
         />
       </div>
     </section>
@@ -83,186 +77,206 @@
       <p class="text-xl">Bergische Universität Wuppertal: AG Applied and Computational Mathematics</p>
       <p class="mt-2">
         <span class="inline-flex items-center gap-4">
-          <img src="./assets/images/uos_logo.jpg"
-               alt="Universität Osnabrück logo"
-               class="h-10 sm:h-12 w-auto object-contain"
-               loading="lazy" decoding="async">
-          <img src="./assets/images/buw_logo.jpg"
-               alt="Bergische Universität Wuppertal logo"
-               class="h-10 sm:h-12 w-auto object-contain"
-               loading="lazy" decoding="async">
+          <a href="https://www.uni-osnabrueck.de/">
+            <img src="./assets/images/uos_logo.jpg"
+                alt="Universität Osnabrück logo"
+                class="h-10 sm:h-12 w-auto object-contain"
+                loading="lazy" decoding="async">
+          </a>
+          <a href="https://www.uni-wuppertal.de/de/">
+            <img src="./assets/images/buw_logo.jpg"
+                alt="Bergische Universität Wuppertal logo"
+                class="h-10 sm:h-12 w-auto object-contain"
+                loading="lazy" decoding="async">
+          </a>
         </span>
     </section>
 
     <!-- PUBLICATIONS & DATASETS PANEL -->
-<section class="bg-gray-50 rounded-lg p-8 max-w-5xl mx-auto space-y-8">
+    <section class="bg-gray-50 rounded-lg p-8 max-w-5xl mx-auto space-y-8">
 
-  <!-- Recent Publications -->
-  <div id="recent-publications">
-    <div class="flex flex-wrap items-start sm:items-center justify-between gap-3 mb-4">
-      <h2 class="text-2xl font-semibold">Recent Publications</h2>
-      <a
-        href="publications.html"
-        class="shrink-0 whitespace-nowrap px-3 py-1 text-sm sm:text-base bg-blue-600 text-white rounded-md hover:bg-blue-700"
-      >
-        All Publications
-      </a>
-    </div>
-
-    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Item 1 -->
-      <li class="bg-white p-4 rounded-lg shadow-sm flex flex-col min-w-0">
-        <img src="./assets/images/publications/pub_4.png" alt="Publication Cover"
-             class="w-full h-40 object-cover rounded mb-4">
-        <h3 class="font-semibold break-words">
-          Learning to Detect Label Errors by Making Them
-        </h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Penquitt, S., Riedlinger, T., Heller, T., Reischl, R., Rottmann, M. (2025)
-        </p>
-
-        <div class="mt-auto pt-4 grid grid-cols-2 sm:grid-cols-3 gap-2">
-          <!-- Paper -->
-          <a href="https://arxiv.org/abs/2508.17930"
-             class="col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 2.25h7.5L18 6.75v14.25a.75.75 0 01-.75.75H6.75A.75.75 0 016 21V2.25z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 2.25v4.5h4.5" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9.75h7.5m-7.5 3h7.5m-7.5 3h4.5" />
-            </svg>
-            <span>Paper</span>
-          </a>
-
-          <!-- GitHub -->
-          <a href="https://github.com/spenquitt/Learning_to_detect_label_errors_in_segmentation_and_object_detection_datasets"
-             class="col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
-            <svg viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 mr-1">
-              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-              -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
-              .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
-              -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
-              .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
-              .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8
-              c0-4.42-3.58-8-8-8z" />
-            </svg>
-            <span>GitHub</span>
-          </a>
-
-          <!-- Website -->
-          <a href="https://acm-ai-lab.github.io/Learning-To-Detect-Labeling-Errors/"
-             class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-4 w-4 mr-1 flex-shrink-0"
-                 fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
-            </svg>
-            <span>Website</span>
+      <!-- Recent Publications -->
+      <div id="recent-publications">
+        <div class="flex flex-wrap items-start sm:items-center justify-between gap-3 mb-4">
+          <h2 class="text-2xl font-semibold">Recent Publications</h2>
+          <a href="publications.html" class="shrink-0 whitespace-nowrap px-3 py-1 text-sm sm:text-base bg-blue-600 text-white rounded-md hover:bg-blue-700">
+            All Publications
           </a>
         </div>
-      </li>
 
-      <!-- Item 2 -->
-      <li class="bg-white p-4 rounded-lg shadow-sm flex flex-col min-w-0">
-        <img src="./assets/images/publications/pub_3.png" alt="Publication Cover"
-             class="w-full h-40 object-cover rounded mb-4">
-        <h3 class="font-semibold break-words">
-          From Label Error Detection to Correction
-        </h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Penquitt, S., Klees, J., Cakaj, R., Kondermann, D., Rottmann, M., Schmarje, L. (2025)
-        </p>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Item 1 -->
+          <li class="bg-white p-4 rounded-lg shadow-sm flex flex-col min-w-0">
+            <img src="./assets/images/publications/pub_4.png" alt="Publication Cover"
+                class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="font-semibold break-words">
+              Learning to Detect Label Errors by Making Them
+            </h3>
+            <p class="text-sm text-gray-600 mt-2">
+              Penquitt, S., Riedlinger, T., Heller, T., Reischl, R., Rottmann, M. (2025)
+            </p>
 
-        <div class="mt-auto pt-4 grid grid-cols-2 sm:grid-cols-3 gap-2">
-          <a href="https://arxiv.org/abs/2508.06556"
-             class="col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 2.25h7.5L18 6.75v14.25a.75.75 0 01-.75.75H6.75A.75.75 0 016 21V2.25z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 2.25v4.5h4.5" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9.75h7.5m-7.5 3h7.5m-7.5 3h4.5" />
-            </svg>
-            <span>Paper</span>
-          </a>
-          <a href="https://github.com/JonathanKlees/rechecked"
-             class="col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
-            <svg viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 mr-1">
-              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-              -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
-              .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
-              -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
-              .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
-              .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8
-              c0-4.42-3.58-8-8-8z" />
-            </svg>
-            <span>GitHub</span>
-          </a>
-          <a href="https://acm-ai-lab.github.io/ReChecked/"
-             class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-4 w-4 mr-1 flex-shrink-0"
-                 fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
-            </svg>
-            <span>Website</span>
-          </a>
-        </div>
-      </li>
+            <div class="mt-auto pt-4 grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <!-- Paper -->
+              <a href="https://arxiv.org/abs/2508.17930"
+                class="col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 2.25h7.5L18 6.75v14.25a.75.75 0 01-.75.75H6.75A.75.75 0 016 21V2.25z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 2.25v4.5h4.5" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9.75h7.5m-7.5 3h7.5m-7.5 3h4.5" />
+                </svg>
+                <span>Paper</span>
+              </a>
 
-      <!-- Item 3 -->
-      <li class="bg-white p-4 rounded-lg shadow-sm flex flex-col min-w-0">
-        <img src="./assets/images/publications/pub_2.jpg" alt="Publication Cover"
-             class="w-full h-40 object-cover rounded mb-4">
-        <h3 class="font-semibold break-words">
-          Shape Bias &amp; Robustness via Cue Decomposition
-        </h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Heinert, E., Gottwald, T., Mütze, A., Rottmann, M. (2025)
-        </p>
+              <!-- GitHub -->
+              <a href="https://github.com/spenquitt/Learning_to_detect_label_errors_in_segmentation_and_object_detection_datasets"
+                class="col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
+                <svg viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 mr-1">
+                  <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                  0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                  -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                  .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                  -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
+                  .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+                  .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                  0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8
+                  c0-4.42-3.58-8-8-8z" />
+                </svg>
+                <span>GitHub</span>
+              </a>
 
-        <div class="mt-auto pt-4 grid grid-cols-2 sm:grid-cols-3 gap-2">
-          <a href="https://arxiv.org/abs/2503.12453"
-             class="col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 2.25h7.5L18 6.75v14.25a.75.75 0 01-.75.75H6.75A.75.75 0 016 21V2.25z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 2.25v4.5h4.5" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9.75h7.5m-7.5 3h7.5m-7.5 3h4.5" />
-            </svg>
-            <span>Paper</span>
-          </a>
-          <a href="https://acm-ai-lab.github.io/Shape-Bias-and-Robustness-Evaluation/"
-             class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-4 w-4 mr-1 flex-shrink-0"
-                 fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
-            </svg>
-            <span>Website</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
+              <!-- Website -->
+              <a href="https://acm-ai-lab.github.io/Learning-To-Detect-Labeling-Errors/"
+                class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1 flex-shrink-0"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+                <span>Website</span>
+              </a>
+            </div>
+          </li>
 
-  <!-- Datasets -->
-  <div id="datasets" class="mt-8">
-    <h2 class="text-2xl font-semibold mb-4">Datasets</h2>
-    <ul class="list-disc list-inside space-y-2">
-      <li><strong>SegmentMeIfYouCan</strong> – A Benchmark for Anomaly Segmentation</li>
-      <li><strong>OoDIS</strong> – Anomaly Instance Segmentation Benchmark</li>
-    </ul>
-  </div>
+          <!-- Item 2 -->
+          <li class="bg-white p-4 rounded-lg shadow-sm flex flex-col min-w-0">
+            <img src="./assets/images/publications/pub_3.png" alt="Publication Cover"
+                class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="font-semibold break-words">
+              From Label Error Detection to Correction
+            </h3>
+            <p class="text-sm text-gray-600 mt-2">
+              Penquitt, S., Klees, J., Cakaj, R., Kondermann, D., Rottmann, M., Schmarje, L. (2025)
+            </p>
 
-</section>
+            <div class="mt-auto pt-4 grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <a href="https://arxiv.org/abs/2508.06556"
+                class="col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 2.25h7.5L18 6.75v14.25a.75.75 0 01-.75.75H6.75A.75.75 0 016 21V2.25z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 2.25v4.5h4.5" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9.75h7.5m-7.5 3h7.5m-7.5 3h4.5" />
+                </svg>
+                <span>Paper</span>
+              </a>
+              <a href="https://github.com/JonathanKlees/rechecked"
+                class="col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
+                <svg viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 mr-1">
+                  <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                  0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                  -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                  .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                  -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
+                  .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+                  .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                  0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8
+                  c0-4.42-3.58-8-8-8z" />
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://acm-ai-lab.github.io/ReChecked/"
+                class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1 flex-shrink-0"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+                <span>Website</span>
+              </a>
+            </div>
+          </li>
 
-     <!-- PROJECTS (no outer gray panel) -->
+          <!-- Item 3 -->
+          <li class="bg-white p-4 rounded-lg shadow-sm flex flex-col min-w-0">
+            <img src="./assets/images/publications/pub_2.jpg" alt="Publication Cover"
+                class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="font-semibold break-words">
+              Shape Bias &amp; Robustness via Cue Decomposition
+            </h3>
+            <p class="text-sm text-gray-600 mt-2">
+              Heinert, E., Gottwald, T., Mütze, A., Rottmann, M. (2025)
+            </p>
+
+            <div class="mt-auto pt-4 grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <a href="https://arxiv.org/abs/2503.12453"
+                class="col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 2.25h7.5L18 6.75v14.25a.75.75 0 01-.75.75H6.75A.75.75 0 016 21V2.25z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 2.25v4.5h4.5" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9.75h7.5m-7.5 3h7.5m-7.5 3h4.5" />
+                </svg>
+                <span>Paper</span>
+              </a>
+              <a href="https://acm-ai-lab.github.io/Shape-Bias-and-Robustness-Evaluation/"
+                class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1 flex-shrink-0"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+                <span>Website</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Datasets -->
+      <div id="datasets" class="mt-8">
+        <h2 class="text-2xl font-semibold mb-4">Datasets</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            <a
+              href="https://segmentmeifyoucan.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="no-underline hover:underline text-blue-600"
+              title="SegmentMeIfYouCan — A Benchmark for Anomaly Segmentation"
+            >
+              <strong>SegmentMeIfYouCan</strong> – A Benchmark for Anomaly Segmentation
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://kumuji.github.io/oodis_website/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="no-underline hover:underline text-blue-600"
+              title="OoDIS — Anomaly Instance Segmentation Benchmark"
+            >
+              <strong>OoDIS</strong> – Anomaly Instance Segmentation Benchmark
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Projects Section-->
     <section id="projects" class="max-w-5xl mx-auto">
-      <!-- Headline + subtext -->
       <div class="mb-6">
         <h2 class="text-3xl font-semibold">Projects &amp; Cooperations</h2>
         <p class="text-gray-700 text-sm sm:text-base">
@@ -273,80 +287,90 @@
       <!-- Grid of project cards -->
       <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Project 1 -->
-        <li class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-          <img src="./assets/images/projects/proj_5.jpg" alt="Project5"
-              class="w-full h-48 object-cover">
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-semibold text-lg">Project REFRAME</h3>
-            <p class="text-sm text-gray-700 mt-1">Investigate the possibilities and limitations of so-called foundation models in computer-aided image recognition and to develop new methods for improving these models.</p>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+        <li>
+          <a href="https://www.uni-wuppertal.de/en/news/detail/kuenstliche-intelligenz-in-der-bilderkennung-verbessern/"
+            class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+            <img src="./assets/images/projects/proj_5.jpg" alt="Project5" class="w-full h-48 object-cover">
+            <div class="p-4 flex-1 flex flex-col">
+              <h3 class="font-semibold text-lg">Project REFRAME</h3>
+              <p class="text-sm text-gray-700 mt-1">Investigate the possibilities and limitations of so-called foundation models in computer-aided image recognition and to develop new methods for improving these models.</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+              </div>
+              <p class="mt-auto text-xs text-gray-500 pt-3">2024–???</p>
             </div>
-            <p class="mt-auto text-xs text-gray-500 pt-3">2024–???</p>
-          </div>
+          </a>
         </li>
 
         <!-- Project 2 -->
-        <li class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-          <img src="./assets/images/projects/proj_4.png" alt="Project4"
-              class="w-full h-48 object-cover">
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-semibold text-lg">Project RELiABEL</h3>
-            <p class="text-sm text-gray-700 mt-1">How to make the interpretation of image data for automated driving more reliable.</p>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+        <li>
+          <a href="https://acm.uni-wuppertal.de/en/news/detail/making-automated-driving-safer-reliabel-project-launched/"
+            class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+            <img src="./assets/images/projects/proj_4.png" alt="Project4" class="w-full h-48 object-cover">
+            <div class="p-4 flex-1 flex flex-col">
+              <h3 class="font-semibold text-lg">Project RELiABEL</h3>
+              <p class="text-sm text-gray-700 mt-1">How to make the interpretation of image data for automated driving more reliable.</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+              </div>
+              <p class="mt-auto text-xs text-gray-500 pt-3">2024–???</p>
             </div>
-            <p class="mt-auto text-xs text-gray-500 pt-3">2024–???</p>
-          </div>
+          </a>
         </li>
 
         <!-- Project 3 -->
-        <li class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-          <img src="./assets/images/projects/proj_3.png" alt="Project3"
-              class="w-full h-48 object-cover">
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-semibold text-lg">Just Scan It 3D</h3>
-            <p class="text-sm text-gray-700 mt-1">Easy creation of 3D models with photogrammetry and AI</p>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">EFRE</span>
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+        <li>
+          <a href="https://just-scan-it-3d.uni-wuppertal.de/"
+            class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+            <img src="./assets/images/projects/proj_3.png" alt="Project3" class="w-full h-48 object-cover">
+            <div class="p-4 flex-1 flex flex-col">
+              <h3 class="font-semibold text-lg">Just Scan It 3D</h3>
+              <p class="text-sm text-gray-700 mt-1">Easy creation of 3D models with photogrammetry and AI</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">EFRE</span>
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+              </div>
+              <p class="mt-auto text-xs text-gray-500 pt-3">2024–2026</p>
             </div>
-            <p class="mt-auto text-xs text-gray-500 pt-3">2024–2026</p>
-          </div>
+          </a>
         </li>
 
         <!-- Project 4 -->
-        <li class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-          <img src="./assets/images/projects/proj_2.png" alt="Project2"
-              class="w-full h-48 object-cover">
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-semibold text-lg">Cooperation with QUT Center for Robotics </h3>
-            <p class="text-sm text-gray-700 mt-1">Exploring the frontiers of foundation models in computer vision.</p>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">DAAD</span>
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">QUT</span>
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+        <li>
+          <a href="https://acm.uni-wuppertal.de/en/news/detail/daad-unterstuetzt-zusammenarbeit-mit-der-queensland-university-of-technology-qut-zentrum-fuer-robotik/"
+            class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+            <img src="./assets/images/projects/proj_2.png" alt="Project2" class="w-full h-48 object-cover">
+            <div class="p-4 flex-1 flex flex-col">
+              <h3 class="font-semibold text-lg">Cooperation with QUT Center for Robotics</h3>
+              <p class="text-sm text-gray-700 mt-1">Exploring the frontiers of foundation models in computer vision.</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">DAAD</span>
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">QUT</span>
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+              </div>
+              <p class="mt-auto text-xs text-gray-500 pt-3">2023–???</p>
             </div>
-            <p class="mt-auto text-xs text-gray-500 pt-3">2023–???</p>
-          </div>
+          </a>
         </li>
 
         <!-- Project 5 -->
-        <li class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-          <img src="./assets/images/projects/proj_1.png" alt="Project1"
-              class="w-full h-48 object-cover">
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-semibold text-lg">BMBF Junior Research Group UnrEAL</h3>
-            <p class="text-sm text-gray-700 mt-1">Making the use of artificial intelligence safer.</p>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">DFG</span>
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
-              <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+        <li>
+          <a href="https://acm.uni-wuppertal.de/en/news/detail/bmbf-nachwuchsgruppe-unreal/"
+            class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+            <img src="./assets/images/projects/proj_1.png" alt="Project1" class="w-full h-48 object-cover">
+            <div class="p-4 flex-1 flex flex-col">
+              <h3 class="font-semibold text-lg">BMBF Junior Research Group UnrEAL</h3>
+              <p class="text-sm text-gray-700 mt-1">Making the use of artificial intelligence safer.</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">DFG</span>
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+              </div>
+              <p class="mt-auto text-xs text-gray-500 pt-3">2022–2025</p>
             </div>
-            <p class="mt-auto text-xs text-gray-500 pt-3">2022–2025</p>
-          </div>
+          </a>
         </li>
       </ul>
     </section>
@@ -366,49 +390,99 @@
     </section>
 
     <!-- NEWS -->
-<section id="news" class="max-w-5xl mx-auto">
-  <h2 class="text-2xl font-semibold mb-4">News</h2>
-  <div class="relative">
-    <button id="prevNews" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#9664;</button>
+    <section id="news" class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">News</h2>
 
-    <div class="flex overflow-x-auto space-x-6 scrollbar-hide px-12">
-      <!-- News panel (fixed size) -->
-      <article class="w-56 h-64 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
-        <img src="./assets/images/news/news1.jpg" alt="News 1" class="w-full h-32 object-cover">
-        <div class="p-3 h-32 flex flex-col">
-          <h3 class="text-sm font-semibold leading-snug line-clamp-2 overflow-hidden">
-            Our paper on shape bias was accepted at ICCV
-          </h3>
-          <p class="text-xs text-gray-600 mt-auto">July 1, 2025</p>
+      <div class="relative">
+        <div class="flex overflow-x-auto space-x-6 px-12 scrollbar-hide snap-x snap-mandatory">
+          <!-- News panel-->
+
+          <!-- News 3-->
+          <article class="w-64 sm:w-72 h-80 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm flex-shrink-0 snap-start">
+            <img src="./assets/images/news/news1.jpg" alt="ICCV acceptance cover" class="w-full h-32 object-cover bg-gray-100" loading="lazy" decoding="async"/>
+            <div class="p-3 h-[calc(100%-8rem)] flex flex-col">
+              <a href="https://acm-ai-lab.github.io/Shape-Bias-and-Robustness-Evaluation/" class="group inline-block">
+                <h3 class="text-sm font-semibold leading-snug line-clamp-2 group-hover:underline">
+                  New paper on Shape Bias & Robustness Evaluation released
+                </h3>
+              </a>
+              <div class="mt-1 text-xs text-gray-600 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 flex-none">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v3m10.5-3v3M3 8.25h18M4.5 6.75A1.5 1.5 0 016 5.25h12a1.5 1.5 0 011.5 1.5v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12z"/>
+                </svg>
+                <time datetime="2025-07-01" class="truncate">Mar 16, 2025</time>
+                <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-[11px]">
+                  Paper
+                </span>
+              </div>
+              <p class="mt-2 text-xs text-gray-700 line-clamp-3">
+                Our work on Shape Bias & Robustness Evaluation via Cue Decomposition for Image Classification and Segmentation was published.
+              </p>
+              <div class="mt-auto pt-3 flex flex-wrap gap-2 text-xs">
+                <a href="https://arxiv.org/abs/2503.12453" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">Paper</a>
+                <a href="https://acm-ai-lab.github.io/Shape-Bias-and-Robustness-Evaluation/" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">Project page</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- News 2-->
+          <article class="w-64 sm:w-72 h-80 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm flex-shrink-0 snap-start">
+            <img src="./assets/images/news/news2.jpg" alt="Talk Image" class="w-full h-32 object-cover bg-gray-100" loading="lazy" decoding="async"/>
+            <div class="p-3 h-[calc(100%-8rem)] flex flex-col">
+              <a href="#" class="group inline-block">
+                <h3 class="text-sm font-semibold leading-snug line-clamp-2 group-hover:underline">
+                  Example Talk
+                </h3>
+              </a>
+              <div class="mt-1 text-xs text-gray-600 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 flex-none">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v3m10.5-3v3M3 8.25h18M4.5 6.75A1.5 1.5 0 016 5.25h12a1.5 1.5 0 011.5 1.5v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12z"/>
+                </svg>
+                <time datetime="2025-07-01" class="truncate">Date</time>
+                <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-[11px]">
+                  Talk
+                </span>
+              </div>
+              <p class="mt-2 text-xs text-gray-700 line-clamp-3">
+                Example Talk Text
+              </p>
+              <div class="mt-auto pt-3 flex flex-wrap gap-2 text-xs">
+                <a href="#" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">Slides</a>
+            </div>
+          </article>
+
+          <!-- News 1-->
+          <article class="w-64 sm:w-72 h-80 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm flex-shrink-0 snap-start">
+            <img src="#" alt="Dataset Image" class="w-full h-32 object-cover bg-gray-100" loading="lazy" decoding="async"/>
+            <div class="p-3 h-[calc(100%-8rem)] flex flex-col">
+              <a href="#" class="group inline-block">
+                <h3 class="text-sm font-semibold leading-snug line-clamp-2 group-hover:underline">
+                  Example Dataset Launch
+                </h3>
+              </a>
+              <div class="mt-1 text-xs text-gray-600 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 flex-none">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v3m10.5-3v3M3 8.25h18M4.5 6.75A1.5 1.5 0 016 5.25h12a1.5 1.5 0 011.5 1.5v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12z"/>
+                </svg>
+                <time datetime="2025-07-01" class="truncate">Date</time>
+                <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-[11px]">
+                  Dataset
+                </span>
+              </div>
+              <p class="mt-2 text-xs text-gray-700 line-clamp-3">
+                Example Dataset Launch Text
+              </p>
+              <div class="mt-auto pt-3 flex flex-wrap gap-2 text-xs">
+                <a href="#" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- duplicate more <article> cards here; keep the same w-*/h-* to prevent growth -->
         </div>
-      </article>
+      </div>
+    </section>
 
-      <!-- Example post 2 (fixed size) -->
-      <article class="w-56 h-64 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
-        <img src="./assets/images/news/news2.jpg" alt="News 2" class="w-full h-32 object-cover">
-        <div class="p-3 h-32 flex flex-col">
-          <h3 class="text-sm font-semibold leading-snug line-clamp-2 overflow-hidden">
-            Example
-          </h3>
-          <p class="text-xs text-gray-600 mt-auto">Date</p>
-        </div>
-      </article>
-
-      <!-- Example post 3 (fixed size) -->
-      <article class="w-56 h-64 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm flex-shrink-0">
-        <img src="./assets/images/news/news3.jpg" alt="News 3" class="w-full h-32 object-cover">
-        <div class="p-3 h-32 flex flex-col">
-          <h3 class="text-sm font-semibold leading-snug line-clamp-2 overflow-hidden">
-            Example
-          </h3>
-          <p class="text-xs text-gray-600 mt-auto">Date</p>
-        </div>
-      </article>
-    </div>
-
-    <button id="nextNews" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#9654;</button>
-  </div>
-</section>
 
 
 
@@ -416,6 +490,7 @@
     <!-- CONTACT FOOTER -->
     <footer class="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-600">
       Questions or collaborations? Email us at <a href="mailto:rot@uni-wuppertal.de" class="text-blue-600 hover:underline">rot@uni-wuppertal.de</a>.
+      <br><a href="impressum.html" class="text-blue-600 hover:underline">Impressium</a>.
     </footer>
 
   </main>

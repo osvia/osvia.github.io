@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACM AI Lab – Projects & Cooperations</title>
+  <title>OSVIA Lab – Projects & Cooperations</title>
   <link rel="icon" type="image/png" href="./assets/images/KeyVisual_Dark.png" />
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,9 +14,8 @@
     <!-- Top bar -->
     <header class="border-b border-gray-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-10">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-        <a href="index.html" class="inline-flex items-center gap-2 font-bold text-lg">
-          <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab" class="h-6 w-6 object-contain" />
-          <span>ACM AI Lab</span>
+        <a href="index.html" class="relative inline-flex items-center h-6 w-28" aria-label="OSVIA Lab — Home">
+          <img src="./assets/images/KeyVisual_Dark.png" alt="OSVIA Lab logo" class="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-6 object-contain origin-left scale-[4] sm:scale-[5.5]"/>
         </a>
 
         <!-- Desktop nav (unchanged) -->
@@ -67,87 +66,97 @@
         <!-- Grid of project cards -->
         <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Project 1 -->
-          <li class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-            <img src="./assets/images/projects/proj_5.png" alt="Project5"
-                class="w-full h-48 object-cover">
-            <div class="p-4 flex-1 flex flex-col">
-              <h3 class="font-semibold text-lg">Project REFRAME</h3>
-              <p class="text-sm text-gray-700 mt-1">Investigate the possibilities and limitations of so-called foundation models in computer-aided image recognition and to develop new methods for improving these models.</p>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+          <li>
+            <a href="https://www.uni-wuppertal.de/en/news/detail/kuenstliche-intelligenz-in-der-bilderkennung-verbessern/"
+              class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+              <img src="./assets/images/projects/proj_5.jpg" alt="Project5" class="w-full h-48 object-cover">
+              <div class="p-4 flex-1 flex flex-col">
+                <h3 class="font-semibold text-lg">Project REFRAME</h3>
+                <p class="text-sm text-gray-700 mt-1">Investigate the possibilities and limitations of so-called foundation models in computer-aided image recognition and to develop new methods for improving these models.</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+                </div>
+                <p class="mt-auto text-xs text-gray-500 pt-3">2024–???</p>
               </div>
-              <p class="mt-auto text-xs text-gray-500 pt-3">2024–???</p>
-            </div>
+            </a>
           </li>
 
           <!-- Project 2 -->
-          <li class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-            <img src="./assets/images/projects/proj_4.png" alt="Project4"
-                class="w-full h-48 object-cover">
-            <div class="p-4 flex-1 flex flex-col">
-              <h3 class="font-semibold text-lg">Project RELiABEL</h3>
-              <p class="text-sm text-gray-700 mt-1">How to make the interpretation of image data for automated driving more reliable.</p>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+          <li>
+            <a href="https://acm.uni-wuppertal.de/en/news/detail/making-automated-driving-safer-reliabel-project-launched/"
+              class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+              <img src="./assets/images/projects/proj_4.png" alt="Project4" class="w-full h-48 object-cover">
+              <div class="p-4 flex-1 flex flex-col">
+                <h3 class="font-semibold text-lg">Project RELiABEL</h3>
+                <p class="text-sm text-gray-700 mt-1">How to make the interpretation of image data for automated driving more reliable.</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+                </div>
+                <p class="mt-auto text-xs text-gray-500 pt-3">2024–???</p>
               </div>
-              <p class="mt-auto text-xs text-gray-500 pt-3">2024–???</p>
-            </div>
+            </a>
           </li>
 
           <!-- Project 3 -->
-          <li class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-            <img src="./assets/images/projects/proj_3.png" alt="Project3"
-                class="w-full h-48 object-cover">
-            <div class="p-4 flex-1 flex flex-col">
-              <h3 class="font-semibold text-lg">Just Scan It 3D</h3>
-              <p class="text-sm text-gray-700 mt-1">Easy creation of 3D models with photogrammetry and AI</p>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">EFRE</span>
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+          <li>
+            <a href="https://just-scan-it-3d.uni-wuppertal.de/"
+              class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+              <img src="./assets/images/projects/proj_3.png" alt="Project3" class="w-full h-48 object-cover">
+              <div class="p-4 flex-1 flex flex-col">
+                <h3 class="font-semibold text-lg">Just Scan It 3D</h3>
+                <p class="text-sm text-gray-700 mt-1">Easy creation of 3D models with photogrammetry and AI</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">EFRE</span>
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+                </div>
+                <p class="mt-auto text-xs text-gray-500 pt-3">2024–2026</p>
               </div>
-              <p class="mt-auto text-xs text-gray-500 pt-3">2024–2026</p>
-            </div>
+            </a>
           </li>
 
           <!-- Project 4 -->
-          <li class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-            <img src="./assets/images/projects/proj_2.png" alt="Project2"
-                class="w-full h-48 object-cover">
-            <div class="p-4 flex-1 flex flex-col">
-              <h3 class="font-semibold text-lg">Cooperation with QUT Center for Robotics </h3>
-              <p class="text-sm text-gray-700 mt-1">Exploring the frontiers of foundation models in computer vision.</p>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">DAAD</span>
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">QUT</span>
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+          <li>
+            <a href="https://acm.uni-wuppertal.de/en/news/detail/daad-unterstuetzt-zusammenarbeit-mit-der-queensland-university-of-technology-qut-zentrum-fuer-robotik/"
+              class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+              <img src="./assets/images/projects/proj_2.png" alt="Project2" class="w-full h-48 object-cover">
+              <div class="p-4 flex-1 flex flex-col">
+                <h3 class="font-semibold text-lg">Cooperation with QUT Center for Robotics</h3>
+                <p class="text-sm text-gray-700 mt-1">Exploring the frontiers of foundation models in computer vision.</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">DAAD</span>
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">QUT</span>
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+                </div>
+                <p class="mt-auto text-xs text-gray-500 pt-3">2023–???</p>
               </div>
-              <p class="mt-auto text-xs text-gray-500 pt-3">2023–???</p>
-            </div>
+            </a>
           </li>
 
           <!-- Project 5 -->
-          <li class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-            <img src="./assets/images/projects/proj_1.png" alt="Project1"
-                class="w-full h-48 object-cover">
-            <div class="p-4 flex-1 flex flex-col">
-              <h3 class="font-semibold text-lg">BMBF Junior Research Group UnrEAL</h3>
-              <p class="text-sm text-gray-700 mt-1">Making the use of artificial intelligence safer.</p>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">DFG</span>
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
-                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+          <li>
+            <a href="https://acm.uni-wuppertal.de/en/news/detail/bmbf-nachwuchsgruppe-unreal/"
+              class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+              <img src="./assets/images/projects/proj_1.png" alt="Project1" class="w-full h-48 object-cover">
+              <div class="p-4 flex-1 flex flex-col">
+                <h3 class="font-semibold text-lg">BMBF Junior Research Group UnrEAL</h3>
+                <p class="text-sm text-gray-700 mt-1">Making the use of artificial intelligence safer.</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">DFG</span>
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMBF</span>
+                  <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
+                </div>
+                <p class="mt-auto text-xs text-gray-500 pt-3">2022–2025</p>
               </div>
-              <p class="mt-auto text-xs text-gray-500 pt-3">2022–2025</p>
-            </div>
+            </a>
           </li>
         </ul>
       </section>
 
-      <!-- Partners strip (unchanged) -->
+      <!-- Partners strip-->
       <section class="mt-12">
-        <h3 class="text-sm font-semibold text-gray-700 mb-3">Selected partners</h3>
+        <h3 class="text-sm font-semibold text-gray-700 mb-3">Our partners</h3>
         <div class="flex flex-wrap items-center gap-6">
           <img src="./assets/images/uos_logo.jpg" alt="Universität Osnabrück" class="h-8 w-auto object-contain" loading="lazy" decoding="async">
           <img src="./assets/images/buw_logo.jpg" alt="Bergische Universität Wuppertal" class="h-8 w-auto object-contain" loading="lazy" decoding="async">
@@ -161,7 +170,8 @@
 
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-600">
-      Back to <a href="index.html#projects" class="text-blue-600 hover:underline">homepage projects section</a> • Questions? <a href="mailto:rot@uni-wuppertal.de" class="text-blue-600 hover:underline">rot@uni-wuppertal.de</a>
+      Back to <a href="index.html#projects" class="text-blue-600 hover:underline">homepage</a> • Questions? <a href="mailto:rot@uni-wuppertal.de" class="text-blue-600 hover:underline">rot@uni-wuppertal.de</a>
+      <br><a href="impressum.html" class="text-blue-600 hover:underline">Impressium</a>.
     </footer>
   </div>
 </body>

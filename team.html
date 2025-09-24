@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACM AI Lab – Team</title>
+  <title>OSVIA Lab – Team</title>
   <link rel="icon" type="image/png" href="./assets/images/KeyVisual_Dark.png" />
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -11,13 +11,11 @@
 <body class="bg-white text-gray-800">
   <!-- Page wrapper -->
   <div class="min-h-screen flex flex-col">
-    <!-- Top bar (simple, matches publications page) -->
     <!-- Top bar -->
     <header class="border-b border-gray-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-10">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-        <a href="index.html" class="inline-flex items-center gap-2 font-bold text-lg">
-          <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab" class="h-6 w-6 object-contain" />
-          <span>ACM AI Lab</span>
+        <a href="index.html" class="relative inline-flex items-center h-6 w-28" aria-label="OSVIA Lab — Home">
+          <img src="./assets/images/KeyVisual_Dark.png" alt="OSVIA Lab logo" class="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-6 object-contain origin-left scale-[4] sm:scale-[5.5]"/>
         </a>
 
         <!-- Desktop nav (unchanged) -->
@@ -57,7 +55,89 @@
           <p class="text-gray-600 mt-1">List of current members and their contact details.</p>
         </header>
 
-        <!-- Person -->
+        <!-- ========== Lead / Principal Investigator ========== -->
+    <section aria-labelledby="pi-heading" class="mb-10">
+      <h2 id="pi-heading" class="sr-only">Principal Investigator</h2>
+
+      <article class="flex flex-col sm:flex-row items-start gap-6 p-6 rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <img src="./assets/images/team/matthias_rottmann.jpg" alt="Portrait of PD Dr. Matthias Rottmann"
+             class="w-28 h-28 sm:w-32 sm:h-32 rounded-xl object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
+        <div class="min-w-0 w-full">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <h3 class="text-2xl font-bold leading-tight">
+              Matthias Rottmann <span class="text-sm font-normal text-gray-500">(PD Dr.)</span>
+            </h3>
+            <!-- Lead social buttons (larger) -->
+            <ul class="flex flex-wrap gap-2">
+              <!-- Replace hrefs as needed -->
+              <li>
+                <a href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3 py-1.5 text-sm hover:bg-gray-50">
+                  <!-- LinkedIn icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                       fill="currentColor" class="w-4 h-4"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3.5 9h3v12h-3zM9 9h2.878v1.642h.041c.401-.761 1.38-1.564 2.84-1.564 3.037 0 3.6 2.001 3.6 4.605V21H15.4v-5.4c0-1.289-.023-2.95-1.797-2.95-1.8 0-2.076 1.406-2.076 2.856V21H9z"/></svg>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.math.uni-wuppertal.de/de/roster/rottmann" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3 py-1.5 text-sm hover:bg-gray-50">
+                  <!-- University / globe icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                       fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9z"/><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M12 3c2.5 3 2.5 15 0 18M6 6c4 2 8 2 12 0M6 18c4-2 8-2 12 0"/>
+                  </svg>
+                  University Profile
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/USERNAME" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3 py-1.5 text-sm hover:bg-gray-50">
+                  <!-- GitHub icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                       fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.22 3.38 9.64 8.08 11.2.59.1.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.29.72-3.98-1.61-3.98-1.61-.54-1.4-1.33-1.77-1.33-1.77-1.09-.75.08-.74.08-.74 1.21.09 1.85 1.26 1.85 1.26 1.07 1.87 2.82 1.33 3.51 1.02.11-.79.42-1.33.76-1.64-2.63-.3-5.4-1.35-5.4-6 0-1.33.47-2.42 1.25-3.27-.13-.31-.54-1.56.12-3.25 0 0 1.01-.33 3.3 1.25.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.28-1.58 3.29-1.25 3.29-1.25.66 1.69.25 2.94.12 3.25.79.85 1.24 1.94 1.24 3.27 0 4.67-2.78 5.69-5.43 5.99.43.37.81 1.11.81 2.25 0 1.62-.01 2.93-.01 3.33 0 .32.22.69.83.57A11.505 11.505 0 0 0 23.5 12.3 11.5 11.5 0 0 0 12 .5Z" clip-rule="evenodd"/></svg>
+                  GitHub
+                </a>
+              </li>
+              <!-- Add more: Google Scholar, X, etc. -->
+            </ul>
+          </div>
+
+          <p class="text-sm text-gray-600 mt-1">Affiliation: University of Wuppertal</p>
+
+          <!-- Lead contact list -->
+          <ul class="mt-4 text-sm text-gray-700 space-y-2">
+            <li class="flex items-start gap-2">
+              <!-- email -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/>
+              </svg>
+              <a href="mailto:rottmann@math.uni-wuppertal.de" class="hover:underline break-words">rottmann@math.uni-wuppertal.de</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <!-- phone -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/>
+              </svg>
+              <a href="tel:+492024391706" class="hover:underline">+49 202 439 1706</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <!-- room -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/>
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/>
+              </svg>
+              <span>Room FZ.00.04</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- ========== Everyone else ========== -->
         <article class="flex items-start gap-4 py-6 border-b border-gray-200">
           <img src="./assets/images/team/ichrak_el_gabsi.jpg" alt="Portrait of B.Sc. Ichrak El Gabsi" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
           <div class="min-w-0">
@@ -78,29 +158,6 @@
                 <!-- room icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
                 <span>Room FZ.00.20</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Person -->
-        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
-          <img src="./assets/images/team/artin_gerxhaliu.jpg" alt="Portrait of B.Sc. Artin Gerxhaliu" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
-          <div class="min-w-0">
-            <h2 class="text-xl font-semibold leading-tight">Artin Gerxhaliu <span class="text-sm font-normal text-gray-500">(B.Sc.)</span></h2>
-            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
-            <ul class="mt-3 text-sm text-gray-700 space-y-1">
-              <li class="flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
-                <a href="mailto:artin.gerxhaliu@uni-wuppertal.de" class="hover:underline break-words">artin.gerxhaliu@uni-wuppertal.de</a>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
-                <a href="tel:+492024391708" class="hover:underline">+49 202 439 1708</a>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
-                <span>Room FZ.00.06</span>
               </li>
             </ul>
           </div>
@@ -224,7 +281,7 @@
             <ul class="mt-3 text-sm text-gray-700 space-y-1">
               <li class="flex items-start gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
-                <a href="mailto:sadia.ilyas@aptiv.com" class="hover:underline break-words">sadia.ilyas@aptiv.com</a>
+                <a href="mailto:XXX" class="hover:underline break-words">XXX</a>
               </li>
             </ul>
           </div>
@@ -324,29 +381,6 @@
 
         <!-- Person (title kept as provided on source page) -->
         <article class="flex items-start gap-4 py-6 border-b border-gray-200">
-          <img src="./assets/images/team/matthias_rottmann.jpg" alt="Portrait of PD Dr. Matthias Rottmann" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
-          <div class="min-w-0">
-            <h2 class="text-xl font-semibold leading-tight">Matthias Rottmann <span class="text-sm font-normal text-gray-500">(PD Dr.)</span></h2>
-            <p class="text-sm text-gray-600 mt-0.5">Affiliation: University of Wuppertal</p>
-            <ul class="mt-3 text-sm text-gray-700 space-y-1">
-              <li class="flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
-                <a href="mailto:rottmann@math.uni-wuppertal.de" class="hover:underline break-words">rottmann@math.uni-wuppertal.de</a>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
-                <a href="tel:+492024391706" class="hover:underline">+49 202 439 1706</a>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
-                <span>Room FZ.00.04</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Person (title kept as provided on source page) -->
-        <article class="flex items-start gap-4 py-6 border-b border-gray-200">
           <img src="./assets/images/team/marco_schumacher.jpg" alt="Portrait of Marco Schumacher" class="w-24 h-24 rounded-lg object-cover flex-none bg-gray-100" loading="lazy" decoding="async" />
           <div class="min-w-0">
             <h2 class="text-xl font-semibold leading-tight">Marco Schumacher <span class="text-sm font-normal text-gray-500">(Student)</span></h2>
@@ -364,6 +398,29 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5v15a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-15z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 21V9h6v12M12 13.5h.01"/></svg>
                 <span>Room FZ.00.03</span>
               </li>
+              <!-- Lead social buttons (larger) -->
+            <ul class="flex flex-wrap gap-2">
+              <!-- Replace hrefs as needed -->
+              <li>
+                <a href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3 py-1.5 text-sm hover:bg-gray-50">
+                  <!-- LinkedIn icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                       fill="currentColor" class="w-4 h-4"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3.5 9h3v12h-3zM9 9h2.878v1.642h.041c.401-.761 1.38-1.564 2.84-1.564 3.037 0 3.6 2.001 3.6 4.605V21H15.4v-5.4c0-1.289-.023-2.95-1.797-2.95-1.8 0-2.076 1.406-2.076 2.856V21H9z"/></svg>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/USERNAME" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3 py-1.5 text-sm hover:bg-gray-50">
+                  <!-- GitHub icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                       fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.22 3.38 9.64 8.08 11.2.59.1.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.29.72-3.98-1.61-3.98-1.61-.54-1.4-1.33-1.77-1.33-1.77-1.09-.75.08-.74.08-.74 1.21.09 1.85 1.26 1.85 1.26 1.07 1.87 2.82 1.33 3.51 1.02.11-.79.42-1.33.76-1.64-2.63-.3-5.4-1.35-5.4-6 0-1.33.47-2.42 1.25-3.27-.13-.31-.54-1.56.12-3.25 0 0 1.01-.33 3.3 1.25.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.28-1.58 3.29-1.25 3.29-1.25.66 1.69.25 2.94.12 3.25.79.85 1.24 1.94 1.24 3.27 0 4.67-2.78 5.69-5.43 5.99.43.37.81 1.11.81 2.25 0 1.62-.01 2.93-.01 3.33 0 .32.22.69.83.57A11.505 11.505 0 0 0 23.5 12.3 11.5 11.5 0 0 0 12 .5Z" clip-rule="evenodd"/></svg>
+                  GitHub
+                </a>
+              </li>
+              <!-- Add more: Google Scholar, X, etc. -->
+            </ul>
             </ul>
           </div>
         </article>
@@ -415,7 +472,7 @@
             <ul class="mt-3 text-sm text-gray-700 space-y-1">
               <li class="flex items-start gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
-                <a href="mailto:martha.teye@aptiv.com" class="hover:underline break-words">martha.teye@aptiv.com</a>
+                <a href="mailto:XXX" class="hover:underline break-words">XXX</a>
               </li>
               <li class="flex items-start gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
@@ -438,7 +495,7 @@
             <ul class="mt-3 text-sm text-gray-700 space-y-1">
               <li class="flex items-start gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.904l-6.75 4.219a2.25 2.25 0 01-2.4 0L4.82 8.897a2.25 2.25 0 01-1.03-1.904V6.75"/></svg>
-                <a href="mailto:jialong.wu@aptiv.com" class="hover:underline break-words">jialong.wu@aptiv.com</a>
+                <a href="mailto:XXX" class="hover:underline break-words">XXX</a>
               </li>
               <li class="flex items-start gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5 mt-0.5 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.008 6.492 14.5 14.5 14.5.86 0 1.69-.07 2.49-.21a1.75 1.75 0 001.41-1.72v-2.56a1 1 0 00-1.1-1l-3.6.36a1.5 1.5 0 01-1.29-.43l-1.87-1.87a12 12 0 01-3.82-3.82l-1.87-1.87a1.5 1.5 0 01-.43-1.29l.36-3.6a1 1 0 00-1-.1H4.68a1.75 1.75 0 00-1.72 1.41c-.14.8-.21 1.63-.21 2.49z"/></svg>
@@ -459,7 +516,8 @@
 
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-600">
-      Back to <a href="index.html#team" class="text-blue-600 hover:underline">homepage team section</a> • Questions? <a href="mailto:rot@uni-wuppertal.de" class="text-blue-600 hover:underline">rot@uni-wuppertal.de</a>
+      Back to <a href="index.html#team" class="text-blue-600 hover:underline">homepage</a> • Questions? <a href="mailto:rot@uni-wuppertal.de" class="text-blue-600 hover:underline">rot@uni-wuppertal.de</a>
+      <br><a href="impressum.html" class="text-blue-600 hover:underline">Impressium</a>.
     </footer>
   </div>
 </body>

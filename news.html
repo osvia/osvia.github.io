@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACM AI Lab – News</title>
+  <title>OSVIA Lab – News</title>
   <link rel="icon" type="image/png" href="./assets/images/KeyVisual_Dark.png" />
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -11,13 +11,11 @@
 <body class="bg-white text-gray-800">
   <!-- Page wrapper -->
   <div class="min-h-screen flex flex-col">
-    <!-- Top bar (consistent) -->
     <!-- Top bar -->
     <header class="border-b border-gray-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-10">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-        <a href="index.html" class="inline-flex items-center gap-2 font-bold text-lg">
-          <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab" class="h-6 w-6 object-contain" />
-          <span>ACM AI Lab</span>
+        <a href="index.html" class="relative inline-flex items-center h-6 w-28" aria-label="OSVIA Lab — Home">
+          <img src="./assets/images/KeyVisual_Dark.png" alt="OSVIA Lab logo" class="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-6 object-contain origin-left scale-[4] sm:scale-[5.5]"/>
         </a>
 
         <!-- Desktop nav (unchanged) -->
@@ -58,26 +56,27 @@
         </header>
 
         <!-- Optional year headings; keep the list simple and readable -->
-
+        
+        <!-- Year 2025 -->
         <h2 class="text-sm font-semibold text-gray-500 tracking-wide mb-3">2025</h2>
         <ol class="space-y-6 mb-10">
           <!-- Article item (duplicate per post) -->
           <li class="flex flex-col sm:flex-row gap-4 border-b border-gray-200 pb-6">
             <img src="./assets/images/news/news1.jpg" alt="ICCV acceptance cover" class="w-full sm:w-40 h-40 object-cover rounded-lg bg-gray-100 flex-none" loading="lazy" decoding="async" />
             <div class="min-w-0">
-              <a href="#" class="group inline-block">
-                <h3 class="text-lg font-semibold leading-snug group-hover:underline">Our paper on shape bias was accepted at ICCV</h3>
+              <a href="https://acm-ai-lab.github.io/Shape-Bias-and-Robustness-Evaluation/" class="group inline-block">
+                <h3 class="text-lg font-semibold leading-snug group-hover:underline">New paper on Shape Bias & Robustness Evaluation released</h3>
               </a>
 
               <div class="mt-1 text-sm text-gray-600 flex items-center gap-2">
                 <!-- calendar icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v3m10.5-3v3M3 8.25h18M4.5 6.75A1.5 1.5 0 016 5.25h12a1.5 1.5 0 011.5 1.5v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12z"/></svg>
-                <time datetime="2025-07-01">July 1, 2025</time>
+                <time datetime="2025-07-01">Mar 16, 2025</time>
                 <span class="inline-flex items-center gap-1 text-xs text-gray-600">
-                  <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200">Conference</span>
+                  <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200">Paper</span>
                 </span>
               </div>
-              <p class="mt-3 text-sm text-gray-700">Our work on cue decomposition improves robustness assessments by isolating shape vs. texture signals. We will present it at ICCV.</p>
+              <p class="mt-3 text-sm text-gray-700">Our work on Shape Bias & Robustness Evaluation via Cue Decomposition for Image Classification and Segmentation was published.</p>
               <div class="mt-3 flex flex-wrap gap-2 text-sm">
                 <a href="https://arxiv.org/abs/2503.12453" class="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200">Paper</a>
                 <a href="https://acm-ai-lab.github.io/Shape-Bias-and-Robustness-Evaluation/" class="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200">Project page</a>
@@ -90,14 +89,14 @@
             <img src="./assets/images/news/news2.jpg" alt="Talk photo" class="w-full sm:w-40 h-40 object-cover rounded-lg bg-gray-100 flex-none" loading="lazy" decoding="async" />
             <div class="min-w-0">
               <a href="#" class="group inline-block">
-                <h3 class="text-lg font-semibold leading-snug group-hover:underline">Invited talk at the Autonomous Systems Seminar</h3>
+                <h3 class="text-lg font-semibold leading-snug group-hover:underline">Example Talk</h3>
               </a>
               <div class="mt-1 text-sm text-gray-600 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v3m10.5-3v3M3 8.25h18M4.5 6.75A1.5 1.5 0 016 5.25h12a1.5 1.5 0 011.5 1.5v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12z"/></svg>
-                <time datetime="2025-05-10">May 10, 2025</time>
+                <time datetime="2025-05-10">Date</time>
                 <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-xs">Talk</span>
               </div>
-              <p class="mt-3 text-sm text-gray-700">Matthias Rottmann discussed uncertainty calibration for safety-critical perception pipelines.</p>
+              <p class="mt-3 text-sm text-gray-700">Example Talk text</p>
               <div class="mt-3 flex flex-wrap gap-2 text-sm">
                 <a href="#" class="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200">Slides</a>
               </div>
@@ -105,20 +104,21 @@
           </li>
         </ol>
 
+        <!-- Year 2024 -->
         <h2 class="text-sm font-semibold text-gray-500 tracking-wide mb-3">2024</h2>
         <ol class="space-y-6">
           <li class="flex flex-col sm:flex-row gap-4 border-b border-gray-200 pb-6">
             <img src="./assets/images/news/news3.jpg" alt="Workshop image" class="w-full sm:w-40 h-40 object-cover rounded-lg bg-gray-100 flex-none" loading="lazy" decoding="async" />
             <div class="min-w-0">
               <a href="#" class="group inline-block">
-                <h3 class="text-lg font-semibold leading-snug group-hover:underline">Launching the OoDIS benchmark</h3>
+                <h3 class="text-lg font-semibold leading-snug group-hover:underline">Example Dataset Launch</h3>
               </a>
               <div class="mt-1 text-sm text-gray-600 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v3m10.5-3v3M3 8.25h18M4.5 6.75A1.5 1.5 0 016 5.25h12a1.5 1.5 0 011.5 1.5v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12z"/></svg>
-                <time datetime="2024-11-20">November 20, 2024</time>
+                <time datetime="2024-11-20">Date</time>
                 <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-xs">Dataset</span>
               </div>
-              <p class="mt-3 text-sm text-gray-700">We released a new instance-level open-set benchmark for complex urban scenes, focusing on rare and hazardous objects.</p>
+              <p class="mt-3 text-sm text-gray-700">Example Dataset Launch Text</p>
               <div class="mt-3 flex flex-wrap gap-2 text-sm">
                 <a href="#" class="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200">Website</a>
                 <a href="#" class="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200">GitHub</a>
@@ -127,37 +127,14 @@
             </div>
           </li>
         </ol>
-
-        <!-- Pagination (static placeholder; feel free to remove if not needed) -->
-        <nav class="mt-10 flex justify-between items-center text-sm">
-          <a href="#" class="px-3 py-1 rounded border border-gray-300 text-gray-700 hover:bg-gray-50">Newer posts</a>
-          <a href="#" class="px-3 py-1 rounded border border-gray-300 text-gray-700 hover:bg-gray-50">Older posts</a>
-        </nav>
-
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-600">
-      Back to <a href="index.html#news" class="text-blue-600 hover:underline">homepage news section</a> • Questions? <a href="mailto:rot@uni-wuppertal.de" class="text-blue-600 hover:underline">rot@uni-wuppertal.de</a>
+      Back to <a href="index.html#news" class="text-blue-600 hover:underline">homepage</a> • Questions? <a href="mailto:rot@uni-wuppertal.de" class="text-blue-600 hover:underline">rot@uni-wuppertal.de</a>
+      <br><a href="impressum.html" class="text-blue-600 hover:underline">Impressium</a>.
     </footer>
   </div>
-
-  <!-- (Optional) Very small JS: mark posts as “NEW” if within 60 days of today. Remove if you want zero JS. -->
-  <script>
-    (function(){
-      const days = 60, now = new Date();
-      document.querySelectorAll('time[datetime]').forEach(t => {
-        const dt = new Date(t.getAttribute('datetime'));
-        const diff = (now - dt) / (1000*60*60*24);
-        if (!isNaN(diff) && diff <= days) {
-          const badge = document.createElement('span');
-          badge.textContent = 'NEW';
-          badge.className = 'ml-2 inline-flex items-center px-2 py-0.5 rounded bg-blue-600 text-white text-[10px]';
-          t.parentElement.appendChild(badge);
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
