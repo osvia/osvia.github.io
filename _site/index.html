@@ -51,22 +51,14 @@
   <main class="flex-1 overflow-y-auto p-6 space-y-16">
 
     <!-- HERO -->
-    <section id="home" class="max-w-5xl mx-auto mt-32 sm:mt-24 scroll-mt-28 sm:scroll-mt-24 flex flex-col lg:flex-row items-center bg-gray-100 rounded-lg p-6 sm:p-8 lg:p-12 overflow-hidden">
-      <div class="w-full lg:w-1/2 min-w-0 space-y-4 sm:space-y-6">
+    <section id="home" class="max-w-4xl mx-auto mt-32 sm:mt-24 scroll-mt-28 sm:scroll-mt-24 bg-gray-100 rounded-xl p-6 sm:p-8 lg:p-12">
+      <div class="space-y-4 sm:space-y-6">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight break-words">
           Osnabrück Vision AI (OSVIA) Lab
         </h1>
         <p class="text-base sm:text-lg text-gray-700">
           The OSVIA Lab researches methods that teach machines to see – from the basics of classical computer vision to modern deep learning approaches. Our goal is to develop algorithms that process visual data reliably, efficiently, and explainably. We work on problems ranging from the recognition and analysis of complex scenes to 3D reconstruction and robust machine learning. With our research, we bridge the gap between theory and application – for advances in science, industry, and society.
         </p>
-      </div>
-
-      <div class="w-full lg:w-1/2 min-w-0 mt-8 lg:mt-0 flex justify-center lg:justify-end">
-        <img
-          src="./assets/images/hero_image.png"
-          alt="Hero Image"
-          class="max-h-80 sm:max-h-96 w-auto h-auto rounded-lg object-contain border border-gray-200"
-        />
       </div>
     </section>
 
@@ -146,7 +138,7 @@
               </a>
 
               <!-- Website -->
-              <a href="https://acm-ai-lab.github.io/Learning-To-Detect-Labeling-Errors/"
+              <a href="https://osvia-lab.github.io/Learning-To-Detect-Labeling-Errors/"
                 class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 mr-1 flex-shrink-0"
@@ -195,7 +187,7 @@
                 </svg>
                 <span>GitHub</span>
               </a>
-              <a href="https://acm-ai-lab.github.io/ReChecked/"
+              <a href="https://osvia-lab.github.io/ReChecked/"
                 class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 mr-1 flex-shrink-0"
@@ -229,7 +221,7 @@
                 </svg>
                 <span>Paper</span>
               </a>
-              <a href="https://acm-ai-lab.github.io/Shape-Bias-and-Robustness-Evaluation/"
+              <a href="https://osvia-lab.github.io/Shape-Bias-and-Robustness-Evaluation/"
                 class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 mr-1 flex-shrink-0"
@@ -278,7 +270,7 @@
     <!-- Projects Section-->
     <section id="projects" class="max-w-5xl mx-auto">
       <div class="mb-6">
-        <h2 class="text-3xl font-semibold">Projects &amp; Cooperations</h2>
+        <h2 class="text-3xl font-semibold">Projects</h2>
         <p class="text-gray-700 text-sm sm:text-base">
           Ongoing and recent work with our research and industry partners.
         </p>
@@ -290,12 +282,13 @@
         <li>
           <a href="https://www.uni-wuppertal.de/en/news/detail/kuenstliche-intelligenz-in-der-bilderkennung-verbessern/"
             class="bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-500 transition-colors duration-200 overflow-hidden flex flex-col h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
-            <img src="./assets/images/projects/proj_5.jpg" alt="Project5" class="w-full h-48 object-cover">
+            <img src="./assets/images/projects/proj_5.jpg" alt=" " class="w-full h-48 object-cover">
             <div class="p-4 flex-1 flex flex-col">
               <h3 class="font-semibold text-lg">Project REFRAME</h3>
               <p class="text-sm text-gray-700 mt-1">Investigate the possibilities and limitations of so-called foundation models in computer-aided image recognition and to develop new methods for improving these models.</p>
               <div class="mt-3 flex flex-wrap gap-2">
                 <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BMFTR</span>
+                <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">UOS</span>
                 <span class="px-2 py-0.5 text-xs bg-gray-100 rounded border border-gray-200">BUW</span>
               </div>
               <p class="mt-auto text-xs text-gray-500 pt-3">2024–2027</p>
@@ -392,8 +385,14 @@
 
     <!-- NEWS -->
     <section id="news" class="max-w-5xl mx-auto">
-      <h2 class="text-2xl font-semibold mb-4">News</h2>
-
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-2xl font-semibold">News</h2>
+        <a href="news.html"
+           class="shrink-0 whitespace-nowrap px-3 py-1 text-sm sm:text-base bg-blue-600 text-white rounded-md hover:bg-blue-700">
+          All News
+        </a>
+      </div>
+    
       <div class="relative">
         <div class="flex overflow-x-auto space-x-6 px-12 scrollbar-hide snap-x snap-mandatory">
           <!-- News panel-->
@@ -402,7 +401,7 @@
           <article class="w-64 sm:w-72 h-80 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm flex-shrink-0 snap-start">
             <img src="./assets/images/news/news1.jpg" alt="ICCV acceptance cover" class="w-full h-32 object-cover bg-gray-100" loading="lazy" decoding="async"/>
             <div class="p-3 h-[calc(100%-8rem)] flex flex-col">
-              <a href="https://acm-ai-lab.github.io/Shape-Bias-and-Robustness-Evaluation/" class="group inline-block">
+              <a href="https://osvia-lab.github.io/Shape-Bias-and-Robustness-Evaluation/" class="group inline-block">
                 <h3 class="text-sm font-semibold leading-snug line-clamp-2 group-hover:underline">
                   New paper on Shape Bias & Robustness Evaluation released
                 </h3>
@@ -421,7 +420,7 @@
               </p>
               <div class="mt-auto pt-3 flex flex-wrap gap-2 text-xs">
                 <a href="https://arxiv.org/abs/2503.12453" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">Paper</a>
-                <a href="https://acm-ai-lab.github.io/Shape-Bias-and-Robustness-Evaluation/" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">Project page</a>
+                <a href="https://osvia-lab.github.io/Shape-Bias-and-Robustness-Evaluation/" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">Project page</a>
               </div>
             </div>
           </article>
@@ -490,7 +489,7 @@
 
     <!-- CONTACT FOOTER -->
     <footer class="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-600">
-      Questions or collaborations? Email us at <a href="mailto:rot@uni-wuppertal.de" class="text-blue-600 hover:underline">rot@uni-wuppertal.de</a>.
+      Questions or collaborations? Email us at <a href="mailto:matthias.rottmann@uni-osnabrueck.de" class="text-blue-600 hover:underline">matthias.rottmann[at]uni-osnabrueck.de</a>.
       <br><a href="impressum.html" class="text-blue-600 hover:underline">Impressium</a>.
     </footer>
 
