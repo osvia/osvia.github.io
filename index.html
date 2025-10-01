@@ -22,6 +22,7 @@
       <nav class="hidden sm:flex items-center gap-6 text-sm">
         <a href="index.html"   class="text-gray-900 font-semibold">Home</a>
         <a href="publications.html" class="text-gray-700 hover:underline">Publications</a>
+        <a href="datasets.html"     class="text-gray-700 hover:underline">Datasets</a>
         <a href="projects.html"     class="text-gray-700 hover:underline">Projects</a>
         <a href="team.html"         class="text-gray-700 hover:underline">Team</a>
         <a href="news.html"         class="text-gray-700 hover:underline">News</a>
@@ -37,7 +38,8 @@
         <nav class="space-y-1">
           <!-- Use page links that actually exist in your site -->
           <a href="index.html"                 class="block hover:underline text-gray-700">Home</a>
-          <a href="publications.html#recent"        class="block hover:underline text-gray-700">Publications</a>
+          <a href="publications.html"        class="block hover:underline text-gray-700">Publications</a>
+          <a href="datasets.html"                   class="text-gray-700 hover:underline">Datasets</a>
           <a href="projects.html"                   class="block hover:underline text-gray-700">Projects</a>
           <a href="team.html"                       class="block hover:underline text-gray-700">Team</a>
           <a href="news.html"                       class="block hover:underline text-gray-700">News</a>
@@ -138,7 +140,7 @@
               </a>
 
               <!-- Website -->
-              <a href="https://osvia-lab.github.io/Learning-To-Detect-Labeling-Errors/"
+              <a href="https://osvia.github.io/Learning-To-Detect-Labeling-Errors/"
                 class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 mr-1 flex-shrink-0"
@@ -187,7 +189,7 @@
                 </svg>
                 <span>GitHub</span>
               </a>
-              <a href="https://osvia-lab.github.io/ReChecked/"
+              <a href="https://osvia.github.io/ReChecked/"
                 class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 mr-1 flex-shrink-0"
@@ -221,7 +223,7 @@
                 </svg>
                 <span>Paper</span>
               </a>
-              <a href="https://osvia-lab.github.io/Shape-Bias-and-Robustness-Evaluation/"
+              <a href="https://osvia.github.io/Shape-Bias-and-Robustness-Evaluation/"
                 class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 mr-1 flex-shrink-0"
@@ -238,29 +240,64 @@
 
       <!-- Datasets -->
       <div id="datasets" class="mt-8">
-        <h2 class="text-2xl font-semibold mb-4">Datasets</h2>
-        <ul class="list-disc list-inside space-y-2">
-          <li>
-            <a
-              href="https://segmentmeifyoucan.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="no-underline hover:underline text-blue-600"
-              title="SegmentMeIfYouCan — A Benchmark for Anomaly Segmentation"
-            >
-              <strong>SegmentMeIfYouCan</strong> – A Benchmark for Anomaly Segmentation
-            </a>
+        <div class="flex flex-wrap items-start sm:items-center justify-between gap-3 mb-4">
+          <h2 class="text-2xl font-semibold">Datasets</h2>
+          <a href="datasets.html" class="shrink-0 whitespace-nowrap px-3 py-1 text-sm sm:text-base bg-blue-600 text-white rounded-md hover:bg-blue-700">
+            All Datasets
+          </a>
+        </div>
+
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Dataset 1 -->
+          <li class="bg-white p-4 rounded-lg shadow-sm flex flex-col min-w-0">
+            <img src="./assets/images/datasets/segmentmeifyoucan.webp" alt="SegmentMeIfYouCan cover"
+                class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="font-semibold break-words">
+              SegmentMeIfYouCan
+            </h3>
+            <p class="text-sm text-gray-600 mt-2">
+              A Benchmark for Anomaly Segmentation. (2025)
+            </p>
+
+            <div class="mt-auto pt-4 grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <!-- Website -->
+              <a href="https://segmentmeifyoucan.com/" target="_blank" rel="noopener noreferrer"
+                class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1 flex-shrink-0"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+                <span>Website</span>
+              </a>
+            </div>
           </li>
-          <li>
-            <a
-              href="https://kumuji.github.io/oodis_website/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="no-underline hover:underline text-blue-600"
-              title="OoDIS — Anomaly Instance Segmentation Benchmark"
-            >
-              <strong>OoDIS</strong> – Anomaly Instance Segmentation Benchmark
-            </a>
+
+          <!-- Dataset 2 -->
+          <li class="bg-white p-4 rounded-lg shadow-sm flex flex-col min-w-0">
+            <img src="./assets/images/datasets/oodis.jpg" alt="OoDIS cover"
+                class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="font-semibold break-words">
+              OoDIS
+            </h3>
+            <p class="text-sm text-gray-600 mt-2">
+              Anomaly Instance Segmentation Benchmark. (2024)
+            </p>
+
+            <div class="mt-auto pt-4 grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <!-- Website -->
+              <a href="https://kumuji.github.io/oodis_website/index.html" target="_blank" rel="noopener noreferrer"
+                class="col-span-2 sm:col-span-1 inline-flex items-center justify-center w-full px-3 py-1 bg-gray-200 rounded text-sm hover:bg-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1 flex-shrink-0"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+                <span>Website</span>
+              </a>
+            </div>
           </li>
         </ul>
       </div>
@@ -405,7 +442,7 @@
           <article class="w-64 sm:w-72 h-80 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm flex-shrink-0 snap-start">
             <img src="./assets/images/news/news1.jpg" alt="ICCV acceptance cover" class="w-full h-32 object-cover bg-gray-100" loading="lazy" decoding="async"/>
             <div class="p-3 h-[calc(100%-8rem)] flex flex-col">
-              <a href="https://osvia-lab.github.io/Shape-Bias-and-Robustness-Evaluation/" class="group inline-block">
+              <a href="https://osvia.github.io/Shape-Bias-and-Robustness-Evaluation/" class="group inline-block">
                 <h3 class="text-sm font-semibold leading-snug line-clamp-2 group-hover:underline">
                   New paper on Shape Bias & Robustness Evaluation released
                 </h3>
@@ -424,7 +461,7 @@
               </p>
               <div class="mt-auto pt-3 flex flex-wrap gap-2 text-xs">
                 <a href="https://arxiv.org/abs/2503.12453" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">Paper</a>
-                <a href="https://osvia-lab.github.io/Shape-Bias-and-Robustness-Evaluation/" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">Project page</a>
+                <a href="https://osvia.github.io/Shape-Bias-and-Robustness-Evaluation/" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">Project page</a>
               </div>
             </div>
           </article>
