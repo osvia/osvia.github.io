@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSVIA Lab – News</title>
+  <link rel="icon" type="image/png" href="../assets/images/Browser_Icon.png" />
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Page wrapper -->
+  <div class="min-h-screen flex flex-col">
+    <!-- Top bar -->
+    <header class="border-b border-gray-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+        <a href="../index.html" class="relative inline-flex items-center h-6 w-28" aria-label="OSVIA Lab — Home">
+          <img src="../assets/images/KeyVisual_Dark.png" alt="OSVIA Lab logo" class="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-6 object-contain origin-left scale-[4] sm:scale-[5.5]"/>
+        </a>
+
+        <!-- Desktop nav (unchanged) -->
+        <nav class="hidden sm:flex items-center gap-6 text-sm">
+          <a href="../index.html"     class="text-gray-700 hover:underline">Home</a>
+          <a href="../publications.html"   class="text-gray-700 hover:underline">Publications</a>
+          <a href="../datasets.html"       class="text-gray-700 hover:underline">Datasets</a>
+          <a href="../projects.html"       class="text-gray-700 hover:underline">Projects</a>
+          <a href="../team.html"           class="text-gray-700 hover:underline">Team</a>
+          <a href="../news.html"           class="text-gray-900 font-semibold">News</a>
+        </nav>
+      </div>
+
+      <!-- ==========  MOBILE-ONLY COLLAPSIBLE MENU  ========== -->
+      <details class="sm:hidden bg-white border-t border-gray-200 shadow-sm">
+        <summary class="px-4 py-3 font-semibold cursor-pointer select-none">
+          Menu
+        </summary>
+        <div class="px-4 pb-5 text-sm space-y-6 leading-relaxed">
+          <nav class="space-y-1">
+            <!-- Use page links that actually exist in your site -->
+            <a href="../index.html"                 class="block hover:underline text-gray-700">Home</a>
+            <a href="../publications.html"        class="block hover:underline text-gray-700">Publications</a>
+            <a href="../datasets.html"                   class="text-gray-700 hover:underline">Datasets</a>
+            <a href="../projects.html"                   class="block hover:underline text-gray-700">Projects</a>
+            <a href="../team.html"                       class="block hover:underline text-gray-700">Team</a>
+            <a href="../news.html"                       class="block hover:underline text-gray-700">News</a>
+          </nav>
+          <hr>
+        </div>
+      </details>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1 py-10 px-4 sm:px-6">
+    <section class="max-w-3xl mx-auto">
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+          Paper accepted for publication at ICCV workshops
+        </h1>
+
+        <div class="mt-1 text-sm text-gray-600 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v3m10.5-3v3M3 8.25h18M4.5 6.75A1.5 1.5 0 016 5.25h12a1.5 1.5 0 011.5 1.5v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12z"/></svg>
+          <time datetime="2023-10-01T00:00:00+02:00">
+            Oct 1, 2023
+          </time>
+
+          
+            <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-xs">Paper</span>
+          
+            <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-xs">ICCV2023</span>
+          
+          
+        </div>
+      </header>
+
+      
+        <img src=".././assets/images/news/news09.png" class="w-full rounded-lg"/>
+      
+      
+
+      <div class="min-w-0 text-base mt-6 text-gray-700">
+        <p>Our paper: “MGiaD: Multigrid in all dimensions. Efficiency and robustness by weight sharing and coarsening in resolution and channel dimensions” by Antonia van Betteray, Matthias Rottmann and Karsten Kahl has been accepted for publication and poster presentation for the workshop on resource efficient deep learning for computer vision at ICCV23.
+<br /><br />
+Current state-of-the-art deep neural networks for image classification consist of 10-100 million learnable parameters, i.e. weights. Despite their high classification accuracy, these networks are highly overparameterized. The complexity of the number of weights can be considered as a function of the number of channels, the spatial extent of the input, and the number of layers of the network. Due to the use of convolutional layers, the scaling of the weight complexity is usually linear with respect to the resolution dimensions, but remains quadratic with respect to the number of channels. Active research in recent years on the use of multigrid-inspired ideas in deep neural networks has shown that, on the one hand, a significant number of weights can be saved by appropriate weight sharing and, on the other hand, that a hierarchical structure in the channel dimension can improve the weight complexity to linear. Exploiting these findings, we introduce an architecture that establishes multigrid structures in all relevant dimensions, contributing to a drastically improved accuracy-parameter trade-off. Our experiments show that this structured reduction in the number of weights reduces overparameterization and additionally improves performance over state-of-the-art ResNet architectures on typical image classification benchmarks.
+<br /><br />
+The paper is available at: openaccess.thecvf.com/content/ICCV2023W/RCV/papers/van_Betteray_MGiaD_Multigrid_in_all_Dimensions._Efficiency_and_Robustness_by_Weight_ICCVW_2023_paper.pdf</p>
+
+      </div>
+
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-600">
+      Back to <a href="../index.html" class="text-blue-600 hover:underline">homepage</a> • Questions? <a href="mailto:matthias.rottmann@uni-osnabrueck.de" class="text-blue-600 hover:underline">matthias.rottmann[at]uni-osnabrueck.de</a>
+      <br><a href="../impressum.html" class="text-blue-600 hover:underline">Impressium</a>.
+    </footer>
+  </div>
+</body>
+</html>

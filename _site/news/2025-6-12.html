@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSVIA Lab – News</title>
+  <link rel="icon" type="image/png" href="../assets/images/Browser_Icon.png" />
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Page wrapper -->
+  <div class="min-h-screen flex flex-col">
+    <!-- Top bar -->
+    <header class="border-b border-gray-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+        <a href="../index.html" class="relative inline-flex items-center h-6 w-28" aria-label="OSVIA Lab — Home">
+          <img src="../assets/images/KeyVisual_Dark.png" alt="OSVIA Lab logo" class="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-6 object-contain origin-left scale-[4] sm:scale-[5.5]"/>
+        </a>
+
+        <!-- Desktop nav (unchanged) -->
+        <nav class="hidden sm:flex items-center gap-6 text-sm">
+          <a href="../index.html"     class="text-gray-700 hover:underline">Home</a>
+          <a href="../publications.html"   class="text-gray-700 hover:underline">Publications</a>
+          <a href="../datasets.html"       class="text-gray-700 hover:underline">Datasets</a>
+          <a href="../projects.html"       class="text-gray-700 hover:underline">Projects</a>
+          <a href="../team.html"           class="text-gray-700 hover:underline">Team</a>
+          <a href="../news.html"           class="text-gray-900 font-semibold">News</a>
+        </nav>
+      </div>
+
+      <!-- ==========  MOBILE-ONLY COLLAPSIBLE MENU  ========== -->
+      <details class="sm:hidden bg-white border-t border-gray-200 shadow-sm">
+        <summary class="px-4 py-3 font-semibold cursor-pointer select-none">
+          Menu
+        </summary>
+        <div class="px-4 pb-5 text-sm space-y-6 leading-relaxed">
+          <nav class="space-y-1">
+            <!-- Use page links that actually exist in your site -->
+            <a href="../index.html"                 class="block hover:underline text-gray-700">Home</a>
+            <a href="../publications.html"        class="block hover:underline text-gray-700">Publications</a>
+            <a href="../datasets.html"                   class="text-gray-700 hover:underline">Datasets</a>
+            <a href="../projects.html"                   class="block hover:underline text-gray-700">Projects</a>
+            <a href="../team.html"                       class="block hover:underline text-gray-700">Team</a>
+            <a href="../news.html"                       class="block hover:underline text-gray-700">News</a>
+          </nav>
+          <hr>
+        </div>
+      </details>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1 py-10 px-4 sm:px-6">
+    <section class="max-w-3xl mx-auto">
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+          Workshop with CARIAD
+        </h1>
+
+        <div class="mt-1 text-sm text-gray-600 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v3m10.5-3v3M3 8.25h18M4.5 6.75A1.5 1.5 0 016 5.25h12a1.5 1.5 0 011.5 1.5v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12z"/></svg>
+          <time datetime="2025-06-12T00:00:00+02:00">
+            Jun 12, 2025
+          </time>
+
+          
+            <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-xs">Workshop</span>
+          
+          
+        </div>
+      </header>
+
+      
+        <img src=".././assets/images/news/news29.jpg" class="w-full rounded-lg"/>
+      
+      
+
+      <div class="min-w-0 text-base mt-6 text-gray-700">
+        <p>On June 12th, the ACM AI-Lab at the University of Wuppertal hosted a collaborative workshop with CARIAD, the software and technology company within the Volkswagen Group. This event allowed us to deepen research collaboration and welcome Tsung Yuan Tseng, a new PhD student who will be jointly supervised by Dr. Matthias Rottmann (University of Wuppertal) and Dr. Fabian Hüger (CARIAD).
+<br /><br />
+The afternoon began with an introduction round which was followed by three overview talks:
+<br /><br />
+• Tsung Yuan Tseng introduced us to his previous work at the TU Munich, giving insight into his research background and laying the groundwork for his future contributions to the lab.
+<br /><br />
+• Next, Dr. Matthias Rottmann provided an overview of current research topics at the University of Wuppertal, highlighting projects that align with safe and robust machine learning, especially in the context of computer vision and autonomous systems.
+<br /><br />
+• Following that, Dr. Fabian Hüger gave an engaging talk on Safe AI Engineering, emphasizing the importance of trustworthy and transparent AI in automotive applications and the challenges that arise in real-world deployment scenarios.
+<br /><br />
+After a lively coffee break and open discussions, the workshop continued with two research presentations from lab members:
+<br /><br />
+• Edgar Heinert presented joint work on “Transferring Styles for Reduced Texture Bias and Improved Robustness in Semantic Segmentation Networks”, developed in collaboration with Ben Hamscher, Annika Mütze, Kira Maag and Matthias Rottmann. The talk focused on improving generalization in vision models through style transfer techniques.
+<br /><br />
+• Dr. Annika Mütze followed with a talk titled “Can We Challenge Open-Vocabulary Object Detectors with Generated Content in Street Scenes?”, co-authored with Sadia Ilyas, Christian Dörpelkus, and Matthias Rottmann. She explored how synthetic data can help test the limits of object detectors trained on broad, open-vocabulary datasets.
+<br /><br />
+This workshop marks a promising step forward in fostering long-term collaboration between academia and industry. We look forward to supporting Tsung Yuan Tseng in his research and continuing to explore the intersection of safe AI and automotive innovation.</p>
+
+      </div>
+
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-600">
+      Back to <a href="../index.html" class="text-blue-600 hover:underline">homepage</a> • Questions? <a href="mailto:matthias.rottmann@uni-osnabrueck.de" class="text-blue-600 hover:underline">matthias.rottmann[at]uni-osnabrueck.de</a>
+      <br><a href="../impressum.html" class="text-blue-600 hover:underline">Impressium</a>.
+    </footer>
+  </div>
+</body>
+</html>
