@@ -1,11 +1,11 @@
 # _config.yml
-title: Team Website
-email: your-email@example.com
-description: >-
-  Team site.
-
-url: "https://marcoschumacher-uniwuppertal.github.io"
-baseurl: "/Team-Website"
+title: Osnabrück Vision AI Lab - OSVIA
+description: "Research group at Osnabrück University focusing on computer vision and modern deep learning."
+url: "https://osvia.org/"
+author: 
+  name: "OSVIA Lab"
+  email: "matthias.rottmann@uni-osnabrueck.de"
+lang: "en"
 
 
 #theme: minimal-mistakes-jekyll
@@ -13,6 +13,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-include-cache
+  - jekyll-sitemap
 
 author:
   name: "Marco Schumacher"
