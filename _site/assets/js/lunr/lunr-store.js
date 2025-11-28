@@ -239,6 +239,12 @@ var store = [{
         "url": "/publications/shape-bias-and-robustness-via-cue-decomposition/",
         "teaser": null
       },{
+        "title": "LiDAR MOT-DETR: A LiDAR-based Two-Stage Transformer for 3D Multiple Object Tracking ",
+        "excerpt":" ","categories": ["lidar","object-detection"],
+        "tags": ["transformer","object detection","object tracking"],
+        "url": "/publications/lidar-mot-detr/",
+        "teaser": null
+      },{
         "title": "From Label Error Detection to Correction",
         "excerpt":" ","categories": ["label-errors","robustness"],
         "tags": ["object detection","label quality"],
@@ -249,5 +255,11 @@ var store = [{
         "excerpt":" ","categories": ["label-errors","robustness"],
         "tags": ["segmentation","object detection","label quality"],
         "url": "/publications/learning-to-detect-label-errors-by-making-them/",
+        "teaser": null
+      },{
+        "title": "FutrTrack: A Camera-LiDAR Fusion Transformer for 3D Multiple Object Tracking",
+        "excerpt":" ","categories": ["lidar","object-detection"],
+        "tags": ["transformer","object detection","object tracking"],
+        "url": "/publications/futrtrack/",
         "teaser": null
       }]
