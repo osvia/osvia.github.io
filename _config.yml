@@ -15,18 +15,16 @@ plugins:
   - jekyll-include-cache
   - jekyll-sitemap
 
-author:
-  name: "Marco Schumacher"
-  avatar: "/assets/images/avatar.png"
-  bio: "System admin."
-  location: "Wuppertal, Germany"
-
 #conetent management system
 
 collections:
   news:
     output: true
     permalink: /news/:slug/
+  
+  publications:
+    output: true
+    permalink: /publications/:slug/
 
 defaults:
   - scope:
