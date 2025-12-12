@@ -1,7 +1,7 @@
 # _config.yml
 title: Osnabrück Vision AI Lab - OSVIA
 description: "Research group at Osnabrück University focusing on computer vision and modern deep learning."
-url: "https://osvia.org/"
+url: "https://osvia.org"
 author: 
   name: "OSVIA Lab"
   email: "matthias.rottmann@uni-osnabrueck.de"
