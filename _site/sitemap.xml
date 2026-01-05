@@ -1,314 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://localhost:4000/news/2022-9-14/</loc>
-<lastmod>2022-09-14T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/project1/</loc>
-<lastmod>2022-10-19T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-4-1/</loc>
-<lastmod>2023-04-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-4-28/</loc>
-<lastmod>2023-04-28T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-6-6/</loc>
-<lastmod>2023-06-06T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-9-9/</loc>
-<lastmod>2023-09-09T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-9-15/</loc>
-<lastmod>2023-09-15T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-10-1/</loc>
-<lastmod>2023-10-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/project3/</loc>
-<lastmod>2023-10-14T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-10-24/</loc>
-<lastmod>2023-10-24T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-10-24-2/</loc>
-<lastmod>2023-10-24T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/project2/</loc>
-<lastmod>2023-11-14T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-11-23/</loc>
-<lastmod>2023-11-23T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-12-7/</loc>
-<lastmod>2023-12-07T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-2-1/</loc>
-<lastmod>2024-02-01T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-2-16/</loc>
-<lastmod>2024-02-16T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-5-31/</loc>
-<lastmod>2024-05-31T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-6-24/</loc>
-<lastmod>2024-06-24T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-6-25/</loc>
-<lastmod>2024-06-25T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-7-1/</loc>
-<lastmod>2024-07-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-7-4/</loc>
-<lastmod>2024-07-04T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-7-21/</loc>
-<lastmod>2024-07-21T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-8-9/</loc>
-<lastmod>2024-08-09T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-8-23/</loc>
-<lastmod>2024-08-23T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-8-27/</loc>
-<lastmod>2024-08-27T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-11-27/</loc>
-<lastmod>2024-11-27T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-2-7/</loc>
-<lastmod>2025-02-07T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-3-16/</loc>
-<lastmod>2025-03-16T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-4-3/</loc>
-<lastmod>2025-04-03T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-4-11/</loc>
-<lastmod>2025-04-11T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-6-11/</loc>
-<lastmod>2025-06-11T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-6-12/</loc>
-<lastmod>2025-06-12T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-6-13/</loc>
-<lastmod>2025-06-13T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-6-26/</loc>
-<lastmod>2025-06-26T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/project4/</loc>
-<lastmod>2025-10-10T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/jekyll/update/2025/05/02/welcome-to-jekyll.html</loc>
-<lastmod>2025-05-02T10:59:12+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/publications/sparseradnet/</loc>
-<lastmod>2024-06-15T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/publications/oodis/</loc>
-<lastmod>2024-06-17T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/publications/tars/</loc>
-<lastmod>2025-03-13T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/publications/shape-bias-and-robustness-via-cue-decomposition/</loc>
-<lastmod>2025-03-16T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/publications/lidar-mot-detr/</loc>
-<lastmod>2025-05-19T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/publications/from-label-error-detection-to-correction/</loc>
-<lastmod>2025-08-06T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/publications/learning-to-detect-label-errors-by-making-them/</loc>
-<lastmod>2025-08-25T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/publications/futrtrack/</loc>
-<lastmod>2025-10-22T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/news/2022-9-14.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-10-1.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-10-24.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-10-24_2.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-11-23.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-12-7.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-4-1.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-4-28.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-6-6.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-9-15.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2023-9-9.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-11-27.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-2-1.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-2-16.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-5-31.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-6-24.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-6-25.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-7-1.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-7-21.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-7-4.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-8-23.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-8-27.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2024-8-9.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-2-7.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-4-11.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-4-3.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-6-11.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-6-12.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/2025-6-13.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/about/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/project1.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/project2.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/project3.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/news/project4.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/publications.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/assets/charts/classification_cue_decom_metrics.html</loc>
-<lastmod>2025-05-02T16:07:29+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/assets/charts/semseg_selected_cue_decom_metrics.html</loc>
-<lastmod>2025-05-09T09:21:39+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/datasets.html</loc>
-<lastmod>2025-11-07T10:25:32+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/impressum.html</loc>
-<lastmod>2025-10-24T13:11:12+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/projects.html</loc>
-<lastmod>2025-10-17T15:35:25+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/team.html</loc>
-<lastmod>2025-11-28T10:58:03+01:00</lastmod>
-</url>
-</urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+        <loc>http://localhost:4000/news/2022-9-14.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2023-10-1.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2023-10-24.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2023-10-24_2.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2023-11-23.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2023-12-7.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2023-4-1.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2023-4-28.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2023-6-6.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2023-9-15.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2023-9-9.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-11-27.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-2-1.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-2-16.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-5-31.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-6-24.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-6-25.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-7-1.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-7-21.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-7-4.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-8-23.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-8-27.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2024-8-9.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2025-2-7.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2025-4-11.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2025-4-3.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2025-6-11.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2025-6-12.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/2025-6-13.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/about/</loc>
+      </url><url>
+        <loc>http://localhost:4000/</loc>
+      </url><url>
+        <loc>http://localhost:4000/news.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/project1.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/project2.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/project3.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/news/project4.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/publications.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/team.html</loc>
+      </url><url>
+        <loc>http://localhost:4000/feed.xml</loc>
+      </url><url>
+          <loc>http://localhost:4000/news/2022-9-14/</loc><lastmod>2022-09-14T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/project1/</loc><lastmod>2022-10-19T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2023-4-1/</loc><lastmod>2023-04-01T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2023-4-28/</loc><lastmod>2023-04-28T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2023-6-6/</loc><lastmod>2023-06-06T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2023-9-9/</loc><lastmod>2023-09-09T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2023-9-15/</loc><lastmod>2023-09-15T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2023-10-1/</loc><lastmod>2023-10-01T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/project3/</loc><lastmod>2023-10-14T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2023-10-24/</loc><lastmod>2023-10-24T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2023-10-24-2/</loc><lastmod>2023-10-24T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/project2/</loc><lastmod>2023-11-14T00:00:00+01:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2023-11-23/</loc><lastmod>2023-11-23T00:00:00+01:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2023-12-7/</loc><lastmod>2023-12-07T00:00:00+01:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-2-1/</loc><lastmod>2024-02-01T00:00:00+01:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-2-16/</loc><lastmod>2024-02-16T00:00:00+01:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-5-31/</loc><lastmod>2024-05-31T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-6-24/</loc><lastmod>2024-06-24T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-6-25/</loc><lastmod>2024-06-25T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-7-1/</loc><lastmod>2024-07-01T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-7-4/</loc><lastmod>2024-07-04T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-7-21/</loc><lastmod>2024-07-21T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-8-9/</loc><lastmod>2024-08-09T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-8-23/</loc><lastmod>2024-08-23T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-8-27/</loc><lastmod>2024-08-27T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2024-11-27/</loc><lastmod>2024-11-27T00:00:00+01:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2025-2-7/</loc><lastmod>2025-02-07T00:00:00+01:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2025-3-16/</loc><lastmod>2025-03-16T00:00:00+01:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2025-4-3/</loc><lastmod>2025-04-03T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2025-4-11/</loc><lastmod>2025-04-11T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2025-6-11/</loc><lastmod>2025-06-11T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2025-6-12/</loc><lastmod>2025-06-12T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2025-6-13/</loc><lastmod>2025-06-13T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/2025-6-26/</loc><lastmod>2025-06-26T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/news/project4/</loc><lastmod>2025-10-10T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/jekyll/update/2025/05/02/welcome-to-jekyll.html</loc><lastmod>2025-05-02T10:59:12+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/publications/sparseradnet/</loc><lastmod>2024-06-15T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/publications/oodis/</loc><lastmod>2024-06-17T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/publications/tars/</loc><lastmod>2025-03-13T00:00:00+01:00</lastmod></url><url>
+          <loc>http://localhost:4000/publications/shape-bias-and-robustness-via-cue-decomposition/</loc><lastmod>2025-03-16T00:00:00+01:00</lastmod></url><url>
+          <loc>http://localhost:4000/publications/lidar-mot-detr/</loc><lastmod>2025-05-19T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/publications/from-label-error-detection-to-correction/</loc><lastmod>2025-08-06T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/publications/learning-to-detect-label-errors-by-making-them/</loc><lastmod>2025-08-25T00:00:00+02:00</lastmod></url><url>
+          <loc>http://localhost:4000/publications/futrtrack/</loc><lastmod>2025-10-22T00:00:00+02:00</lastmod></url></urlset>

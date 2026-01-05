@@ -26,6 +26,9 @@ collections:
     output: true
     permalink: /publications/:slug/
 
+  team:
+    output: false
+
 defaults:
   - scope:
       path: ""
