@@ -245,6 +245,12 @@ var store = [{
         "url": "/publications/lidar-mot-detr/",
         "teaser": null
       },{
+        "title": "Temporal Object Captioning for Street Scene Videos from LiDAR Tracks ",
+        "excerpt":" ","categories": ["video","lidar"],
+        "tags": ["object detection","street scenes"],
+        "url": "/publications/temcap/",
+        "teaser": null
+      },{
         "title": "From Label Error Detection to Correction",
         "excerpt":" ","categories": ["label-errors","robustness"],
         "tags": ["object detection","label quality"],
@@ -369,6 +375,12 @@ var store = [{
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/team/olaf-kubinkiewicz.html",
+        "teaser": null
+      },{
+        "title": "Parssa Jashnieh",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/team/parssa-jashnieh.html",
         "teaser": null
       },{
         "title": "Peter Stehr",
