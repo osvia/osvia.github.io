@@ -251,6 +251,12 @@ var store = [{
         "url": "/publications/temcap/",
         "teaser": null
       },{
+        "title": "Uncertainty Estimation for Novel Views in Gaussian Splatting from Primitive-Based Representations of Error and Coverage ",
+        "excerpt":" ","categories": ["3d","just-scan-it","just scan it"],
+        "tags": ["3d","3d scenes","gaussian splatting"],
+        "url": "/publications/primu/",
+        "teaser": null
+      },{
         "title": "From Label Error Detection to Correction",
         "excerpt":" ","categories": ["label-errors","robustness"],
         "tags": ["object detection","label quality"],
@@ -267,6 +273,12 @@ var store = [{
         "excerpt":" ","categories": ["lidar","object-detection"],
         "tags": ["transformer","object detection","object tracking"],
         "url": "/publications/futrtrack/",
+        "teaser": null
+      },{
+        "title": "LFA Applied to CNNs: Efficient Singular Value Decomposition of Convolutional Mappings by Local Fourier Analysis",
+        "excerpt":" ","categories": ["LFA","CNNs"],
+        "tags": ["Singular Value Decomposition","Convolutional Mappings","Fourier Analysis"],
+        "url": "/publications/lfa/",
         "teaser": null
       },{
         "title": "Anna Hovermann",
@@ -351,6 +363,12 @@ var store = [{
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/team/matthias-rottmann.html",
+        "teaser": null
+      },{
+        "title": "Mert Keser",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/team/mert-keser.html",
         "teaser": null
       },{
         "title": "Miriam Schafers",
