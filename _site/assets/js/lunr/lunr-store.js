@@ -209,6 +209,24 @@ var store = [{
         "url": "/news/project4/",
         "teaser": null
       },{
+        "title": "Two papers accepted at VISAPP 2026",
+        "excerpt":"The OSVIA lab at the University of Osnabrück has two accepted papers at VISAPP 2026. The project pages and arXiv preprints are available. From Label Error Detection to Correction: A Modular Framework and Benchmark for Object Detection Datasets Sarina Penquitt, Jonathan Klees, Rinor Cakaj, Daniel Kondermann, Matthias Rottmann, Lars Schmarje...","categories": ["VISAPP 2026","Paper"],
+        "tags": [],
+        "url": "/news/2025-11-6/",
+        "teaser": null
+      },{
+        "title": "Workshop on Uncertainty Quantification at ControlExpert",
+        "excerpt":"The OSVIA lab joined a scientific workshop hosted at ControlExpert together with the research team of Prof. Kira Maag from Heinrich Heine University Düsseldorf and colleagues from ControlExpert. We discussed uncertainty quantification for modern AI systems, covering topics such as detection and segmentation in computer vision, foundation models, and calibration...","categories": ["Workshop"],
+        "tags": [],
+        "url": "/news/2025-12-12/",
+        "teaser": null
+      },{
+        "title": "Inaugural lecture by Prof. Rottmann and Prof. Mossakowski ",
+        "excerpt":"On 20.01.2026, the Institute of Computer Science celebrated “50 years of computer science at Osnabrück University”. Prior to this, Prof. Rottmann and Prof. Mossakowski presented their research areas in their inaugural lectures. Prof. Mossakowski, who took up the Chair of Knowledge Representation in Hybrid AI Systems at Osnabrück University last...","categories": ["UOS"],
+        "tags": [],
+        "url": "/news/2026-1-20/",
+        "teaser": null
+      },{
         "title": "SparseRadNet: Sparse Perception Neural Network on Subsampled Radar Data",
         "excerpt":" ","categories": ["lidar","autonamous-driving"],
         "tags": ["object detection","lidar","radar"],
