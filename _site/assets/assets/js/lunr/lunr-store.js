@@ -221,6 +221,12 @@ var store = [{
         "url": "/news/2025-12-12/",
         "teaser": null
       },{
+        "title": "Paper accepted at WACV 2026",
+        "excerpt":"Our paper “Can We Challenge Open-Vocabulary Object Detectors with Generated Content in Street Scenes?” has been accepted to WACV 2026. Authors: Annika Muetze, Sadia Ilyas, Christian Dörpelkus, and Matthias Rottmann. This work builds on Christian Dörpelkus Master’s thesis and marks a strong step forward in our research on evaluating open-vocabulary...","categories": ["Paper","WACV 2026"],
+        "tags": [],
+        "url": "/news/2025-12-20/",
+        "teaser": null
+      },{
         "title": "Inaugural lecture by Prof. Rottmann and Prof. Mossakowski ",
         "excerpt":"On 20.01.2026, the Institute of Computer Science celebrated “50 years of computer science at Osnabrück University”. Prior to this, Prof. Rottmann and Prof. Mossakowski presented their research areas in their inaugural lectures. Prof. Mossakowski, who took up the Chair of Knowledge Representation in Hybrid AI Systems at Osnabrück University last...","categories": ["UOS"],
         "tags": [],
@@ -263,7 +269,7 @@ var store = [{
         "url": "/publications/temcap/",
         "teaser": null
       },{
-        "title": "Uncertainty Estimation for Novel Views in Gaussian Splatting from Primitive-Based Representations of Error and Coverage ",
+        "title": "PRIMU: Uncertainty Estimation for Novel Views in Gaussian Splatting from Primitive-Based Representations of Error and Coverage",
         "excerpt":" ","categories": ["3d","just-scan-it","just scan it"],
         "tags": ["3d","3d scenes","gaussian splatting"],
         "url": "/publications/primu/",

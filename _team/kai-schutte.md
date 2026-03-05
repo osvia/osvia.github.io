@@ -5,7 +5,7 @@ name: Kai Schütte
 degree: "M.Sc."
 affiliation: "University of Wuppertal, Volkswagen"
 subtitle: ""
-image: ""
+image: "./assets/images/team/kai_schütte.jpg"
 badges: []
 contacts:
   email: "kai.schuette[at]volkswagen.de"

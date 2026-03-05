@@ -5,7 +5,7 @@ name: Parssa Jashnieh
 degree: "M.Sc."
 affiliation: "Osnabrück University"
 subtitle: ""
-image: ""
+image: "./assets/images/team/parssa_jashnieh.jpg"
 badges: []
 contacts:
   email: "parssa.jashnieh[at]uni-osnabrueck.de"
