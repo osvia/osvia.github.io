@@ -1,5 +1,5 @@
 ---
-title: "Uncertainty Estimation for Novel Views in Gaussian Splatting from Primitive-Based Representations of Error and Coverage "
+title: "PRIMU: Uncertainty Estimation for Novel Views in Gaussian Splatting from Primitive-Based Representations of Error and Coverage"
 authors:
   - "Gottwald, T."
   - "Heinert, E."
