@@ -215,6 +215,12 @@ var store = [{
         "url": "/news/2025-11-6/",
         "teaser": null
       },{
+        "title": "BarmeniaGothaer Mathematics Prize",
+        "excerpt":"We are proud to share that our former member Natalie Grabowsky was awarded the BarmeniaGothaer Mathematics Prize during this semesters graduation ceremony of Faculty 4 at the University of Wuppertal. The award recognizes the outstanding master’s thesis carried out in our lab. We sincerely thank Christian Ritz and BarmeniaGothaer for...","categories": [],
+        "tags": [],
+        "url": "/news/2025-11-10/",
+        "teaser": null
+      },{
         "title": "Workshop on Uncertainty Quantification at ControlExpert",
         "excerpt":"The OSVIA lab joined a scientific workshop hosted at ControlExpert together with the research team of Prof. Kira Maag from Heinrich Heine University Düsseldorf and colleagues from ControlExpert. We discussed uncertainty quantification for modern AI systems, covering topics such as detection and segmentation in computer vision, foundation models, and calibration...","categories": ["Workshop"],
         "tags": [],
