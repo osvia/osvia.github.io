@@ -221,6 +221,12 @@ var store = [{
         "url": "/news/2025-11-10/",
         "teaser": null
       },{
+        "title": "Martha Teye Presents at BMVC 2025",
+        "excerpt":"In November 2025, Martha Teye attended the British Machine Vision Conference (BMVC) at the Cutler‘s Hall in Sheffield (UK), where she had the opportunity to present her work. She presented a poster on the work we did with Lidar MOT-DETR. She shared that being able to showcase her research among...","categories": ["BMVC 2025"],
+        "tags": [],
+        "url": "/news/2025-11-28/",
+        "teaser": null
+      },{
         "title": "Workshop on Uncertainty Quantification at ControlExpert",
         "excerpt":"The OSVIA lab joined a scientific workshop hosted at ControlExpert together with the research team of Prof. Kira Maag from Heinrich Heine University Düsseldorf and colleagues from ControlExpert. We discussed uncertainty quantification for modern AI systems, covering topics such as detection and segmentation in computer vision, foundation models, and calibration...","categories": ["Workshop"],
         "tags": [],
