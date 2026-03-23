@@ -3,7 +3,7 @@ group: PhD Candidates
 order: 1
 name: Vignesh Gopinathan
 degree: "M.Sc."
-affiliation: "University of Wuppertal, Aptiv"
+affiliation: "University of Wuppertal"
 subtitle: ""
 image: "./assets/images/team/vignesh_gopinathan.jpg"
 badges: []
