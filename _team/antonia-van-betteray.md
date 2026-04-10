@@ -1,6 +1,6 @@
 ---
-group: PhD Candidates
-order: 13
+group: Postdocs
+order: 3
 name: Antonia van Betteray
 degree: "M.Sc."
 affiliation: "Osnabrück University"
