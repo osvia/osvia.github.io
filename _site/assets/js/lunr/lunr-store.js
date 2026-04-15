@@ -371,6 +371,12 @@ var store = [{
         "url": "/team/kai-schutte.html",
         "teaser": null
       },{
+        "title": "Maram Akila",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/team/maram-akila.html",
+        "teaser": null
+      },{
         "title": "Marco Schumacher",
         "excerpt":" ","categories": [],
         "tags": [],

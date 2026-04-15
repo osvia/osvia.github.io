@@ -1,8 +1,8 @@
 ---
-group: Student Assistants
-order: 3
+group: PhD Candidates
+order: 4
 name: Anna Hövermann
-degree: "B.Sc."
+degree: "M.Sc."
 affiliation: "University of Wuppertal"
 subtitle: ""
 image: ""

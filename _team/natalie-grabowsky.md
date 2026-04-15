@@ -1,6 +1,6 @@
 ---
 group: Former Members
-order: 3
+order: 1
 name: Natalie Grabowsky
 degree: "M.Sc."
 affiliation: ""
