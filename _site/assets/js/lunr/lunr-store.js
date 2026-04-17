@@ -252,7 +252,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Project LiDiMoVer",
-        "excerpt":"LiDiMoVer is an innovative smart city research initiative focused on advancing urban mobility analysis through the use of LiDAR-based sensing and artificial intelligence. In this project, LiDAR sensors are deployed on existing urban infrastructure—such as traffic signals and street lighting—to continuously capture high-resolution, three-dimensional data of road environments. A central...","categories": ["Project","BUW","EU","NRW"],
+        "excerpt":"LiDiMoVer is an innovative smart city research initiative focused on advancing urban mobility analysis through the use of LiDAR-based sensing and artificial intelligence. In this project, LiDAR sensors are deployed on existing urban infrastructure—such as traffic signals and street lighting—to continuously capture high-resolution, three-dimensional data of road environments. A central...","categories": ["BUW","EFRE-NRW"],
         "tags": [],
         "url": "/news/project5/",
         "teaser": null
