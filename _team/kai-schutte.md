@@ -1,6 +1,6 @@
 ---
 group: PhD Candidates
-order: 9
+order: 10
 name: Kai Schütte
 degree: "M.Sc."
 affiliation: "University of Wuppertal, Volkswagen"

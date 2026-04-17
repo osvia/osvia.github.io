@@ -1,6 +1,6 @@
 ---
 group: Former Members
-order: 2
+order: 3
 name: Miriam Schäfers
 degree: "M.Sc."
 affiliation: ""

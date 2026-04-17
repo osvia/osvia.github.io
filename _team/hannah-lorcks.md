@@ -1,6 +1,6 @@
 ---
 group: PhD Candidates
-order: 6
+order: 7
 name: Hannah Lörcks
 degree: "M.Sc."
 affiliation: "Osnabrück University"
