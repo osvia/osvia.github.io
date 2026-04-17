@@ -1,7 +1,7 @@
 ---
 title: "Can We Challenge Open-Vocabulary Object Detectors with Generated Content in Street Scenes? "
 authors:
-  - "Mütze1, A."
+  - "Mütze, A."
   - "Ilyas, S."
   - "Dörpelkus, C"
   - "Rottmann, A."
