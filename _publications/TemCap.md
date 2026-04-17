@@ -6,7 +6,7 @@ authors:
   - "Michael, A."
   - "Rottmann, M."
 year: 2025
-date: 2025-05-22
+date: 2026-01-22
 venue: "WACV 2026"
 image: "/assets/images/publications/pub_7.png"
 

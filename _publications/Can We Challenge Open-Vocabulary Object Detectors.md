@@ -6,7 +6,7 @@ authors:
   - "Dörpelkus, C"
   - "Rottmann, A."
 year: 2025
-date: 2025-06-30
+date: 2026-01-30
 venue: "WACV (2026)"
 image: "/assets/images/publications/pub_13.png"
 

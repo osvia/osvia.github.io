@@ -8,7 +8,7 @@ authors:
   - "Leibe, B."
   - "Rottmann, M."
 year: 2024
-date: 2024-06-17
+date: 2025-06-17
 venue: "ICRA 2025"
 image: "/assets/images/datasets/oodis.jpg"
 
