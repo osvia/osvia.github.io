@@ -3,7 +3,7 @@ title: "Project LiDiMoVer"
 date: 2026-3-23
 summary: LiDiMoVer is an innovative smart city research initiative focused on advancing urban mobility.
 image: ./assets/images/projects/proj_7.png
-categories: [Project, BUW, EU, NRW, BUW]
+categories: [Project, BUW, EFRE-NRW]
 tags: []
 main_url: ./news/project5.html
 links:
