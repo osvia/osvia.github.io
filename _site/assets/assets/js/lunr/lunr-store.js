@@ -245,6 +245,12 @@ var store = [{
         "url": "/news/2026-1-20/",
         "teaser": null
       },{
+        "title": "MGiaD: Multigrid in all dimensions - Efficiency and robustness by weight sharing and coarsening in resolution and channel dimensions",
+        "excerpt":" ","categories": ["robustness","architecture","efficiency"],
+        "tags": ["CNNs","bias complexity"],
+        "url": "/publications/mgiad/",
+        "teaser": null
+      },{
         "title": "SparseRadNet: Sparse Perception Neural Network on Subsampled Radar Data",
         "excerpt":" ","categories": ["lidar","autonamous-driving"],
         "tags": ["object detection","lidar","radar"],
@@ -281,6 +287,12 @@ var store = [{
         "url": "/publications/temcap/",
         "teaser": null
       },{
+        "title": "Can We Challenge Open-Vocabulary Object Detectors with Generated Content in Street Scenes? ",
+        "excerpt":" ","categories": ["object detection","street scenes"],
+        "tags": ["object detection","street scenes"],
+        "url": "/publications/can-we-challenge-open-vocabulary-object-detectors/",
+        "teaser": null
+      },{
         "title": "PRIMU: Uncertainty Estimation for Novel Views in Gaussian Splatting from Primitive-Based Representations of Error and Coverage",
         "excerpt":" ","categories": ["3d","just-scan-it","just scan it"],
         "tags": ["3d","3d scenes","gaussian splatting"],
@@ -299,6 +311,12 @@ var store = [{
         "url": "/publications/learning-to-detect-label-errors-by-making-them/",
         "teaser": null
       },{
+        "title": "Transferring styles for reduced texture bias and improved robustness in semantic segmentation networks ",
+        "excerpt":" ","categories": ["style transfer","images","street scenes"],
+        "tags": ["segmentation","object detection","robustness","bias"],
+        "url": "/publications/transferring-styles/",
+        "teaser": null
+      },{
         "title": "FutrTrack: A Camera-LiDAR Fusion Transformer for 3D Multiple Object Tracking",
         "excerpt":" ","categories": ["lidar","object-detection"],
         "tags": ["transformer","object detection","object tracking"],
@@ -309,6 +327,12 @@ var store = [{
         "excerpt":" ","categories": ["LFA","CNNs"],
         "tags": ["Singular Value Decomposition","Convolutional Mappings","Fourier Analysis"],
         "url": "/publications/lfa/",
+        "teaser": null
+      },{
+        "title": "Probabilistic Label Spreading: Efficient and Consistent Estimation of Soft Labels with Epistemic Uncertainty on Graphs ",
+        "excerpt":" ","categories": ["noise","uncertainty estimation"],
+        "tags": ["Uncertainty Quantification","Graph-Based Learning"],
+        "url": "/publications/probabilistic-label-spreading/",
         "teaser": null
       },{
         "title": "Anna Hovermann",
