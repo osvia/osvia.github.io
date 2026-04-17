@@ -245,6 +245,18 @@ var store = [{
         "url": "/news/2026-1-20/",
         "teaser": null
       },{
+        "title": "Paper accepted at CVPR 2026",
+        "excerpt":"Our paper “PRIMU: Uncertainty Estimation for Novel Views in Gaussian Splatting from Primitive-Based Representations of Error and Coverage” has been accepted for publication at CVPR 2026. In this work, Thomas Gottwald, Edgar Heinert, Peter Stehr, Chamuditha Jayanga, and Matthias Rottmann present a method to estimate predictive uncertainty for novel views...","categories": ["Paper","CVPR 2026"],
+        "tags": [],
+        "url": "/news/2026-3-10/",
+        "teaser": null
+      },{
+        "title": "Best Student Paper Award at VISAPP 2026",
+        "excerpt":"Our doctoral student Martha Teiko T. received the Best Student Paper Award at VISAPP 2026 for the paper “FutrTrack: A Camera-LiDAR Fusion Transformer for 3D Multiple Object Tracking,” co-authored by Ori Maoz. The paper proposes a transformer-based approach for tightly fusing camera and LiDAR data for robust 3D multiple object...","categories": ["Paper","VISAPP 2026"],
+        "tags": [],
+        "url": "/news/2026-4-17/",
+        "teaser": null
+      },{
         "title": "MGiaD: Multigrid in all dimensions - Efficiency and robustness by weight sharing and coarsening in resolution and channel dimensions",
         "excerpt":" ","categories": ["robustness","architecture","efficiency"],
         "tags": ["CNNs","bias complexity"],
@@ -255,12 +267,6 @@ var store = [{
         "excerpt":" ","categories": ["lidar","autonamous-driving"],
         "tags": ["object detection","lidar","radar"],
         "url": "/publications/sparseradnet/",
-        "teaser": null
-      },{
-        "title": "OoDIS: Anomaly Instance Segmentation Benchmark",
-        "excerpt":" ","categories": ["dataset","segmentation"],
-        "tags": ["dataset","segmentation","out of distribution data"],
-        "url": "/publications/oodis/",
         "teaser": null
       },{
         "title": "TARS: Traffic-Aware Radar Scene Flow Estimation",
@@ -281,16 +287,10 @@ var store = [{
         "url": "/publications/lidar-mot-detr/",
         "teaser": null
       },{
-        "title": "Temporal Object Captioning for Street Scene Videos from LiDAR Tracks ",
-        "excerpt":" ","categories": ["video","lidar"],
-        "tags": ["object detection","street scenes"],
-        "url": "/publications/temcap/",
-        "teaser": null
-      },{
-        "title": "Can We Challenge Open-Vocabulary Object Detectors with Generated Content in Street Scenes? ",
-        "excerpt":" ","categories": ["object detection","street scenes"],
-        "tags": ["object detection","street scenes"],
-        "url": "/publications/can-we-challenge-open-vocabulary-object-detectors/",
+        "title": "OoDIS: Anomaly Instance Segmentation Benchmark",
+        "excerpt":" ","categories": ["dataset","segmentation"],
+        "tags": ["dataset","segmentation","out of distribution data"],
+        "url": "/publications/oodis/",
         "teaser": null
       },{
         "title": "PRIMU: Uncertainty Estimation for Novel Views in Gaussian Splatting from Primitive-Based Representations of Error and Coverage",
@@ -327,6 +327,18 @@ var store = [{
         "excerpt":" ","categories": ["LFA","CNNs"],
         "tags": ["Singular Value Decomposition","Convolutional Mappings","Fourier Analysis"],
         "url": "/publications/lfa/",
+        "teaser": null
+      },{
+        "title": "Temporal Object Captioning for Street Scene Videos from LiDAR Tracks ",
+        "excerpt":" ","categories": ["video","lidar"],
+        "tags": ["object detection","street scenes"],
+        "url": "/publications/temcap/",
+        "teaser": null
+      },{
+        "title": "Can We Challenge Open-Vocabulary Object Detectors with Generated Content in Street Scenes? ",
+        "excerpt":" ","categories": ["object detection","street scenes"],
+        "tags": ["object detection","street scenes"],
+        "url": "/publications/can-we-challenge-open-vocabulary-object-detectors/",
         "teaser": null
       },{
         "title": "Probabilistic Label Spreading: Efficient and Consistent Estimation of Soft Labels with Epistemic Uncertainty on Graphs ",

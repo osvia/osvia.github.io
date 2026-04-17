@@ -9,7 +9,7 @@ authors:
   - "Schmarje, L." 
 year: 2025
 date: 2025-08-06
-venue: "arXiv"
+venue: "VISAPP 2026"
 image: "/assets/images/publications/pub_3.png"
 
 paper_url: "https://arxiv.org/abs/2508.06556"

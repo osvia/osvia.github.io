@@ -6,7 +6,7 @@ authors:
   - "Rottmann, M." 
 year: 2025
 date: 2025-10-22
-venue: "arXiv"
+venue: "VISAPP 2026"
 image: "assets/images/publications/pub_6.png"
 
 paper_url: "https://arxiv.org/abs/2510.19981"
