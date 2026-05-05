@@ -275,6 +275,12 @@ var store = [{
         "url": "/publications/sparseradnet/",
         "teaser": null
       },{
+        "title": "Does Knowledge About Perceptual Uncertainty Help an Agent in Automated Driving?",
+        "excerpt":" ","categories": ["autonamous driving","street scenes"],
+        "tags": ["autonamous driving","street scenes"],
+        "url": "/publications/can-we-challenge-open-vocabulary-object-detectors-copy/",
+        "teaser": null
+      },{
         "title": "TARS: Traffic-Aware Radar Scene Flow Estimation",
         "excerpt":" ","categories": ["lidar","autonamous-driving"],
         "tags": ["object detection","lidar"],
