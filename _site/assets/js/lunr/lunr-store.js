@@ -473,6 +473,12 @@ var store = [{
         "url": "/team/natalie-grabowsky.html",
         "teaser": null
       },{
+        "title": "Noah Schade",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/team/noah-schade.html",
+        "teaser": null
+      },{
         "title": "Olaf Kubinkiewicz",
         "excerpt":" ","categories": [],
         "tags": [],
