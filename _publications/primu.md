@@ -12,6 +12,7 @@ venue: "arXiv"
 image: "assets/images/publications/pub_8.png"
 
 paper_url: "https://arxiv.org/abs/2508.02443"
+code_url: "https://github.com/Thomas-Gottwald/PRIMU"
 project_url: "https://osvia.org/PRIMU/"
 
 categories: ["3d", "just-scan-it", "just scan it"]
