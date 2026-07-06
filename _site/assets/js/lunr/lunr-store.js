@@ -509,6 +509,12 @@ var store = [{
         "url": "/team/sarina-penquitt.html",
         "teaser": null
       },{
+        "title": "Shabnam Mesgary",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/team/shabnam-mesgary.html",
+        "teaser": null
+      },{
         "title": "Stephan Tilgner",
         "excerpt":" ","categories": [],
         "tags": [],

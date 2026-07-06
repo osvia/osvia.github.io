@@ -1,6 +1,6 @@
 ---
 group: Former Members
-order: 2
+order: 3
 name: Olaf Kubinkiewicz
 degree: "M.Sc."
 affiliation: ""

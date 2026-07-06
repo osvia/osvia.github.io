@@ -3,7 +3,7 @@ group: PhD Candidates
 order: 5
 name: Sadia Ilyas
 degree: "M.Sc."
-affiliation: "Osnabrück University, Aptiv"
+affiliation: "Aptiv, Osnabrück University"
 subtitle: ""
 image: "./assets/images/team/sadia_ilyas.jpg"
 badges: []

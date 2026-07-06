@@ -1,6 +1,6 @@
 ---
 group: Student Assistants
-order: 5
+order: 4
 name: Marco Schumacher
 degree: "Student"
 affiliation: "University of Wuppertal"

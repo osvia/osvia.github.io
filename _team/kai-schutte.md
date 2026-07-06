@@ -3,7 +3,7 @@ group: PhD Candidates
 order: 10
 name: Kai Schütte
 degree: "M.Sc."
-affiliation: "University of Wuppertal, Volkswagen"
+affiliation: "Volkswagen, Osnabrück University"
 subtitle: ""
 image: "./assets/images/team/kai_schütte.jpg"
 badges: []

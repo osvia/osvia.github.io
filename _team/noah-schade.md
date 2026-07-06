@@ -1,9 +1,9 @@
 ---
 group: Student Assistants
-order: 4
+order: 3
 name: Noah Schade
 degree: "Student"
-affiliation: "University of Osnabrück"
+affiliation: "Osnabrück University"
 subtitle: ""
 image: ""
 badges: []

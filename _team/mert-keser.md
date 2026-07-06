@@ -3,7 +3,7 @@ group: PhD Candidates
 order: 6
 name: Mert Keser
 degree: "M.Sc."
-affiliation: "Osnabrück University, Technical University of Munich, AUMOVIO SE"
+affiliation: "AUMOVIO SE, Osnabrück University, Technical University of Munich"
 subtitle: ""
 image: "./assets/images/team/mert_keser.jpg"
 badges: []

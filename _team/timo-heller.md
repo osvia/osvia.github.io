@@ -1,10 +1,10 @@
 ---
-group: Student Assistants
+group: Former Members
 order: 2
 name: Timo Heller
-degree: "B.Sc."
-affiliation: "University of Wuppertal"
-subtitle: ""
+degree: "M.Sc."
+affiliation: ""
+subtitle: "Former Student Assistant"
 image: "./assets/images/team/timo_heller.jpg"
 badges: []
 contacts:

@@ -3,7 +3,7 @@ group: Postdocs
 order: 0
 name: Maram Akila
 degree: "Dr."
-affiliation: "University of Osnabrück"
+affiliation: "Osnabrück University"
 subtitle: ""
 image: "./assets/images/team/maram_akila.jpg"
 badges: []

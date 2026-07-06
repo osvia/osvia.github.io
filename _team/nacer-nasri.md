@@ -1,6 +1,6 @@
 ---
 group: Student Assistants
-order: 4
+order: 3
 name: Nacer Nasri
 degree: "B.Sc."
 affiliation: "Osnabrück University"

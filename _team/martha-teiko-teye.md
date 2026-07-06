@@ -3,7 +3,7 @@ group: PhD Candidates
 order: 11
 name: Martha Teiko Teye
 degree: "M.Sc."
-affiliation: "University of Wuppertal, Aptiv"
+affiliation: "Aptiv, University of Wuppertal"
 subtitle: ""
 image: "./assets/images/team/martha_teye.jpg"
 badges: []

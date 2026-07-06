@@ -3,7 +3,7 @@ group: PhD Candidates
 order: 14
 name: Jialong Wu
 degree: "M.Sc."
-affiliation: "Osnabrück University, Aptiv"
+affiliation: "Aptiv, Osnabrück University"
 subtitle: ""
 image: ""
 badges: []
