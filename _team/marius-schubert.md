@@ -1,6 +1,6 @@
 ---
 group: Former Members
-order: 4
+order: 5
 name: Marius Schubert
 degree: "Dr."
 affiliation: ""
