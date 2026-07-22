@@ -8,7 +8,7 @@ authors:
   - "Rottmann, M." 
 year: 2025
 date: 2025-07-04
-venue: "arXiv"
+venue: "CVPR 2026"
 image: "assets/images/publications/pub_8.png"
 
 paper_url: "https://arxiv.org/abs/2508.02443"

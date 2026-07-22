@@ -311,6 +311,12 @@ var store = [{
         "url": "/publications/primu/",
         "teaser": null
       },{
+        "title": "Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis",
+        "excerpt":" ","categories": ["3d","just-scan-it","just scan it"],
+        "tags": ["3d","3d scenes","gaussian splatting","uncertainty"],
+        "url": "/publications/predictive-photometric-uncertainty/",
+        "teaser": null
+      },{
         "title": "From Label Error Detection to Correction",
         "excerpt":" ","categories": ["label-errors","robustness"],
         "tags": ["object detection","label quality"],
