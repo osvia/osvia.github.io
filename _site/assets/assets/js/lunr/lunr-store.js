@@ -263,6 +263,12 @@ var store = [{
         "url": "/news/2026-4-17/",
         "teaser": null
       },{
+        "title": "Paper accepted for publication at ECCV 2026",
+        "excerpt":"Our joint work with Queensland University of Technology (QUT) in Brisbane entitled “Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis” by Thomas Gottwald, Peter Stehr, Edgar Heinert, Chamuditha Jayanga, Niko Sünderhauf, and Dimity Miller has been accepted for publication at ECCV 2026. 3D Gaussian Splatting has become a...","categories": [],
+        "tags": [],
+        "url": "/news/2026-6-22/",
+        "teaser": null
+      },{
         "title": "MGiaD: Multigrid in all dimensions - Efficiency and robustness by weight sharing and coarsening in resolution and channel dimensions",
         "excerpt":" ","categories": ["robustness","architecture","efficiency"],
         "tags": ["CNNs","bias complexity"],
@@ -311,12 +317,6 @@ var store = [{
         "url": "/publications/primu/",
         "teaser": null
       },{
-        "title": "Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis",
-        "excerpt":" ","categories": ["3d","just-scan-it","just scan it"],
-        "tags": ["3d","3d scenes","gaussian splatting","uncertainty"],
-        "url": "/publications/predictive-photometric-uncertainty/",
-        "teaser": null
-      },{
         "title": "From Label Error Detection to Correction",
         "excerpt":" ","categories": ["label-errors","robustness"],
         "tags": ["object detection","label quality"],
@@ -363,6 +363,12 @@ var store = [{
         "excerpt":" ","categories": ["noise","uncertainty estimation"],
         "tags": ["Uncertainty Quantification","Graph-Based Learning"],
         "url": "/publications/probabilistic-label-spreading/",
+        "teaser": null
+      },{
+        "title": "Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis",
+        "excerpt":" ","categories": ["3d","just-scan-it","just scan it"],
+        "tags": ["3d","3d scenes","gaussian splatting","uncertainty"],
+        "url": "/publications/predictive-photometric-uncertainty/",
         "teaser": null
       },{
         "title": "Anna Hovermann",

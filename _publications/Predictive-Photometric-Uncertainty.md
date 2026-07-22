@@ -8,8 +8,8 @@ authors:
   - "Suenderhauf1, N."
   - "Miller, D."
   - "Rottmann, M." 
-year: 2022
-date: 2025-07-10
+year: 2026
+date: 2026-07-10
 venue: "ECCV 2026"
 image: "assets/images/publications/pub_15.png"
 
