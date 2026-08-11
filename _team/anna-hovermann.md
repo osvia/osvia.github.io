@@ -1,15 +1,15 @@
 ---
-group: PhD Candidates
-order: 4
+group: Former Members
+order: 2.5
 name: Anna Hövermann
 degree: "M.Sc."
-affiliation: "University of Wuppertal"
+affiliation: "Former Student Assistant"
 subtitle: ""
 image: ""
 badges: []
 contacts:
-  email: ""
+  email: "ahn[at]wupperverband.de"
   phone: ""
-  room: "Room FZ.00.06, Lise-Meinter-Str. 27-31, D-42119 Wuppertal, Germany"
+  room: ""
 links: []
 ---

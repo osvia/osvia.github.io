@@ -264,7 +264,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Paper accepted for publication at ECCV 2026",
-        "excerpt":"Our joint work with Queensland University of Technology (QUT) in Brisbane entitled “Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis” by Thomas Gottwald, Peter Stehr, Edgar Heinert, Chamuditha Jayanga, Niko Sünderhauf, and Dimity Miller has been accepted for publication at ECCV 2026. 3D Gaussian Splatting has become a...","categories": [],
+        "excerpt":"Our joint work with Queensland University of Technology (QUT) in Brisbane entitled “Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis” by Chamuditha Jayanga Galappaththige, Thomas Gottwald, Peter Stehr, Edgar Heinert, Niko Suenderhauf, Dimity Miller and Matthias Rottmann has been accepted for publication at ECCV 2026. 3D Gaussian Splatting...","categories": [],
         "tags": [],
         "url": "/news/2026-6-22/",
         "teaser": null
