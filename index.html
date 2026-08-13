@@ -89,6 +89,97 @@ layout: null
         </span>
     </section>
 
+    <!-- NEWS -->
+    <section id="news" class="max-w-5xl mx-auto">
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-2xl font-semibold">News</h2>
+        <a href="news.html"
+          class="shrink-0 whitespace-nowrap px-3 py-1 text-sm sm:text-base bg-blue-600 text-white rounded-md hover:bg-blue-700">
+          More News
+        </a>
+      </div>
+
+      <div class="relative">
+        <div class="flex overflow-x-auto space-x-6 px-12 scrollbar-hide snap-x snap-mandatory">
+          {% assign sorted_news = site.news | sort: "date" | reverse %}
+
+          {% for post in sorted_news limit:6 %}
+            {% assign main_url = post.main_url | default: post.url %}
+
+            <article class="w-64 sm:w-72 h-80 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm flex-shrink-0 snap-start">
+              <a href="{{ main_url }}">
+                {% if post.image %}
+                  <img src="{{ post.image }}" alt="{{ post.title | escape }}" class="w-full h-32 object-cover bg-gray-100" loading="lazy" decoding="async"/>
+                {% else %}
+                  <div class="w-full h-32 object-cover bg-gray-100"></div>
+                {% endif %}
+              </a>
+
+              <div class="p-3 h-[calc(100%-8rem)] flex flex-col">
+                <a href="{{ main_url }}" class="group inline-block">
+                  <h3 class="text-sm font-semibold leading-snug line-clamp-2 group-hover:underline">
+                    {{ post.title }}
+                  </h3>
+                </a>
+
+                <div class="mt-1 text-xs text-gray-600 flex items-center gap-2">
+                  <!-- calendar icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 flex-none">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v3m10.5-3v3M3 8.25h18M4.5 6.75A1.5 1.5 0 016 5.25h12a1.5 1.5 0 011.5 1.5v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12z"/>
+                  </svg>
+                  <time datetime="{{ post.date | date_to_xmlschema }}" class="truncate">
+                    {{ post.date | date: "%b %-d, %Y" }}
+                  </time>
+
+                  {% if post.categories %}
+                    {% for c in post.categories %}
+                      <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-[11px]">
+                        {{ c }}
+                      </span>
+                    {% endfor %}
+                  {% endif %}
+
+                  {% if post.tags %}
+                    {% for t in post.tags %}
+                      <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-[11px]">
+                        {{ t }}
+                      </span>
+                    {% endfor %}
+                  {% endif %}
+                </div>
+
+                {% if post.summary %}
+                  <p class="mt-2 text-xs text-gray-700 line-clamp-3">
+                    {{ post.summary }}
+                  </p>
+                {% else %}
+                  <p class="mt-2 text-xs text-gray-700 line-clamp-3">
+                    {{ post.excerpt | strip_html | truncate: 160 }}
+                  </p>
+                {% endif %}
+
+                {% if post.links %}
+                  <div class="mt-auto pt-3 flex flex-wrap gap-2 text-xs">
+                    {% for l in post.links %}
+                      <a href="{{ l.url }}" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">
+                        {{ l.label }}
+                      </a>
+                    {% endfor %}
+                  </div>
+                {% else %}
+                  <div class="mt-auto pt-3 flex flex-wrap gap-2 text-xs">
+                    <a href="{{ main_url }}" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">
+                      Read more
+                    </a>
+                  </div>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
     <!-- PUBLICATIONS & DATASETS PANEL -->
     <section class="bg-gray-50 rounded-lg p-8 max-w-5xl mx-auto space-y-8">
 
@@ -448,99 +539,6 @@ layout: null
         </a>
       </div>
     </section>
-
-    <!-- NEWS -->
-    <section id="news" class="max-w-5xl mx-auto">
-      <div class="mb-4 flex items-center justify-between">
-        <h2 class="text-2xl font-semibold">News</h2>
-        <a href="news.html"
-          class="shrink-0 whitespace-nowrap px-3 py-1 text-sm sm:text-base bg-blue-600 text-white rounded-md hover:bg-blue-700">
-          More News
-        </a>
-      </div>
-
-      <div class="relative">
-        <div class="flex overflow-x-auto space-x-6 px-12 scrollbar-hide snap-x snap-mandatory">
-          {% assign sorted_news = site.news | sort: "date" | reverse %}
-
-          {% for post in sorted_news limit:6 %}
-            {% assign main_url = post.main_url | default: post.url %}
-
-            <article class="w-64 sm:w-72 h-80 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm flex-shrink-0 snap-start">
-              <a href="{{ main_url }}">
-                {% if post.image %}
-                  <img src="{{ post.image }}" alt="{{ post.title | escape }}" class="w-full h-32 object-cover bg-gray-100" loading="lazy" decoding="async"/>
-                {% else %}
-                  <div class="w-full h-32 object-cover bg-gray-100"></div>
-                {% endif %}
-              </a>
-
-              <div class="p-3 h-[calc(100%-8rem)] flex flex-col">
-                <a href="{{ main_url }}" class="group inline-block">
-                  <h3 class="text-sm font-semibold leading-snug line-clamp-2 group-hover:underline">
-                    {{ post.title }}
-                  </h3>
-                </a>
-
-                <div class="mt-1 text-xs text-gray-600 flex items-center gap-2">
-                  <!-- calendar icon -->
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 flex-none">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v3m10.5-3v3M3 8.25h18M4.5 6.75A1.5 1.5 0 016 5.25h12a1.5 1.5 0 011.5 1.5v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12z"/>
-                  </svg>
-                  <time datetime="{{ post.date | date_to_xmlschema }}" class="truncate">
-                    {{ post.date | date: "%b %-d, %Y" }}
-                  </time>
-
-                  {% if post.categories %}
-                    {% for c in post.categories %}
-                      <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-[11px]">
-                        {{ c }}
-                      </span>
-                    {% endfor %}
-                  {% endif %}
-
-                  {% if post.tags %}
-                    {% for t in post.tags %}
-                      <span class="px-2 py-0.5 rounded bg-gray-100 border border-gray-200 text-[11px]">
-                        {{ t }}
-                      </span>
-                    {% endfor %}
-                  {% endif %}
-                </div>
-
-                {% if post.summary %}
-                  <p class="mt-2 text-xs text-gray-700 line-clamp-3">
-                    {{ post.summary }}
-                  </p>
-                {% else %}
-                  <p class="mt-2 text-xs text-gray-700 line-clamp-3">
-                    {{ post.excerpt | strip_html | truncate: 160 }}
-                  </p>
-                {% endif %}
-
-                {% if post.links %}
-                  <div class="mt-auto pt-3 flex flex-wrap gap-2 text-xs">
-                    {% for l in post.links %}
-                      <a href="{{ l.url }}" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">
-                        {{ l.label }}
-                      </a>
-                    {% endfor %}
-                  </div>
-                {% else %}
-                  <div class="mt-auto pt-3 flex flex-wrap gap-2 text-xs">
-                    <a href="{{ main_url }}" class="px-2.5 py-1 rounded bg-gray-100 hover:bg-gray-200 border border-gray-200">
-                      Read more
-                    </a>
-                  </div>
-                {% endif %}
-              </div>
-            </article>
-          {% endfor %}
-        </div>
-      </div>
-    </section>
-
-
 
 
 
