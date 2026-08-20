@@ -2,10 +2,10 @@
 title: "Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis"
 authors:
   - "Galappaththige, C., J."
-  - "Gottwald3, T."
+  - "Gottwald, T."
   - "Stehr, P."
   - "Heinert, E."
-  - "Suenderhauf1, N."
+  - "Suenderhauf, N."
   - "Miller, D."
   - "Rottmann, M." 
 year: 2026
