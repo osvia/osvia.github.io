@@ -1,5 +1,5 @@
 ---
-group: PhD Candidates
+group: Postdocs
 order: 14
 name: Jialong Wu
 degree: "M.Sc."
