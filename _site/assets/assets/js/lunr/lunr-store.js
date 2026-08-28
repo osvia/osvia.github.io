@@ -269,6 +269,12 @@ var store = [{
         "url": "/news/2026-6-22/",
         "teaser": null
       },{
+        "title": "Congratulations Dr. Jialong Wu",
+        "excerpt":"Yesterday was a big day for our OSVIA Lab at Universität Osnabrück: Jialong Wu successfully defended his PhD thesis “Radar-Centric Perception for Autonomous Driving: Object Detection, Scene Flow, and Radar-Camera Fusion”, becoming the first PhD graduate of our lab, just one year after it was founded.   Jialong’s industrial PhD,...","categories": ["Defense"],
+        "tags": [],
+        "url": "/news/2026-8-28/",
+        "teaser": null
+      },{
         "title": "MGiaD: Multigrid in all dimensions - Efficiency and robustness by weight sharing and coarsening in resolution and channel dimensions",
         "excerpt":" ","categories": ["robustness","architecture","efficiency"],
         "tags": ["CNNs","bias complexity"],
