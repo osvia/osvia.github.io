@@ -3,8 +3,8 @@ group: Former Members
 order: 2.5
 name: Anna Hövermann
 degree: "M.Sc."
-affiliation: "Former Student Assistant"
-subtitle: ""
+affiliation: ""
+subtitle: "Former Researcher"
 image: ""
 badges: []
 contacts:
