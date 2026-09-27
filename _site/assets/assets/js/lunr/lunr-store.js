@@ -377,6 +377,12 @@ var store = [{
         "url": "/publications/predictive-photometric-uncertainty/",
         "teaser": null
       },{
+        "title": "Object Detection Benchmarks are Incomplete: The Role of Label Errors and Annotation Uncertainty",
+        "excerpt":" ","categories": ["benchmark","object-detection"],
+        "tags": ["benchmark","object detection","object tracking"],
+        "url": "/publications/object-detection-benchmarks/",
+        "teaser": null
+      },{
         "title": "Anna Hovermann",
         "excerpt":" ","categories": [],
         "tags": [],
