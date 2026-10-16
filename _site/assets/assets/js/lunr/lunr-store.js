@@ -275,6 +275,12 @@ var store = [{
         "url": "/news/2026-8-28/",
         "teaser": null
       },{
+        "title": "QUT Centre for Robotics, University of Wuppertal, and Osnabrück University at ECCV 2026",
+        "excerpt":"In early September, our team attended ECCV 2026, presenting two works in the areas of uncertainty quantification and data-centric AI. Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis Together with colleagues from the QUT Centre for Robotics, Osnabrück University, and the University of Wuppertal, Chamuditha Jayanga, Thomas Gottwald,...","categories": [],
+        "tags": [],
+        "url": "/news/2026-9-14/",
+        "teaser": null
+      },{
         "title": "MGiaD: Multigrid in all dimensions - Efficiency and robustness by weight sharing and coarsening in resolution and channel dimensions",
         "excerpt":" ","categories": ["robustness","architecture","efficiency"],
         "tags": ["CNNs","bias complexity"],
