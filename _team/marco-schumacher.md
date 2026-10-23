@@ -2,7 +2,7 @@
 group: Student Assistants
 order: 4
 name: Marco Schumacher
-degree: "Student"
+degree: "B.Sc."
 affiliation: "University of Wuppertal"
 subtitle: ""
 image: "./assets/images/team/marco_schumacher.jpg"
