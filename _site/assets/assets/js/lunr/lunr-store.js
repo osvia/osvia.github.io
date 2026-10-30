@@ -377,6 +377,12 @@ var store = [{
         "url": "/publications/probabilistic-label-spreading/",
         "teaser": null
       },{
+        "title": "Control Your Queries: Heterogeneous Query Interaction for Camera-Radar Fusion ",
+        "excerpt":" ","categories": ["radar","camera"],
+        "tags": ["object detection","radar"],
+        "url": "/publications/confusion/",
+        "teaser": null
+      },{
         "title": "Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis",
         "excerpt":" ","categories": ["3d","just-scan-it","just scan it"],
         "tags": ["3d","3d scenes","gaussian splatting","uncertainty"],
@@ -453,12 +459,6 @@ var store = [{
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/team/maram-akila.html",
-        "teaser": null
-      },{
-        "title": "Marco Schumacher copy",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "/team/marco-schumacher%20copy.html",
         "teaser": null
       },{
         "title": "Marco Schumacher",
@@ -567,6 +567,12 @@ var store = [{
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/team/timo-heller.html",
+        "teaser": null
+      },{
+        "title": "Tom Scholz",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/team/tom-scholz.html",
         "teaser": null
       },{
         "title": "Tsung Yuan Tseng",
