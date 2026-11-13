@@ -3,8 +3,8 @@ group: PhD Candidates
 order: 3
 name: Timo Heller
 degree: "M.Sc."
-affiliation: ""
-subtitle: "PhD Candidates"
+affiliation: "University of Wuppertal"
+subtitle: ""
 image: "./assets/images/team/timo_heller.jpg"
 badges: []
 contacts:
