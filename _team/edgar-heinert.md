@@ -1,6 +1,6 @@
 ---
 group: PhD Candidates
-order: 3
+order: 4
 name: Edgar Heinert
 degree: "M.Sc."
 affiliation: "Osnabrück University"

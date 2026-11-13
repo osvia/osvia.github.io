@@ -1,15 +1,15 @@
 ---
-group: Former Members
-order: 2
+group: PhD Candidates
+order: 3
 name: Timo Heller
 degree: "M.Sc."
 affiliation: ""
-subtitle: "Former Student Assistant"
+subtitle: "PhD Candidates"
 image: "./assets/images/team/timo_heller.jpg"
 badges: []
 contacts:
-  email: "timo.heller-hk[at]uni-wuppertal.de"
-  phone: "+49 202 439 1711"
-  room: "Room FZ.00.20, Lise-Meinter-Str. 27-31, D-42119 Wuppertal, Germany"
+  email: "theller[at]uni-wuppertal.de"
+  phone: ""
+  room: ""
 links: []
 ---
